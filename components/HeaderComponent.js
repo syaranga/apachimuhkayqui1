@@ -50,7 +50,7 @@ export class HeaderComponent extends Component {
         <View style={styles.liveWrapper}>
           <TouchableWithoutFeedback onPress={() => {}}>
             <View style={styles.live}>
-              <Text style={styles.liveText}>Live</Text>
+              <Text style={styles.liveText}>live</Text>
             </View>
           </TouchableWithoutFeedback>
         </View>
