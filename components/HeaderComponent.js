@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
     height: hp('6%'),
     justifyContent: 'center',
     position: 'relative',
-    borderBottomWidth: 1,
+    borderBottomWidth: 2,
     borderBottomColor: 'gray'
   },
   text: { fontSize: hp('3%'), justifyContent: 'center', textAlign: 'center' },
