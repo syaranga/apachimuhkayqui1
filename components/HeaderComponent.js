@@ -3,28 +3,14 @@ import { View, Text, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 
 const styles = StyleSheet.create({
-<<<<<<< HEAD
-  conatiner: {
-=======
   container: {
->>>>>>> 7a49675aae3173b4ba5ef589ad0e7e0840a76107
     height: hp('6%'),
     justifyContent: 'center',
     position: 'relative',
     borderBottomWidth: 1,
     borderBottomColor: 'gray'
-<<<<<<< HEAD
-
-  },
-  text: {
-    fontSize: hp('3%'),
-    justifyContent: 'center',
-    textAlign: 'center'
-  },
-=======
   },
   text: { fontSize: hp('3%'), justifyContent: 'center', textAlign: 'center' },
->>>>>>> 7a49675aae3173b4ba5ef589ad0e7e0840a76107
   liveWrapper: {
     height: hp('5%'),
     width: hp('5%'),
@@ -47,13 +33,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     justifyContent: 'center'
   },
-<<<<<<< HEAD
-  liveText: {
-    color: 'white'
-  }
-=======
   liveText: { color: 'white' }
->>>>>>> 7a49675aae3173b4ba5ef589ad0e7e0840a76107
 })
 
 export class HeaderComponent extends Component {
@@ -64,16 +44,6 @@ export class HeaderComponent extends Component {
 
   render () {
     return (
-<<<<<<< HEAD
-      <View style={[styles.conatiner, this.props.styleContainer]}>
-        <Text style={[styles.text, this.props.style]}>
-          {this.props.title}
-        </Text>
-        <View style={styles.liveWrapper} onPress={() => { }}>
-          <TouchableWithoutFeedback>
-            <View style={styles.live}>
-              <Text style={styles.liveText}>Live</Text>
-=======
       <View style={[styles.container, this.props.styleContainer]}>
         <Text style={[styles.text, this.props.style]}>
           {this.props.title}
@@ -82,7 +52,6 @@ export class HeaderComponent extends Component {
           <TouchableWithoutFeedback onPress={() => {}}>
             <View style={styles.live}>
               <Text style={styles.liveText}>live</Text>
->>>>>>> 7a49675aae3173b4ba5ef589ad0e7e0840a76107
             </View>
           </TouchableWithoutFeedback>
         </View>
