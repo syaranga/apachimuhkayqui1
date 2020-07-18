@@ -14,21 +14,22 @@ export class SwiperComponent extends Component {
 
   render () {
     return (
-      < View style = {[this.props.styleContainer]} >
-      <Swiper>
-        {
-          this.props.data.map((item, index) => {
-            return (
-              <View key={index} style={styles.container}>
-                <Image 
-                style={{height: '100%', width: '100%', resizeMode: 'cover'}}
-                source={{uri: item.image}}/>
-               { /*<Text> {item.text} </Text>*/}
-              </View>
-            )
-          })
-        }
-      </Swiper>
+      <View style={[this.props.styleContainer]}>
+        <Swiper>
+          {
+            this.props.data.map((item, index) => {
+              return (
+                <View key={index} style={styles.container}>
+                  <Image
+                    style={{ height: '100%', width: '100%', resizeMode: 'cover' }}
+                    source={{ uri: item.image }}
+                  />
+                  {/* <Text> {item.text} </Text> */}
+                </View>
+              )
+            })
+          }
+        </Swiper>
       </View>
     )
   }
