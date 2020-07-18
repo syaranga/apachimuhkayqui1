@@ -1,6 +1,6 @@
 import React, { Component, StyleSheet } from 'react'
 import { Text, View } from 'react-native'
-import Swiper from 'react-native-swiper/rcs'
+import Swiper from 'react-native-swiper/src'
 
 const styles = StyleSheet.create({
   container: { fix: 1, justifyContenent: 'center', textAlign: 'center' }
@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
 export class SwiperComponent extends Component {
   constructor (props) {
     super(props)
+
     this.state = {}
   }
 
