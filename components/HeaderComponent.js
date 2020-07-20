@@ -25,8 +25,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: 'yellow'
   },
-  live:
-  {
+  live: {
     height: hp('4.5%'),
     width: hp('4.5%'),
     borderRadius: wp('50%'),
@@ -50,11 +49,9 @@ export class HeaderComponent extends Component {
           {this.props.title}
         </Text>
         <View style={styles.liveWrapper}>
-          <TouchableWithoutFeedback
-            onPress={() => {}}
-          >
+          <TouchableWithoutFeedback onPress={() => {}}>
             <View style={styles.live}>
-              <Text style={styles.liveText}>Live</Text>
+              <Text style={styles.liveText}>live</Text>
             </View>
           </TouchableWithoutFeedback>
         </View>
