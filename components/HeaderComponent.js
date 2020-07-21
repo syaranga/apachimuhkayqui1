@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     position: 'relative',
     borderBottomWidth: 1,
     borderBottomColor: 'gray'
-
   },
   text: {
     fontSize: hp('3%'),
