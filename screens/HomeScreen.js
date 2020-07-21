@@ -1,23 +1,15 @@
 import React, { Component } from 'react'
-import { StatusBar, Text, ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import SwiperComponent from '../components/SwiperComponent'
 import { TitleComponent } from '../components/TitleComponent'
 
-export class HomeScreen extends Component {
-  render () {
-    return (
-      <ScrollView>
-        <StatusBar hidden />
-        <TitleComponent
-          title='Discover'
           styleContainer={{
             width: wp('95%'),
             marginHorizontal: wp('2.5%'),
             textShadowColor: 'gray',
             textShadowOffset: {
-              width: hp('3%'),
-              height: hp('3%')
+              width: hp('.3%'),
+              height: hp('.3%')
             }
           }}
           style={{
@@ -37,7 +29,7 @@ export class HomeScreen extends Component {
             backgroundColor: 'cyan'
           }}
         />
-        <Text>HomeScreen</Text>
+          < TitleComponent/>
       </ScrollView>
     )
   }

@@ -6,6 +6,9 @@ export class TitleComponent extends Component {
     return (
       <View style={this.props.styleContainer}>
         <Text style={this.props.style}> {this.props.title} </Text>
+        <Text style={this.props.style}>
+          {this.props.title}
+        </Text>
       </View>
     )
   }
