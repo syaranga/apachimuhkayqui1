@@ -38,7 +38,7 @@ export class HomeScreen extends Component {
             backgroundColor: 'cyan'
           }}
         />
-        <GalleryComponent />
+        <GalleryComponent data={[]} />
       </ScrollView>
     )
   }
