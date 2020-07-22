@@ -25,7 +25,7 @@ export class HomeScreen extends Component {
             { text: 'c', image: 'https://d13xymm0hzzbsd.cloudfront.net/1/20200714/15947777912309.png' }
           ]}
           styleContainer={{
-            height: hp('20%'),
+            height: hp('21%'),
             backgroundColor: 'cyan'
           }}
         />
