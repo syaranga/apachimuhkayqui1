@@ -10,12 +10,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: 'gray'
   },
-  text: {
-    fontSize: hp('3%'),
-    justifyContent: 'center',
-    textAlign: 'center'
-  },
-
+  text: { fontSize: hp('3%'), justifyContent: 'center', textAlign: 'center' },
   liveWrapper: {
     height: hp('5%'),
     width: hp('5%'),
@@ -25,7 +20,6 @@ const styles = StyleSheet.create({
     top: 0,
     bottom: 0,
     right: wp('5%'),
-    justifyContent: 'center',
     alignContent: 'center',
     borderWidth: 2,
     borderColor: 'yellow'
@@ -38,10 +32,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     justifyContent: 'center'
   },
-  liveText: {
-    color: 'white'
-  }
+  liveText: { color: 'white' }
 })
+
 export class HeaderComponent extends Component {
   constructor (props) {
     super(props)
@@ -50,14 +43,14 @@ export class HeaderComponent extends Component {
 
   render () {
     return (
-      <View style={styles.container}>
-        <Text style={styles.text}>
+      <View style={[styles.container, this.props.styleContainer]}>
+        <Text style={[styles.text, this.props.style]}>
           {this.props.title}
         </Text>
         <View style={styles.liveWrapper}>
           <TouchableWithoutFeedback onPress={() => {}}>
             <View style={styles.live}>
-              <Text style={styles.liveText}> live </Text>
+              <Text style={styles.liveText}>live</Text>
             </View>
           </TouchableWithoutFeedback>
         </View>
