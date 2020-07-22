@@ -32,13 +32,9 @@ export class HomeScreen extends Component {
             { text: 'c', image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg' }
           ]}
           styleContainer={{
-<<<<<<< HEAD
-            height: hp('21%'),
-=======
             height: hp('50%'),
             width: wp('95%'),
             marginHorizontal: wp('2.5%'),
->>>>>>> 47d833b5e80645d80f32ff6990087330546fe1f0
             backgroundColor: 'cyan'
           }}
         />
