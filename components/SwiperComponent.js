@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD
 import { View, StyleSheet, Image } from 'react-native'
+=======
+import { Text, View, StyleSheet, Image } from 'react-native'
+>>>>>>> a12a6b9f89397e71543a4001aaa5cd5bde10bbf6
 import Swiper from 'react-native-swiper/src'
 
 const styles = StyleSheet.create({
