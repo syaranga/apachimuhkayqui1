@@ -52,29 +52,11 @@ export class HomeScreen extends Component {
             height: hp('50%'),
             width: wp('95%'),
             marginHorizontal: wp('2.5%'),
+            marginBottom: wp('2.5%'),
             backgroundColor: 'cyan'
           }}
         />
-        <GalleryComponent data={[
-          {
-            image: 'https://images.unsplash.com/photo-1561229980-b674f5893cba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
-          avatar: 'https://images.unsplash.com/photo-1561049841-d1d6a3e212fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=60',
-          nickname: 'ridhwam nord',
-          alias: '@ridzjcob',
-          price: '9876.54'
-        }
-        ]} 
-        styleContainer={{
-            height: hp('60%'),
-            width: wp('100%'),
-            backgroundColor: 'blue'
-          }}
-          sytleItem={{
-             height: hp('50%'),
-              width: wp('95%'),
-              marginHorizontal: wp('2.5%')
-            }}
-        />
+        <GalleryComponent />
       </ScrollView>
     )
   }
