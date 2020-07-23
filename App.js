@@ -8,6 +8,7 @@ import SearchScreen from './screens/SearchScreen'
 import FavoriteScreen from './screens/FavoriteScreen'
 import CartScreen from './screens/CartScreen'
 import AccountScreen from './screens/AccountScreen'
+import GalleryScreen from './screens/GalleryScreen'
 
 const Tab = createBottomTabNavigator()
 
@@ -17,8 +18,19 @@ function MyTabs () {
       initialRouteName='Home'
       tabBarOptions={{
         activeTintColor: '#e91e63'
+
       }}
     >
+      <Tab.Screen
+        name='Gallery'
+        component={GalleryScreen}
+        options={{
+          tabBarLabel: 'Gallery',
+          tabBarIcon: ({ color, size }) => (
+            <AntDesign name='gallery' color={color} size={size} />
+          )
+        }}
+      />
       <Tab.Screen
         name='Home'
         component={HomeScreen}
