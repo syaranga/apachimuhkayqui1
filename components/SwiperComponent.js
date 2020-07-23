@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Image } from 'react-native'
+import { Text, View, StyleSheet, Image } from 'react-native'
 import Swiper from 'react-native-swiper/src'
 
 const styles = StyleSheet.create({
@@ -24,8 +24,7 @@ export class SwiperComponent extends Component {
                     style={{ height: '100%', width: '100%', resizeMode: 'cover' }}
                     source={{ uri: item.image }}
                   />
-                  {/*  <Text> {item} </Text> */}
-
+                  {/* <Text> {item.text} </Text> */}
                 </View>
               )
             })
