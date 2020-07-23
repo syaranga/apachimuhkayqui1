@@ -38,7 +38,29 @@ export class HomeScreen extends Component {
             backgroundColor: 'cyan'
           }}
         />
-        <GalleryComponent />
+        <GalleryComponent
+          data={[
+            {
+              avatar: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg',
+              image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg',
+              nickname: '',
+              alias: ''
+            },
+            {
+              avatar: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg',
+              image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg',
+              nickname: '',
+              alias: ''
+            }
+          ]}
+          styleContainerGallery={{
+            height: hp('50%'),
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%'),
+            marginVertical: hp('3%'),
+            backgroundColor: 'green'
+          }}
+        />
       </ScrollView>
     )
   }
