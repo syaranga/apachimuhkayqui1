@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { StatusBar, Text, ScrollView } from 'react-native'
+import { StatusBar, ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
-
 import SwiperComponent from '../components/SwiperComponent'
 import TitleComponent from '../components/TitleComponent'
+import GalleryComponent from '../components/GalleryComponent'
 
 export class HomeScreen extends Component {
   render () {
@@ -17,8 +17,8 @@ export class HomeScreen extends Component {
             marginHorizontal: wp('2.5%'),
             textShadowColor: 'gray',
             textShadowOffset: {
-              width: hp('3%'),
-              height: hp('3%')
+              width: hp('.3%'),
+              height: hp('.3%')
             }
           }}
           style={{
@@ -38,8 +38,11 @@ export class HomeScreen extends Component {
             backgroundColor: 'cyan'
           }}
         />
-
-        <Text>HomeScreen</Text>
+        <GalleryComponent
+          data={[
+            {texto: 'a', image: 'https://farm8.staticflickr.com/7639/16145005443_32b2b9cd46_b.jpg' }
+          ]}
+        />
       </ScrollView>
     )
   }
