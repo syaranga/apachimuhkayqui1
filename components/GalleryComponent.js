@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image } from 'react-native'
-import Swiper from 'react-native-swiper/src'
+import Gallery from 'react-native-swiper/src'
 
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', textAlign: 'center' }
-
 })
-
-export class SwiperComponent extends Component {
+export class GalleryComponent extends Component {
   constructor (props) {
     super(props)
     this.state = {}
@@ -16,7 +14,8 @@ export class SwiperComponent extends Component {
   render () {
     return (
       <View style={[this.props.styleContainer]}>
-        <Swiper>
+        <Gallery>
+
           {
             this.props.data.map((item, index) => {
               return (
@@ -25,15 +24,19 @@ export class SwiperComponent extends Component {
                     style={{ height: '100%', width: '100%', resizeMode: 'cover' }}
                     source={{ uri: item.image }}
                   />
-                  {/* <Text> {item.text} </Text> */}
+                  <Text>
+                    <Text style={styles.text1}>PSimon Zhu</Text>
+                    <Text style={styles.text2}>@smnzhu</Text>
+                    <Text style={styles.text3}>$9876.54</Text>
+                  </Text>
                 </View>
               )
             })
           }
-        </Swiper>
+        </Gallery>
       </View>
     )
   }
 }
 
-export default SwiperComponent
+export default GalleryComponent
