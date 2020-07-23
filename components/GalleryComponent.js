@@ -24,8 +24,8 @@ export class GalleryComponent extends Component {
                     source={{ uri: item.avatar }}
                   />
                   <View style={{ flex: 1 }}>
-                    <Text>nickname</Text>
-                    <Text>@alias</Text>
+                    <Text>item.nickname</Text>
+                    <Text>{item.alias}</Text>
                   </View>
                 </View>
               )
