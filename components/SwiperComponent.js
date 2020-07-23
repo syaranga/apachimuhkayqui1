@@ -24,7 +24,11 @@ export class SwiperComponent extends Component {
                     style={{ height: '100%', width: '100%', resizeMode: 'cover' }}
                     source={{ uri: item.image }}
                   />
+<<<<<<< HEAD
                   {/* { /<Text> {item.text} </Text>/ } */}
+=======
+                  {/* <Text> {item.text} </Text> */}
+>>>>>>> 47d833b5e80645d80f32ff6990087330546fe1f0
                 </View>
               )
             })
