@@ -40,7 +40,7 @@ export class HomeScreen extends Component {
         />
         <GalleryComponent
           data={[
-            {texto: 'a', image: 'https://farm8.staticflickr.com/7639/16145005443_32b2b9cd46_b.jpg' }
+            {texto: 'a', image: ''}
           ]}
         />
       </ScrollView>
