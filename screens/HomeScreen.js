@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { StatusBar, Text, ScrollView } from 'react-native'
+import { StatusBar, Text, ScrollView, View } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
-
-import HeaderComponent from '../components/HeaderComponent'
 import SwiperComponent from '../components/SwiperComponent'
 
 export class HomeScreen extends Component {
@@ -10,31 +8,25 @@ export class HomeScreen extends Component {
     return (
       <ScrollView>
         <StatusBar hidden />
-        <HeaderComponent
-          title='apachimuchkayqui'
-          style={{ textTransform: 'capitalize' }}
-          styleContainer={{
-            borderBottomWidth: 2,
-            borderBottomColor: 'rgba(0,0,0,.2)'
-          }}
-        />
+      
         <SwiperComponent
           data={[
             {
               text: 'a',
-              image: 'https://d13xymm0hzzbsd.cloudfront.net/1/20200714/15947777912309.png'
+              image: 'https://agauche.org/wp-content/uploads/2020/03/alvan-nee-T-0EW-SEbsE-unsplash-scaled.jpg'
             },
             {
               text: 'b',
-              image: 'https://d13xymm0hzzbsd.cloudfront.net/1/20200710/15944262560866.png'
+              image: 'https://www.sosodours.com/wp-content/uploads//2019/07/Chien-plancher-odeur-urine.jpg'
             },
             {
               text: 'c',
-              image: 'https://d13xymm0hzzbsd.cloudfront.net/1/20200710/15944262560050.png'
+              image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg'
             }
           ]}
           styleContainer={{
-            height: hp('20%'),
+            height: hp('50%'),
+            width: wp(95%),
             backgroundColor: 'cyan'
           }}
         />
