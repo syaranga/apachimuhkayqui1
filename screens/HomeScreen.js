@@ -90,6 +90,15 @@ export class HomeScreen extends Component {
             width: hp('7%'),
             borderRadius: hp('7%')
           }}
+          stylePrice={{
+            fontSize: hp('5%')
+          }}
+          styleNickname={{
+            fontSize: hp('3%')
+          }}
+          styleAlias={{
+            fontSize: hp('2%')
+          }}
         />
       </ScrollView>
     )
