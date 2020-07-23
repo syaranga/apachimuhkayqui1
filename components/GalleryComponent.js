@@ -2,10 +2,6 @@ import React, { Component } from 'react'
 import { Text, View, ScrollView, Image, StyleSheet } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 
-const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', height: '100%' }
-})
-
 export class GalleryComponent extends Component {
   render () {
     return (
@@ -36,5 +32,20 @@ export class GalleryComponent extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  scrollView: {},
+  item: {},
+  imageWrapper: { height: '90%', width: '100%', marginBottom: '2%' },
+  image: { height: '100%', width: '100%' },
+  context: { flex: 1, flexDirection: 'row', justifyContent: 'space-between' },
+  user: { flex: 1, flexDirection: 'row' },
+  avatar: { marginRight: '5%' },
+  userData: {},
+  nickname: { fontSize: '120%' },
+  alias: {},
+  priceWrapper: {},
+  price: { fontSize: '200%' }
+})
 
 export default GalleryComponent

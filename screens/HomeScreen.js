@@ -35,6 +35,7 @@ export class HomeScreen extends Component {
             height: hp('50%'),
             width: wp('95%'),
             marginHorizontal: wp('2.5%'),
+            marginBottom: wp('2.5%'),
             backgroundColor: 'cyan'
           }}
         />
