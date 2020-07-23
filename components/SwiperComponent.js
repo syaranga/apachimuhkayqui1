@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image } from 'react-native'
 import Swiper from 'react-native-swiper/src'
-
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', textAlign: 'center' }
 })
-
 export class SwiperComponent extends Component {
   constructor (props) {
     super(props)
