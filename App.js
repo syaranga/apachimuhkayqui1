@@ -22,16 +22,6 @@ function MyTabs () {
       }}
     >
       <Tab.Screen
-        name='Gallery'
-        component={GalleryScreen}
-        options={{
-          tabBarLabel: 'Gallery',
-          tabBarIcon: ({ color, size }) => (
-            <AntDesign name='gallery' color={color} size={size} />
-          )
-        }}
-      />
-      <Tab.Screen
         name='Home'
         component={HomeScreen}
         options={{

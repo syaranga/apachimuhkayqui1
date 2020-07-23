@@ -18,17 +18,7 @@ export class GalleryComponent extends Component {
                     {item.nickname}
                     {item.alias}
                   </Text>
-                  <SwiperComponent
-                    data={[
-                      { text: 'c', image: 'https://images.unsplash.com/photo-1561049841-d1d6a3e212fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80' }
-                    ]}
-                    styleContainer={{
-                      height: hp('60%'),
-                      width: wp('95%'),
-                      marginHorizontal: wp('2.5%'),
-                      backgroundColor: 'white'
-                    }}
-                  />
+
                 </View>
               )
             })
