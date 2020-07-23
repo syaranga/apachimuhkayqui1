@@ -26,17 +26,22 @@ export class HomeScreen extends Component {
           }}
         />
         <SwiperComponent
+          autoplay
+          loop
           data={[
-            { text: 'a', image: 'https://agauche.org/wp-content/uploads/2020/03/alvan-nee-T-0EW-SEbsE-unsplash-scaled.jpg' },
-            { text: 'b', image: 'https://www.sosodours.com/wp-content/uploads//2019/07/Chien-plancher-odeur-urine.jpg' },
-            { text: 'c', image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg' }
+            { image: 'https://agauche.org/wp-content/uploads/2020/03/alvan-nee-T-0EW-SEbsE-unsplash-scaled.jpg' },
+            { image: 'https://www.sosodours.com/wp-content/uploads//2019/07/Chien-plancher-odeur-urine.jpg' },
+            { image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg' }
           ]}
           styleContainer={{
             height: hp('50%'),
+            width: wp('100%'),
+            marginBottom: wp('2.5%')
+          }}
+          styleItem={{
+            height: hp('50%'),
             width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            marginBottom: wp('2.5%'),
-            backgroundColor: 'cyan'
+            marginHorizontal: wp('2.5%')
           }}
         />
         <GalleryComponent
