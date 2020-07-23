@@ -1,17 +1,9 @@
 import React, { Component } from 'react'
-<<<<<<< HEAD
 import { StatusBar, Text, ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import SwiperComponent from '../components/SwiperComponent'
 import { TitleComponent } from '../components/TitleComponent'
 import { GalleryComponent } from '../components/GalleryComponent'
-=======
-import { StatusBar, ScrollView } from 'react-native'
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
-import SwiperComponent from '../components/SwiperComponent'
-import TitleComponent from '../components/TitleComponent'
-import GalleryComponent from '../components/GalleryComponent'
->>>>>>> a12a6b9f89397e71543a4001aaa5cd5bde10bbf6
 
 export class HomeScreen extends Component {
   render () {
