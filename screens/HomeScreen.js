@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StatusBar, Text, ScrollView } from 'react-native'
+import { StatusBar, ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import SwiperComponent from '../components/SwiperComponent'
 import TitleComponent from '../components/TitleComponent'
@@ -35,25 +35,57 @@ export class HomeScreen extends Component {
             height: hp('50%'),
             width: wp('95%'),
             marginHorizontal: wp('2.5%'),
+            marginBottom: wp('2.5%'),
             backgroundColor: 'cyan'
           }}
         />
         <GalleryComponent
           data={[
-            { text: 'a', image: 'https://s3-alpha-sig.figma.com/img/82bb/8f20/d24ce49c7d3d0d87b079a49a32babbca?Expires=1596412800&Signature=OoKdrk1XGv9IOuNYghG9pch81sFmC05-R3SY10OYwV~LudG~Nlv1K0A3CxVJ-yODcI2uecsLiiiFaC-xXNLll-THxvnXa19eqpks9Q6ecx7c3dtKlkQsXYgQCNnzOvOkBD9KvVvZj4r0WvtdoCMxPFQOi-gSG5zdtd~hzOB9Q5C2mGnt-nyX43dLf~-SwCV94j-r5p4cG3XePwY1yuBKqi0OfB3tK8ekHmF3vgFTwavtoseKOoOkl7QpkbxbjaESUatsiY1LDkjgQTwQcEC9mCkoT0920eMfXgR2sc7aiWMx2fzd82vBdRMO2l8cV1ZKk97gunNo9gBkI~i1~BZNtQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' },
-            { text: 'b', image: 'https://s3-alpha-sig.figma.com/img/70a7/639b/cf713fda36d3a58c6f0b94aa98773e2c?Expires=1596412800&Signature=AeC4853n0D1iMgKDWIjwcxLsrzYT~SyfAZC7-K3VmjrkGuDtfGfBBHoJ9aYdLM~bENYnN3tOj8jvBWiC11hRXwVcBWcfdskIea~c2tl4xw-VrVAXn7m7iJuRQ8rGUWO3X0yVpwqdy33JMwRu2wFYzURH5jVKBM9GHegUf1lCOw8ZAC1~ma9x0Ot10uEcLKRFj8lQ6n2-yxfqXkD2sY4sjV6NWwPWoazMLdyHeK-0dljMdY6J60r5LPjYhwRhMSwpySe7EVpsF84SK6zaBCABrLGrELBnG55IBH7O2DnrzDATGOHbvI~ksMqP5qvMfR-BZp8OGswYQI-hTyaEGyBIEA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' },
-            { text: 'c', image: 'https://s3-alpha-sig.figma.com/img/d4ac/3809/458a28c9495fca5e1ebdc0c5b128a7cf?Expires=1596412800&Signature=gJUlW7kqGfIkpkqFsBYK4qVjylYLGixuvPQccI9nTC0E3impYR1hfIuQ7a9vOgF4TXvlH60WkJkMVcMrGNNmerIAdzuRCHmAp7gtPO4LIyodquXH4jsmRhga~0DJ43CSsXSe0MHq~MvxV~WFg44SX~HTqrkuZhrJOmW~eoAD3wWn9e6bx4KwvbowV9InRoarQV8W2jdy1X-uX1DOpjPP5cVVP3~Emp~QLtaH~SolMcBt-vqqeUW0kc0d1lS87d2znKl6IoEI8v8wYUDpZikpRhQdWEwfLE-8Id-K9N1VaLO5FS4RIxIuRpwCQtB9XxBqAAjhjbnyMYm9r179vf-D2A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA' }
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              avatar: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg',
+              nickname: 'ridhwan nordin',
+              alias: '@ridzjcob',
+              price: '9876.54'
+            },
+            {
+              image: 'https://images.unsplash.com/photo-1561229980-b674f5893cba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+              avatar: 'https://manofmany.com/wp-content/uploads/2019/06/50-Long-Haircuts-Hairstyle-Tips-for-Men-2.jpg',
+              nickname: 'clem onojeghuo',
+              alias: '@clemono2',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
+              avatar: 'https://newcastlebeach.org/images/man-picture.jpg',
+              nickname: 'jon tyson',
+              alias: '@jontyson',
+              price: '9876.54'
+            },
+            {
+              image: 'https://scontent.flim22-1.fna.fbcdn.net/v/t1.0-9/p960x960/67139255_489779711566046_9015261501061070848_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_eui2=AeEDK5RDKsTynS2JYj7NfGqIqq9RepxIss2qr1F6nEiyzSNaqwzA2XoIqj4Eyk3Ty39qkDW5_5OfXNywPytfMYee&_nc_ohc=9hy-4b-XawMAX_IZloB&_nc_ht=scontent.flim22-1.fna&_nc_tp=6&oh=a6a82659a6dff635a49b398a24133999&oe=5F3E6583',
+              avatar: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg',
+              nickname: 'simon zhu',
+              alias: '@smnzhu',
+              price: '9876.54'
+            }
           ]}
           styleContainer={{
+            height: hp('55%'),
+            width: wp('100%'),
+            marginBottom: wp('2.5%')
+          }}
+          styleItem={{
             height: hp('50%'),
             width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            backgroundColor: 'cyan',
-            marginTop: 10
+            marginHorizontal: wp('2.5%')
+          }}
+          styleAvatar={{
+            height: hp('7%'),
+            width: hp('7%'),
+            borderRadius: hp('7%')
           }}
         />
-
-        <Text>HomeScreen</Text>
       </ScrollView>
     )
   }
