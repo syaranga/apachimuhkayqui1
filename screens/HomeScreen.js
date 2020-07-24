@@ -26,6 +26,8 @@ export class HomeScreen extends Component {
           }}
         />
         <SwiperComponent
+          autoplay
+          loop
           data={[
             {
               text: 'a',
@@ -42,10 +44,13 @@ export class HomeScreen extends Component {
           ]}
           styleContainer={{
             height: hp('50%'),
+            width: wp('100%'),
+            marginBottom: wp('2.5%')
+          }}
+          styleItem={{
+            height: hp('50%'),
             width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            marginBottom: wp('2.5%'),
-            backgroundColor: 'cyan'
+            marginHorizontal: wp('2.5%')
           }}
         />
         <GalleryComponent
@@ -93,6 +98,15 @@ export class HomeScreen extends Component {
             height: hp('7%'),
             width: hp('7%'),
             borderRadius: hp('7%')
+          }}
+          stylePrice={{
+            fontSize: hp('5%')
+          }}
+          styleNickname={{
+            fontSize: hp('3%')
+          }}
+          styleAlias={{
+            fontSize: hp('2%')
           }}
         />
       </ScrollView>
