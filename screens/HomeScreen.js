@@ -41,10 +41,6 @@ export class HomeScreen extends Component {
         />
         <GalleryComponent
           data={[
-<<<<<<< HEAD
-            {texto: 'a', image: ''}
-          ]}
-=======
             {
               image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
               avatar: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg',
@@ -89,7 +85,6 @@ export class HomeScreen extends Component {
             width: hp('7%'),
             borderRadius: hp('7%')
           }}
->>>>>>> 9adf35966771d945047f05d63ed2389ffb9df363
         />
       </ScrollView>
     )
