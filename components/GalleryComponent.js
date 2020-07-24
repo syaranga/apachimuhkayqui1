@@ -17,12 +17,12 @@ export class GalleryComponent extends Component {
                     <View style={styles.user}>
                       <Image style={[styles.avatar, this.props.styleAvatar]} source={{ uri: item.avatar }} />
                       <View style={styles.userData}>
-                        <Text style={[styles.nickname, this.props.styleNickname]}>{item.nickname}</Text>
-                        <Text style={[styles.alias, this.props.styleAlias]}>{item.alias}</Text>
+                        <Text style={styles.nickname}>{item.nickname}</Text>
+                        <Text style={styles.alias}>{item.alias}</Text>
                       </View>
                     </View>
                     <View styles={styles.priceWrapper}>
-                      <Text style={[styles.price, this.props.stylePrice]}>{item.price}</Text>
+                      <Text style={styles.price}>{item.price}</Text>
                     </View>
                   </View>
                 </View>
@@ -44,10 +44,10 @@ const styles = StyleSheet.create({
   user: { flex: 1, flexDirection: 'row' },
   avatar: { marginRight: '5%' },
   userData: {},
-  nickname: {},
+  nickname: { fontSize: '120%' },
   alias: {},
   priceWrapper: {},
-  price: {}
+  price: { fontSize: '200%' }
 })
 
 export default GalleryComponent
