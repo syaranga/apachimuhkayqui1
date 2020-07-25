@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, ScrollView, Image, StyleSheet } from 'react-native'
 
-const styles = StyleSheet.create({
-  view1: { flex: 1, flexDirection: 'row', backgroundColor: 'white' },
-  nickname: { marginTop: hp('1.7%'), fontWeight: 'bold', marginLeft: wp('1.5%'), fontSize: 13 },
-  price: { position: 'absolute', right: '0', top: '0', alignItems: 'center', paddingBottom: hp('5%') },
-  textPrice: { fontSize: 40 }
-})
 export class GalleryComponent extends Component {
   render () {
     return (
