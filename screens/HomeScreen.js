@@ -38,7 +38,20 @@ export class HomeScreen extends Component {
             backgroundColor: 'cyan'
           }}
         />
-        <GalleryComponent data={[]} />
+        <GalleryComponent
+          data={[
+            { image: 'http://img.mwmw.cn/forum/month_0610/UFJBREFAbWVnYQ==_uPkKzPO6uZ6V.jpg', avatar: 'https://th.bing.com/th/id/OIP.2CzGho8LfDF8KopPuUdKAQHaHa?pid=Api&w=500&h=500&rs=1', nickname: 'Ridwan Nordin', alias: '@ridzjcath', price: ' $9876.54' },
+            { image: 'https://i.ebayimg.com/00/s/OTYwWDcyMA==/z/7x0AAOSwftNcoAFv/$_10.JPG', avatar: 'https://th.bing.com/th/id/OIP.2CzGho8LfDF8KopPuUdKAQHaHa?pid=Api&w=500&h=500&rs=1', nickname: 'Cleam Onojghuo', alias: '@clemano2', price: ' $9876.54' },
+            { image: 'https://th.bing.com/th/id/OIP.PmM_HegDS3ZOOSc6qII-xwHaE8?pid=Api&w=3456&h=2304&rs=1', avatar: 'https://th.bing.com/th/id/OIP.2CzGho8LfDF8KopPuUdKAQHaHa?pid=Api&w=500&h=500&rs=1', nickname: 'Jhon Tyson', alias: '@jontyson', price: ' $9876.54' },
+            { image: 'https://images.unsplash.com/photo-1561049841-d1d6a3e212fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=60', avatar: 'https://th.bing.com/th/id/OIP.2CzGho8LfDF8KopPuUdKAQHaHa?pid=Api&w=500&h=500&rs=1', nickname: 'Simon Zhu', alias: '@smozhu', price: ' $9876.54' }
+          ]}
+          styleContainer={{
+            height: hp('70%'),
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%'),
+            backgroundColor: 'cyan'
+          }}
+        />
       </ScrollView>
     )
   }
