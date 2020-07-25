@@ -23,7 +23,7 @@ export class GalleryComponent extends Component {
                   <View style={styles.view1}>
                     <View>
                       <Image
-                        style={{ marginLeft: wp('0.5%'), marginTop: hp('2%'), borderRadius: 15, height: 30, width: 30, resizeMode: 'cover' }}
+                        style={{ marginLeft: wp('0.2%'), marginTop: hp('2%'), borderRadius: 15, height: 30, width: 30, resizeMode: 'cover' }}
                         source={item.avatar}
                       />
                     </View>
