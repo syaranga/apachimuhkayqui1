@@ -38,7 +38,14 @@ export class HomeScreen extends Component {
             backgroundColor: 'cyan'
           }}
         />
-        <GalleryComponent data={[]} />
+        <GalleryComponent
+          data={[
+            { image: 'https://images.unsplash.com/photo-1561435133-c44befe370ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=60.jpg', avatar: '', nickname: 'Ridhwan Nordin', alias: '@ridzjcob', price: '$9876.54' },
+            { image: 'https://images.unsplash.com/photo-1561229980-b674f5893cba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80', avatar: '', nickname: 'Clem Onojeghuo', alias: '@clemono2', price: '$9876.54' },
+            { image: 'https://images.unsplash.com/photo-1561206204-a403713d7ea8?ixlib=rb-1.2.1&w=1000&q=80', avatar: '', nickname: 'Jon Tyson', alias: '@jontyson', price: '$9876.54' },
+            { image: 'https://images.unsplash.com/photo-1561049841-d1d6a3e212fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80Usan', avatar: '', nickname: 'Simon Zhu', alias: '@smnzhu', price: '$9876.54' }
+          ]}
+        />
       </ScrollView>
     )
   }
