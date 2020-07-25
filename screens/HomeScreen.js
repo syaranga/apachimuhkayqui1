@@ -26,31 +26,78 @@ export class HomeScreen extends Component {
           }}
         />
         <SwiperComponent
+          autoplay
+          loop
           data={[
-            { text: 'a', image: 'https://agauche.org/wp-content/uploads/2020/03/alvan-nee-T-0EW-SEbsE-unsplash-scaled.jpg' },
-            { text: 'b', image: 'https://www.sosodours.com/wp-content/uploads//2019/07/Chien-plancher-odeur-urine.jpg' },
-            { text: 'c', image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg' }
+            { image: 'https://agauche.org/wp-content/uploads/2020/03/alvan-nee-T-0EW-SEbsE-unsplash-scaled.jpg' },
+            { image: 'https://www.sosodours.com/wp-content/uploads//2019/07/Chien-plancher-odeur-urine.jpg' },
+            { image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg' }
           ]}
           styleContainer={{
             height: hp('50%'),
+            width: wp('100%'),
+            marginBottom: wp('2.5%')
+          }}
+          styleItem={{
+            height: hp('50%'),
             width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            backgroundColor: '#F4F1F0'
+            marginHorizontal: wp('2.5%')
           }}
         />
         <GalleryComponent
           data={[
-            { image: 'https://images.unsplash.com/photo-1561435133-c44befe370ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60', avatar: 'https://images.unsplash.com/profile-1561381043166-4a4993b5f33d?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff', nickname: 'Ridhwan Nordin', alias: '@ridzjcob', precio: '$9876.54' },
-            { image: 'https://images.unsplash.com/photo-1561229980-b674f5893cba?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80', avatar: 'https://images.unsplash.com/profile-1537740391424-86188f82f007?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff', nickname: 'Clem Onojeghuo', alias: '@clemono2', precio: '$9876.54' },
-            { image: 'https://p1.piqsels.com/preview/572/646/384/man-standing-beside-motor-scooter-wall-paint.jpg', avatar: 'https://images.unsplash.com/profile-1528230399047-c8d0d832ed9d?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff', nickname: 'Jon Tyson', alias: '@jontyson', precio: '$9876.54' },
-            { image: 'https://images.unsplash.com/photo-1561049841-d1d6a3e212fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80', avatar: 'https://images.unsplash.com/profile-1536272917609-15221a21c8e6?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff', nickname: 'Simon Zhu', alias: '@smnzhu', precio: '$9876.54' }
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              avatar: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg',
+              nickname: 'ridhwan nordin',
+              alias: '@ridzjcob',
+              price: '9876.54'
+            },
+            {
+              image: 'https://images.unsplash.com/photo-1561229980-b674f5893cba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+              avatar: 'https://manofmany.com/wp-content/uploads/2019/06/50-Long-Haircuts-Hairstyle-Tips-for-Men-2.jpg',
+              nickname: 'clem onojeghuo',
+              alias: '@clemono2',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
+              avatar: 'https://newcastlebeach.org/images/man-picture.jpg',
+              nickname: 'jon tyson',
+              alias: '@jontyson',
+              price: '9876.54'
+            },
+            {
+              image: 'https://scontent.flim22-1.fna.fbcdn.net/v/t1.0-9/p960x960/67139255_489779711566046_9015261501061070848_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_eui2=AeEDK5RDKsTynS2JYj7NfGqIqq9RepxIss2qr1F6nEiyzSNaqwzA2XoIqj4Eyk3Ty39qkDW5_5OfXNywPytfMYee&_nc_ohc=9hy-4b-XawMAX_IZloB&_nc_ht=scontent.flim22-1.fna&_nc_tp=6&oh=a6a82659a6dff635a49b398a24133999&oe=5F3E6583',
+              avatar: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg',
+              nickname: 'simon zhu',
+              alias: '@smnzhu',
+              price: '9876.54'
+            }
           ]}
           styleContainer={{
-            marginVertical: wp('2.5%'),
-            height: hp('70%'),
+            height: hp('55%'),
+            width: wp('100%'),
+            marginBottom: wp('2.5%')
+          }}
+          styleItem={{
+            height: hp('50%'),
             width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            backgroundColor: '#F4F1F0'
+            marginHorizontal: wp('2.5%')
+          }}
+          styleAvatar={{
+            height: hp('7%'),
+            width: hp('7%'),
+            borderRadius: hp('7%')
+          }}
+          stylePrice={{
+            fontSize: hp('5%')
+          }}
+          styleNickname={{
+            fontSize: hp('3%')
+          }}
+          styleAlias={{
+            fontSize: hp('2%')
           }}
         />
       </ScrollView>
