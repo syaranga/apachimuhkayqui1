@@ -8,7 +8,6 @@ import SearchScreen from './screens/SearchScreen'
 import FavoriteScreen from './screens/FavoriteScreen'
 import CartScreen from './screens/CartScreen'
 import AccountScreen from './screens/AccountScreen'
-import GalleryScreen from './screens/GalleryScreen'
 
 const Tab = createBottomTabNavigator()
 
