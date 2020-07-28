@@ -43,8 +43,6 @@ export class GridComponent extends Component {
     )
   }
 }
-<<<<<<< HEAD
-=======
 
 const styles = StyleSheet.create({
   title: {
@@ -91,5 +89,4 @@ const styles = StyleSheet.create({
   }
 })
 
->>>>>>> 7c136f14f6ec382e05deff7285eb509c34154086
 export default GridComponent
