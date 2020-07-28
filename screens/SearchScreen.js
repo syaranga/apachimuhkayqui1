@@ -26,7 +26,7 @@ export class SearchScreen extends Component {
         <GridComponent
           data={[
             {
-              image: 'https://agauche.org/wp-content/uploads/2020/03/alvan-nee-T-0EW-SEbsE-unsplash-scaled.jpg',
+              image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg',
               discount: '70%',
               price: '$ 999.9'
             },
