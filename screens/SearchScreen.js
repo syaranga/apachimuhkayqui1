@@ -44,7 +44,7 @@ export class SearchScreen extends Component {
 
           data={[
             {
-              image: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CYC3VPWVK2T2U/ProductCatalog.CYSBZKMVL7GKW/1500x1500/CYSC4CM44J2AQ.jpg',
+              image: 'https://wowpooch.com/wp-content/uploads/2019/05/Best-Dog-Food-For-Giant-Breeds-1024x536.jpg',
               discount: '70%',
               price: '$999.9'
             },
