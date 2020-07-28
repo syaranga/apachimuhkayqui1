@@ -34,11 +34,11 @@ export class SearchScreen extends Component {
         <Text
           style={{
             justifyContent: 'center',
-            marginHorizontal: wp('40%'),
+            marginHorizontal: wp('35%'),
             textShadowColor: 'gray'
           }}
         >
-          1 de 100
+        1 de 100 
         </Text>
         <GridComponent
 
