@@ -27,7 +27,7 @@ export class GridComponent extends Component {
                   style={{ resizeMode: 'cover', height: wp('30%'), width: hp('18%'), flex: 1 }}
                   source={{ uri: item.image }}
                 />
-                <View style={[styles.content, { flex: 1 }]}>
+                <View style={[styles.content]}>
                   <View>
                     <Text style={styles.discount}>{item.discount}</Text>
                   </View>
@@ -69,8 +69,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     backgroundColor: 'rgba(255, 255, 255, .5)',
     width: hp('18%'),
-    paddingHorizontal: 5,
-    margin: 0
+    paddingHorizontal: 5
   },
   discount: {
     color: 'red',

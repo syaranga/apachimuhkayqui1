@@ -120,9 +120,7 @@ export class SearchScreen extends Component {
           styleItem={{
             height: wp('30%'),
             borderRadius: wp('2%'),
-            padding: wp('1%'),
-            backgroundColor: ''
-
+            padding: wp('1%')
           }}
         />
       </ScrollView>
