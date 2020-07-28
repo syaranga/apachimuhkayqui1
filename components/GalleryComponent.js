@@ -1,27 +1,29 @@
 import React, { Component } from 'react'
 import { Text, View, ScrollView, Image, StyleSheet } from 'react-native'
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 
 export class GalleryComponent extends Component {
   render () {
     return (
-      <View style={[this.props.styleContainerGallery]}>
-        <ScrollView>
+      <View style={[this.props.styleContainer]}>
+        <ScrollView horizontal style={styles.scrollView}>
           {
             this.props.data.map((item, index) => {
               return (
-                <View key={index} style={styles.container}>
-                  <Image
-                    style={{ height: hp('100%'), width: wp('100%'), resizeMode: 'cover' }}
-                    source={{ uri: item.image }}
-                  />
-                  <Image
-                    style={{ height: '5%', width: '8%', borderRadius: '50%', resizeMode: 'cover', marginVertical: hp('2%') }}
-                    source={{ uri: item.avatar }}
-                  />
-                  <View style={{ flex: 1 }}>
-                    <Text>item.nickname</Text>
-                    <Text>{item.alias}</Text>
+                <View style={[styles.item, this.props.styleItem]} key={index}>
+                  <View style={styles.imageWrapper}>
+                    <Image style={styles.image} source={{ uri: item.image }} />
+                  </View>
+                  <View style={styles.context}>
+                    <View style={styles.user}>
+                      <Image style={[styles.avatar, this.props.styleAvatar]} source={{ uri: item.avatar }} />
+                      <View style={styles.userData}>
+                        <Text style={styles.nickname}>{item.nickname}</Text>
+                        <Text style={styles.alias}>{item.alias}</Text>
+                      </View>
+                    </View>
+                    <View styles={styles.priceWrapper}>
+                      <Text style={styles.price}>{item.price}</Text>
+                    </View>
                   </View>
                 </View>
               )
