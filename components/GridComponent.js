@@ -10,13 +10,15 @@ export class GridComponent extends Component {
           itemDimension={this.props.itemDimension}
           data={this.props.data}
           renderItem={({ item }) => (
-            <View style={this.props.StyleSheet}>
+            <View style={this.props.styleItem}>
               <Image
-                style={{ resizeMode: 'cover' }}
+                style={{ resizeMode: 'cover', width: '100%', height: '85%' }}
                 source={{ uri: item.image }}
               />
-              <Text>{item.discount}</Text>
-              <Text>{item.price}</Text>
+              <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+                <Text>{item.discount}</Text>
+                <Text>{item.price}</Text>
+              </View>
             </View>
           )}
         />
