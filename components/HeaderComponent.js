@@ -50,7 +50,7 @@ export class HeaderComponent extends Component {
 
   render () {
     return (
-      <View style={styles.conatiner}>
+      <View style={[styles.conatiner, this.props.styleContainer]}>
         <Text style={[styles.text, this.props.style]}>
           {this.props.title}
         </Text>
