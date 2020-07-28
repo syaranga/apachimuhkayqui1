@@ -20,8 +20,7 @@ export class SearchScreen extends Component {
             }
           }}
           style={{
-            fontSize: hp('8%'),
-            color: 'pink'
+            fontSize: hp('8%')
           }}
         />
         <TitleComponent
@@ -48,8 +47,7 @@ export class SearchScreen extends Component {
           }}
           style={{
             fontSize: hp('2.5%'),
-            fontWeight: 'bold',
-            color: 'orange'
+            fontWeight: 'bold'
           }}
         />
         <TitleComponent
