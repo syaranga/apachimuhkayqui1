@@ -5,7 +5,6 @@ export class MasonryComponent extends Component {
   render () {
     return (
       <Masonry
-        sorted
         columns={2}
         bricks={[
           { uri: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CYGEG4Q3GFXVC/1500x1500/CYGENQJ2HZBAI.jpg' },
