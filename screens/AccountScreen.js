@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { Text, View } from 'react-native'
 
-export class AccountScreen extends Component {
+export class TitleComponent extends Component {
   render () {
     return (
-      <View>
-        <Text>AccountScreen</Text>
+      <View style={this.props.styleContainer}>
+        <Text style={this.props.style}>
+          {this.props.title}
+        </Text>
       </View>
     )
   }
 }
 
-export default AccountScreen
+export default TitleComponent
