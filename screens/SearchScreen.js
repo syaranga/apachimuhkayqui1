@@ -13,7 +13,7 @@ export class SearchScreen extends Component {
           styleContainer={{
             width: wp('95%'),
             marginHorizontal: wp('2.5%'),
-            textShadowColor: 'gay',
+            textShadowColor: 'gray',
             textShadowOffset: {
               width: hp('.3%'),
               height: hp('.3%')
@@ -26,84 +26,101 @@ export class SearchScreen extends Component {
         <GridComponent
           data={[
             {
-              image: 'https://cdn.pixabay.com/photo/2016/07/10/21/47/cat-1508613_960_720.jpg',
+              image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2016/08/19/23/53/dog-1606600_960_720.jpg',
+              image: 'https://www.insidehook.com/wp-content/uploads/2020/03/dog_adoptions_coronavirus.jpg?fit=1795%2C1200',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2020/06/25/21/03/dog-5340892_960_720.jpg',
+              image: 'https://th.bing.com/th/id/OIP.NlxrAImhJZuBjrE5_LyqYAAAAA?pid=Api&w=141&h=212&c=7',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2016/11/21/14/47/adorable-1845789_960_720.jpg',
+              image: 'https://www.bing.com/images/blob?bcid=TtybFVvDHJsBsw',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2017/09/25/13/14/dog-2785077_960_720.jpg',
+              image: 'https://th.bing.com/th/id/OIP.Trws725tqh9vm5LNukOOrwHaE5?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_960_720.jpg',
+              image: 'https://th.bing.com/th/id/OIP.dDMUv2x_HRcYmfXRjHusGQAAAA?pid=Api&w=120&h=86&c=7',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2016/12/18/18/42/kittens-1916542_960_720.jpg',
+              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg',
+              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2012/10/12/17/12/cat-61079_960_720.jpg',
+              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2017/12/11/15/34/lion-3012515_960_720.jpg',
+              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2017/08/07/18/57/dog-2606759_960_720.jpg',
+              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
             },
             {
-              image: 'https://cdn.pixabay.com/photo/2017/11/14/13/06/kitty-2948404_960_720.jpg',
+              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$ 999.9'
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
+              discount: '70%',
+              price: '$9999'
             }
           ]}
           itemDimension={wp('25%')}
           styleItem={{
-            height: wp('31%'),
-            justifyContent: 'flex-end',
-            borderRadius: wp('2%'),
-            padding: wp('.5%')
+            height: wp('30%'),
+            backgroundColor: 'gray'
           }}
-          styleText={{
-            flexDirection: 'row',
-            justifyContent: 'space-Between',
-            backgroundColor: '#d6c7c7',
-            opacity: 0.6
-          }}
-          styleDiscont={{
-            color: 'red',
-            fontSize: hp('3%')
-          }}
-
         />
       </ScrollView>
     )
