@@ -3,7 +3,6 @@ import { ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import TitleComponent from '../components/TitleComponent'
 import GridComponent from '../components/GridComponent'
-
 export class SearchScreen extends Component {
   render () {
     return (
@@ -126,5 +125,4 @@ export class SearchScreen extends Component {
     )
   }
 }
-
 export default SearchScreen
