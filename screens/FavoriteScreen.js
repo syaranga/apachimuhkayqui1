@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, StatusBar, View } from 'react-native'
+import { View, ScrollView, StatusBar } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import { FontAwesome5, MaterialIcons } from '@expo/vector-icons'
 import TitleComponent from '../components/TitleComponent'
