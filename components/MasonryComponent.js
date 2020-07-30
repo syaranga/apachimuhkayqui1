@@ -7,12 +7,16 @@ export class MasonryComponent extends Component {
       <Masonry
         columns={2}
         bricks={[
-          { uri: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CYGEG4Q3GFXVC/1500x1500/CYGENQJ2HZBAI.jpg' },
-          { uri: 'https://lafrikileria.com/30851-thickbox_default/set-tetera-y-taza-pusheen-cat.jpg' },
-          { uri: 'https://i.linio.com/p/36989c11b7177b765901574de2f5e383-product.jpg' },
-          { uri: 'https://home.ripley.com.pe/Attachment/WOP_5/2084208145112/2084208145112_2.jpg' },
-          { uri: 'https://www.missbaby.com/media/catalog/product/cache/1/image/5306ff6d921ab100b0d82fbffb63947e/s/w/sw9-1008-0290.jpg' },
-          { uri: 'https://i.pinimg.com/originals/c0/b3/e8/c0b3e8ea34b92fcdce7746225c190f36.jpg' }
+          { uri: 'https://www.bing.com/images/blob?bcid=Tr-vMCzTfZwBMg' },
+          { uri: 'https://www.bing.com/images/blob?bcid=TqLrO9rz4ZwBKA' },
+          { uri: 'https://www.bing.com/images/blob?bcid=Tuu2CeGELJwBlg' },
+          { uri: 'https://www.bing.com/images/blob?bcid=Tr7AlKTV2pwBMw' },
+          { uri: 'https://static.seattletimes.com/wp-content/uploads/2017/02/41ea8bde4534470fae6c8240acad1476-780x1169.jpg' },
+          { uri: 'https://thedogbookcompany.com/wp-content/uploads/2019/10/French-Bulldog-Pictures-Adventure.jpg' },
+          { uri: 'https://www.bing.com/images/blob?bcid=TuQhZSCDUJwBTQ' },
+          { uri: 'https://images.wallpaperscraft.com/image/paint_lines_stains_142949_1366x768.jpg' },
+          { uri: 'https://c.pxhere.com/photos/b9/da/photo-81144.jpg!d' }
+
         ]}
       />
     )
