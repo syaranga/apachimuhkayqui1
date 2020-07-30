@@ -7,12 +7,15 @@ export class MasonryComponent extends Component {
       <Masonry
         columns={2}
         bricks={[
-          { uri: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CYGEG4Q3GFXVC/1500x1500/CYGENQJ2HZBAI.jpg' },
-          { uri: 'https://lafrikileria.com/30851-thickbox_default/set-tetera-y-taza-pusheen-cat.jpg' },
-          { uri: 'https://i.linio.com/p/36989c11b7177b765901574de2f5e383-product.jpg' },
-          { uri: 'https://home.ripley.com.pe/Attachment/WOP_5/2084208145112/2084208145112_2.jpg' },
-          { uri: 'https://www.missbaby.com/media/catalog/product/cache/1/image/5306ff6d921ab100b0d82fbffb63947e/s/w/sw9-1008-0290.jpg' },
-          { uri: 'https://i.pinimg.com/originals/c0/b3/e8/c0b3e8ea34b92fcdce7746225c190f36.jpg' }
+          { uri: 'https://yt3.ggpht.com/a-/AAuE7mAYRTVdQUhzgE3VgI4omF0As2VXwVF64XQnhw=s100-mo-c-c0xffffffff-rj-k-no' },
+          { uri: 'https://64.media.tumblr.com/avatar_9248f219a5d3_64.pnj' },
+          { uri: 'https://images1.miaminewtimes.com/imager/u/125x70/9190880/img_0015.jpg' },
+          { uri: 'http://www.welsh-pony.pl/beautye.jpg' },
+          { uri: 'https://www.salonmaggieg.com.au/wp-content/uploads/2018/12/slider2-1.jpg' },
+          { uri: 'https://irecommend.img.c3.r-99.com/sites/default/files/imagecache/200i/user-images/153585/dsc08436.jpg' },
+          { uri: 'https://i.mycdn.me/i?r=AzEPZsRbOZEKgBhR0XGMT1RkI5mBEhIua0OUOL_hnynR6KaKTM5SRkZCeTgDn6uOyic' },
+          { uri: 'https://petsfans.com/wp-content/uploads/2019/06/photo-1561312176-5aedf7172115.jpg' },
+          { uri: 'https://i1.sndcdn.com/artworks-000218389528-yz0ptp-t200x200.jpg' }
         ]}
       />
     )
