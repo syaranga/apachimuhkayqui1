@@ -8,6 +8,7 @@ export class CartScreen extends Component {
       <View>
         <HeaderComponent />
         <Text>CartScreen</Text>
+        <Text> Hola Mundo</Text>
       </View>
     )
   }
