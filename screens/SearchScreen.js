@@ -44,58 +44,101 @@ export class SearchScreen extends Component {
 
           data={[
             {
-              image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg',
+              image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://i.pinimg.com/originals/92/bc/89/92bc89884e968423c55007726f065937.jpg',
+              image: 'https://www.insidehook.com/wp-content/uploads/2020/03/dog_adoptions_coronavirus.jpg?fit=1795%2C1200',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://www.sosodours.com/wp-content/uploads//2019/07/Chien-plancher-odeur-urine.jpg',
+              image: 'https://th.bing.com/th/id/OIP.NlxrAImhJZuBjrE5_LyqYAAAAA?pid=Api&w=141&h=212&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://wowpooch.com/wp-content/uploads/2019/05/Best-Dog-Food-For-Giant-Breeds-1024x536.jpg',
+              image: 'https://www.bing.com/images/blob?bcid=TtybFVvDHJsBsw',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://th.bing.com/th/id/OIP.wVamKxkb41uHY9v4xHnnkwHaEo?w=267&h=180&c=7&o=5&pid=1.7',
+              image: 'https://th.bing.com/th/id/OIP.Trws725tqh9vm5LNukOOrwHaE5?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: ' https://agauche.org/wp-content/uploads/2020/03/alvan-nee-T-0EW-SEbsE-unsplash-scaled.jpg',
+              image: 'https://th.bing.com/th/id/OIP.dDMUv2x_HRcYmfXRjHusGQAAAA?pid=Api&w=120&h=86&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: ' https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSpuTAMR6U1JJpGZcWugH1ejbRByGODufSPhA&usqp=CAU',
+              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://t1.ea.ltmcdn.com/es/images/7/1/2/img_convivencia_entre_perros_macho_y_hembra_22217_orig.jpg',
+              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://thumbs.dreamstime.com/z/tres-perros-marrones-lindos-que-se-incorporan-y-miran-123126717.jpg',
+              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
+              discount: '70%',
+              price: '$9999'
+            },
+            {
+              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
+              discount: '70%',
+              price: '$9999'
             }
 
           ]}
           itemDimension={wp('25%')}
           styleItem={{
-            height: wp('35%'),
-            justifyContent: 'flex-end',
-            padding: wp('.5%'),
-            backgroundColor: 'white'
+            height: wp('30%'),
+            backgroundColor: 'gray'
           }}
         />
       </ScrollView>
