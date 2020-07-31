@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD
 import { ScrollView, StatusBar, View, Text } from 'react-native'
+=======
+import { View, ScrollView, StatusBar } from 'react-native'
+>>>>>>> 4cd2cc472815418f0ab23821c1e68a1ee3957394
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import { FontAwesome5, MaterialIcons } from '@expo/vector-icons'
 import TitleComponent from '../components/TitleComponent'
@@ -18,6 +22,7 @@ export class FavoriteScreen extends Component {
         justifyContent: 'space-between'
       }}
       >
+<<<<<<< HEAD
         <View style={{
           backgroundColor: 'white',
           padding: '3%',
@@ -34,6 +39,12 @@ export class FavoriteScreen extends Component {
           borderRadius: '1%'
         }}
         >
+=======
+        <View style={{ backgroundColor: 'white', padding: '3%', margin: '3%', borderRadius: '1%' }}>
+          <MaterialIcons name='add-shopping-cart' size={15} color='black' />
+        </View>
+        <View style={{ backgroundColor: 'white', padding: '3%', margin: '3%', borderRadius: '1%' }}>
+>>>>>>> 4cd2cc472815418f0ab23821c1e68a1ee3957394
           <FontAwesome5 name='trash-alt' size={15} color='black' />
         </View>
       </View>
