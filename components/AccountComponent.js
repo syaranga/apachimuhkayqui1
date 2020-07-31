@@ -1,26 +1,23 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
-import { FlatGrid } from 'react-native-super-grid'
 import { FontAwesome5 } from '@expo/vector-icons'
+import { FlatGrid } from 'react-native-super-grid'
 
 export class AccountComponent extends Component {
   render () {
     return (
-      <View style={[styles.styleItem]}>
-        <View style={[styles.item]}>
-          <View style={styles.context}>
-            <View style={styles.user}>
-              <Image style={[styles.avatar, styles.styleAvatar]} source={{ uri: 'https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg' }} />
-              <View style={styles.userData}>
-                <Text style={[styles.styleNickname]}>Ridhwan Nordin</Text>
-                <Text style={[styles.styleAlias]}>@ridzjcob</Text>
-              </View>
+      <View>
+        <View style={styles.context}>
+          <View style={styles.user}>
+            <Image style={[styles.avatar, this.props.styleAvatar]} source={{ uri: 'https://media-exp1.licdn.com/dms/image/C5603AQH5-cgGGJvI4A/profile-displayphoto-shrink_200_200/0?e=1601510400&v=beta&t=HwzDK_qAoTt8Xq8OqFPAKh9KftdFDzb8In6KaZ2NWwQ' }} />
+            <View style={styles.userData}>
+              <Text style={[styles.nickname, this.props.styleNickname]}>Ridhwan Nordin</Text>
+              <Text style={[styles.alias, this.props.styleAlias]}>@ridzjcob</Text>
             </View>
           </View>
         </View>
         <View>
-          <Text style={styles.title}>ADS +</Text>
+          <Text style={styles.title}>ADS {'+'} </Text>
         </View>
         <FlatGrid
           itemDimension={this.props.itemDimension}
@@ -43,30 +40,14 @@ export class AccountComponent extends Component {
 }
 
 const styles = StyleSheet.create({
-  context: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between'
-  },
+  context: { flex: 1, flexDirection: 'row', justifyContent: 'space-between' },
   user: { flex: 1, flexDirection: 'row' },
-  avatar: { marginRight: '5%' },
-  styleAvatar: {
-    height: hp('7%'),
-    width: hp('7%'),
-    borderRadius: hp('7%'),
-    backgroundColor: 'red'
+  avatar: {
+
   },
-  styleNickname: {
-    fontSize: hp('5%'),
-    fontWeight: 'bold'
-  },
-  styleAlias: {
-    fontSize: hp('3%')
-  },
-  styleItem: {
-    width: wp('95%'),
-    marginHorizontal: wp('2.5%')
-  },
+  userData: {},
+  nickname: {},
+  alias: {},
   title: {
     justifyContent: 'center',
     fontSize: '20',
@@ -74,29 +55,20 @@ const styles = StyleSheet.create({
     margin: 10,
     fontWeight: 'bold'
   },
-  textInput: {
-    height: 45,
-    borderColor: 'black',
-    borderWidth: 2,
-    marginHorizontal: '3%',
-    paddingHorizontal: '3%'
-  },
-  textNumber: {
-    textAlign: 'center'
-  },
   item: {
     position: 'relative'
   },
   content: {
     position: 'absolute',
+    right: 0,
+    left: 75,
+    width: 23,
     bottom: '5%',
-    flex: 1,
-    flexDirection: 'row',
-    alignSelf: 'flex-end',
+    justifyContent: '',
     backgroundColor: 'white',
-    padding: '3%',
-    margin: '3%',
-    borderRadius: '1%'
+    padding: '5%',
+    margin: '5%',
+    borderRadius: '10%'
   },
   discount: {
     flex: 0.5,

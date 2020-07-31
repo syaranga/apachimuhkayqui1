@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, StatusBar, View } from 'react-native'
+import { ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import TitleComponent from '../components/TitleComponent'
 import AccountComponent from '../components/AccountComponent'
@@ -27,6 +27,7 @@ export class AccountScreen extends Component {
           data={[
             {
               image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
+              avatar: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
               discount: '70%',
               price: '$9999'
             },
@@ -81,10 +82,29 @@ export class AccountScreen extends Component {
               price: '$9999'
             }
           ]}
+          styleContainer={{
+            height: hp('80%'),
+            width: wp('100%')
+          }}
           itemDimension={wp('25%')}
           styleItem={{
             height: wp('30%'),
             backgroundColor: 'gray'
+          }}
+          styleAvatar={{
+            height: hp('12%'),
+            width: hp('12%'),
+            borderRadius: hp('7%'),
+            marginLeft: hp('2%')
+          }}
+          styleNickname={{
+            fontSize: hp('5.5%'),
+            marginLeft: hp('2%'),
+            fontWeight: 'bold'
+          }}
+          styleAlias={{
+            fontSize: hp('3%'),
+            marginLeft: hp('2%')
           }}
         />
       </ScrollView>
