@@ -32,7 +32,8 @@ export class SearchScreen extends Component {
             {
               image: 'https://www.insidehook.com/wp-content/uploads/2020/03/dog_adoptions_coronavirus.jpg?fit=1795%2C1200',
               discount: '70%',
-              price: '$9999'
+              price: '$9999',
+              renderFooter: this.renderFooterMasonry
             },
             {
               image: 'https://th.bing.com/th/id/OIP.NlxrAImhJZuBjrE5_LyqYAAAAA?pid=Api&w=141&h=212&c=7',
