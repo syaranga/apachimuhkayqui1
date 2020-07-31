@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, TextInput, StyleSheet } from 'react-native'
 import { FlatGrid } from 'react-native-super-grid'
-import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 
 export class GridComponent extends Component {
   render () {

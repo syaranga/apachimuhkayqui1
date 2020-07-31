@@ -1,151 +1,105 @@
 import React, { Component } from 'react'
-import { ScrollView } from 'react-native'
+import { View, Text, ScrollView, StatusBar } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
+import { MaterialIcons, AntDesign } from '@expo/vector-icons'
 import TitleComponent from '../components/TitleComponent'
-import FootComponent from '../components/FootComponent'
+import CartComponent from '../components/CartComponent'
 
-export class SearchScreen extends Component {
+export class CartScreen extends Component {
+  renderFooterCart (data) {
+    return (
+      <View style={{
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        flex: 1,
+        flexDirection: '',
+        justifyContent: 'space-between'
+      }}
+      >
+        <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
+          <View style={{ flex: 1 }}>
+            <Text style={{ flex: 1, fontWeight: 'bold', width: 100, height: 10 }}>Metal Earrin</Text>
+            <Text style={{ flex: 1, color: '#D4C6C3' }}>Special Desin</Text>
+          </View>
+          <View style={{ flex: 1 }}>
+            <Text style={{ color: 'red', fontWeight: 'bold' }}>70%</Text>
+            <Text>$9999</Text>
+          </View>
+        </View>
+
+        <View style={{ flex: 1, flexDirection: 'row' }}>
+          <View style={{ justifyContent: 'space-around', flex: 1, flexDirection: 'row', width: 25, backgroundColor: 'white', padding: '3%', margin: '3%', borderRadius: '1%' }}>
+            <AntDesign name='minus' size={15} color='black' />
+            <Text>1</Text>
+            <AntDesign name='plus' size={15} color='black' />
+          </View>
+          <View style={{ width: 25, backgroundColor: 'white', padding: '3%', margin: '3%', borderRadius: '1%' }}>
+            <MaterialIcons name='add-shopping-cart' size={15} color='black' />
+          </View>
+        </View>
+      </View>
+    )
+  }
+
   render () {
     return (
       <ScrollView>
+        <StatusBar hidden />
         <TitleComponent
           title='Cart'
-
           styleContainer={{
             width: wp('95%'),
             marginHorizontal: wp('2.5%'),
             textShadowColor: 'gray',
             textShadowOffset: {
               width: hp('.3%'),
-              height: hp('.2%')
+              height: hp('.3%')
             }
           }}
           style={{
             fontSize: hp('8%')
           }}
         />
-        <FootComponent
-
+        <CartComponent
           data={[
             {
-              image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
+              uri: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
+              renderFooter: this.renderFooterCart
             },
             {
-              image: 'https://www.insidehook.com/wp-content/uploads/2020/03/dog_adoptions_coronavirus.jpg?fit=1795%2C1200',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
+              uri: 'https://i.pinimg.com/originals/bb/27/f8/bb27f8490461fe47fd23e7231eb6fce8.jpg',
+              renderFooter: this.renderFooterCart
             },
             {
-              image: 'https://th.bing.com/th/id/OIP.NlxrAImhJZuBjrE5_LyqYAAAAA?pid=Api&w=141&h=212&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
+              uri: 'https://i.pinimg.com/originals/cf/87/3d/cf873d9087c8596ee5599f1aaf3ed107.jpg',
+              renderFooter: this.renderFooterCart
             },
             {
-              image: 'https://www.bing.com/images/blob?bcid=TtybFVvDHJsBsw',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
+              uri: 'http://www.wiebelhuskyskleekai.com/scrapbook/lookatthat.JPG',
+              renderFooter: this.renderFooterCart
             },
             {
-              image: 'https://th.bing.com/th/id/OIP.Trws725tqh9vm5LNukOOrwHaE5?pid=Api&w=84&h=84&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
+              uri: 'https://previews.123rf.com/images/isselee/isselee1106/isselee110600349/9749224-perro-pastor-alem%C3%A1n-8-meses-de-edad-sentado-frente-a-fondo-blanco.jpg',
+              renderFooter: this.renderFooterCart
             },
             {
-              image: 'https://th.bing.com/th/id/OIP.dDMUv2x_HRcYmfXRjHusGQAAAA?pid=Api&w=120&h=86&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
-            },
-            {
-              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
-              texts: 'Metal Earrings',
-              discount: '70%',
-              price: '$9999'
+              uri: 'https://i.pinimg.com/originals/bb/27/f8/bb27f8490461fe47fd23e7231eb6fce8.jpg',
+              renderFooter: this.renderFooterCart
             }
-
           ]}
-          itemDimension={wp('45%')}
-          styleItem={{
-            height: wp('50%'),
-            backgroundColor: 'gray'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
           }}
         />
+        <View>
+          <Text style={{ fontWeight: 'bold', fontSize: 30, textAlign: 'center', paddingTop: wp('5%'), marginBottom: wp('5%'), borderBottomColor: 'black', borderBottomWidth: 2 }}>98765.34</Text>
+        </View>
       </ScrollView>
+
     )
   }
 }
-
 export default SearchScreen
