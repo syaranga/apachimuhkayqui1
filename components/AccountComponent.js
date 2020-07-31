@@ -1,23 +1,16 @@
 import React, { Component } from 'react'
-import { Text, View, Image, TextInput, StyleSheet } from 'react-native'
+import { Text, View, Image, StyleSheet } from 'react-native'
 import { FlatGrid } from 'react-native-super-grid'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 
-export class GridComponent extends Component {
+export class AccountComponent extends Component {
   render () {
     return (
       <View>
-        <TextInput
-          style={styles.textInput}
-        />
         <View>
-          <Text style={styles.title}>ALL RESULTS</Text>
+          <Text style={styles.title}>ADS +</Text>
         </View>
-        <View>
-          <Text style={styles.textNumber}>
-            {'(<) 1 de 100 (>)'}
-          </Text>
-        </View>
+
         <FlatGrid
           itemDimension={this.props.itemDimension}
           data={this.props.data}
@@ -34,11 +27,6 @@ export class GridComponent extends Component {
             </View>
           )}
         />
-        <View>
-          <Text style={styles.textNumber}>
-            {'(<) 1 de 100 (>)'}
-          </Text>
-        </View>
       </View>
     )
   }
@@ -86,4 +74,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default GridComponent
+export default AccountComponent

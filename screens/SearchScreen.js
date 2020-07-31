@@ -118,8 +118,7 @@ export class SearchScreen extends Component {
           ]}
           itemDimension={wp('25%')}
           styleItem={{
-            height: wp('30%'),
-            backgroundColor: 'gray'
+            height: wp('30%')
           }}
         />
       </ScrollView>
