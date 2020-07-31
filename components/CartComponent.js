@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { View } from 'react-native'
 import Masonry from 'react-native-masonry'
 
-export class MasonryComponent extends Component {
+export class CartComponent extends Component {
   render () {
     return (
       <View style={this.props.styleContainer}>
@@ -17,4 +17,4 @@ export class MasonryComponent extends Component {
   }
 }
 
-export default MasonryComponent
+export default CartComponent
