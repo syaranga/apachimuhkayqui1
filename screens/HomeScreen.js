@@ -91,12 +91,15 @@ export class HomeScreen extends Component {
             borderRadius: hp('7%')
           }}
           stylePrice={{
+            backgroundColor: 'red',
             fontSize: hp('5%')
           }}
           styleNickname={{
+            backgroundColor: 'yellow',
             fontSize: hp('3%')
           }}
           styleAlias={{
+            backgroundColor: 'pink',
             fontSize: hp('2%')
           }}
         />
