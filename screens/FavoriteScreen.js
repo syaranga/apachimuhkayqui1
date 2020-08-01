@@ -18,22 +18,10 @@ export class FavoriteScreen extends Component {
         justifyContent: 'space-between'
       }}
       >
-        <View style={{
-          backgroundColor: 'white',
-          padding: '3%',
-          margin: '3%',
-          borderRadius: '1%'
-        }}
-        >
+        <View style={{ backgroundColor: 'white', padding: '3%', margin: '3%', borderRadius: '1%' }}>
           <MaterialIcons name='add-shopping-cart' size={15} color='black' />
         </View>
-        <View style={{
-          backgroundColor: 'white',
-          padding: '3%',
-          margin: '3%',
-          borderRadius: '1%'
-        }}
-        >
+        <View style={{ backgroundColor: 'white', padding: '3%', margin: '3%', borderRadius: '1%' }}>
           <FontAwesome5 name='trash-alt' size={15} color='black' />
         </View>
       </View>
