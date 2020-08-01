@@ -8,7 +8,7 @@ import GalleryComponent from '../components/GalleryComponent'
 export class HomeScreen extends Component {
   render () {
     return (
-      <ScrollView>
+      <ScrollView style={{ backgroundColor: 'white' }}>
         <StatusBar hidden />
         <TitleComponent
           title='Discover'

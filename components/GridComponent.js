@@ -17,9 +17,7 @@ export class GridComponent extends Component {
           data={this.props.data}
           renderItem={({ item }) => (
             <View style={this.props.styleItem}>
-              <View style={styles.imageWrapper}>
-                <Image style={styles.image} source={{ uri: item.image }} />
-              </View>
+              <Image source={{ uri: item.image }} style={{ width: wp('30%'), height: hp('19%') }} />
               <View style={styles.textWrapper}>
                 <Text style={styles.discount}>{item.discount}</Text>
                 <Text style={styles.price}>{item.price}</Text>
@@ -36,14 +34,12 @@ export class GridComponent extends Component {
 const styles = StyleSheet.create({
   container: { backgroundColor: 'white', paddingBottom: wp('5%') },
   input: { borderWidth: 2, padding: wp('2.5%'), marginHorizontal: wp('2.5%') },
-  allRes: { marginHorizontal: wp('2.5%'), fontWeight: 1000, fontSize: 12, marginTop: hp('1%') },
-  cantidad: { fontFamily: 'Arial', fontSize: 13, textAlign: 'center', position: 'relative', top: 8 },
-  cantidadFinal: { fontFamily: 'Arial', fontSize: 13, textAlign: 'center', position: 'relative', bottom: 13 },
-  imageWrapper: { height: hp('10%'), width: wp('25%') },
-  image: { heigth: hp('25%'), width: wp('25%') },
-  textWrapper: { backgroundColor: '#FF000020', flexDirection: 'row', marginBottom: hp('1%') },
-  discount: { color: 'red', fontWeight: 'bold', fontSize: 13, marginLeft: 2 },
-  price: { fontSize: 13, position: 'absolute', right: 0, marginRight: 2 }
+  allRes: { marginHorizontal: wp('2.5%'), fontWeight: 'bold', fontSize: 12, marginTop: hp('1%') },
+  cantidad: { fontFamily: 'Arial', fontSize: 13, textAlign: 'center', position: 'relative', top: 8, fontWeight: 510 },
+  cantidadFinal: { fontFamily: 'Arial', fontSize: 13, textAlign: 'center', position: 'relative', bottom: 13, fontWeight: 510 },
+  textWrapper: { backgroundColor: '#FFFFFF50', flexDirection: 'row', marginBottom: hp('0.5%'), position: 'absolute', width: wp('30%') },
+  discount: { color: 'red', fontWeight: 550, fontSize: 14, marginLeft: 2, fontFamily: 'Century Gothic' },
+  price: { fontSize: 14, position: 'absolute', right: 0, fontWeight: 549, fontFamily: 'Century Gothic', marginRight: wp('1%') }
 })
 
 export default GridComponent

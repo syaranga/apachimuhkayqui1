@@ -102,7 +102,7 @@ export class SearchScreen extends Component {
               price: '$999.9'
             },
             {
-              image: 'https://biu.us/wp-content/uploads/2018/07/mitchell-orr-237216-unsplash-5616x2808.jpg',
+              image: 'https://blog.mascotaysalud.com/wp-content/uploads/2019/10/DIENTES-DE-PERROS.jpg',
               discount: '70%',
               price: '$999.9'
             },
