@@ -26,104 +26,101 @@ export class SearchScreen extends Component {
         <GridComponent
           data={[
             {
-              image: 'https://www.igbioscience.co.uk/wp-content/uploads/2019/01/Colostrum-and-Pets-03-800x600.jpg',
+              image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://ariumliving.com/sites/default/files/styles/pets_family/public/2019-11/Capture4_73.JPG?itok=ErJB32_R',
+              image: 'https://www.insidehook.com/wp-content/uploads/2020/03/dog_adoptions_coronavirus.jpg?fit=1795%2C1200',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://static.wixstatic.com/media/8e068d_c50bcd71617d488ba53b8333df226b0a~mv2.png/v1/fit/w_1000%2Ch_1000%2Cal_c%2Cq_80/file.png',
+              image: 'https://th.bing.com/th/id/OIP.NlxrAImhJZuBjrE5_LyqYAAAAA?pid=Api&w=141&h=212&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'http://cfp-nc.org/wp-content/uploads/2019/11/intro.jpg',
+              image: 'https://www.bing.com/images/blob?bcid=TtybFVvDHJsBsw',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://www.bing.com/images/blob?bcid=Tg9YTKTN558BCg',
+              image: 'https://th.bing.com/th/id/OIP.Trws725tqh9vm5LNukOOrwHaE5?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'http://cfp-nc.org/wp-content/uploads/2019/11/intro.jpg',
+              image: 'https://th.bing.com/th/id/OIP.dDMUv2x_HRcYmfXRjHusGQAAAA?pid=Api&w=120&h=86&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://www.bing.com/images/blob?bcid=Tl1omSVCcJ8BrA',
+              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://dogperday.com/wp-content/uploads/2019/10/article3-1.jpg',
+              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CYC3VPWVK2T2U/ProductCatalog.CYSBZKMVL7GKW/1500x1500/CYSC4CM44J2AQ.jpg',
+              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://ariumliving.com/sites/default/files/styles/pets_family/public/2019-11/Capture4_73.JPG?itok=ErJB32_R',
+              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CYC3VPWVK2T2U/ProductCatalog.CYSBZKMVL7GKW/1500x1500/CYSC4CM44J2AQ.jpg',
+              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://ariumliving.com/sites/default/files/styles/pets_family/public/2019-11/Capture4_73.JPG?itok=ErJB32_R',
+              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CYC3VPWVK2T2U/ProductCatalog.CYSBZKMVL7GKW/1500x1500/CYSC4CM44J2AQ.jpg',
+              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://ariumliving.com/sites/default/files/styles/pets_family/public/2019-11/Capture4_73.JPG?itok=ErJB32_R',
+              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CYC3VPWVK2T2U/ProductCatalog.CYSBZKMVL7GKW/1500x1500/CYSC4CM44J2AQ.jpg',
+              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'http://cfp-nc.org/wp-content/uploads/2019/11/intro.jpg',
+              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CYC3VPWVK2T2U/ProductCatalog.CYSBZKMVL7GKW/1500x1500/CYSC4CM44J2AQ.jpg',
+              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'http://cfp-nc.org/wp-content/uploads/2019/11/intro.jpg',
+              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             }
 
           ]}
-          itemDimension={wp('30%')}
+          itemDimension={wp('25%')}
           styleItem={{
             height: wp('30%'),
-            justifyContent: 'flex-end',
-            borderRadius: wp('2%'),
-            padding: wp('.5%'),
-            backgroundColor: ''
+            backgroundColor: 'gray'
           }}
         />
       </ScrollView>
