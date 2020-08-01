@@ -177,7 +177,7 @@ export class SearchScreen extends Component {
               price: '$999.9'
             }
           ]}
-          itemDimension={wp('30%')}
+          itemDimension={wp('25%')}
           styleItem={{
             backgroundColor: '',
             height: wp('30%'),
@@ -189,32 +189,33 @@ export class SearchScreen extends Component {
           bigprice={{
             height: wp('4.2%'),
             width: wp('29.2%'),
-            marginVertical: wp('21.5%'),
+            marginVertical: wp('20%'),
             flexDirection: 'row',
             backgroundColor: 'white',
             position: 'absolute',
             top: '13px',
-            left: '3px',
+            left: '2px',
             opacity: 0.5
           }}
           discount={{
             backgroundColor: '',
             flex: 0.6,
+            height: wp('4.5%'),
             color: 'red',
-            fontSize: 22,
-            marginVertical: wp('.9%'),
+            fontSize: 16,
             marginHorizontal: wp('.9%'),
             fontFamily: 'monoscape',
             alignSelf: 'center',
             fontWeight: 'bold',
-            opacity: 1.0
+            opacity: 1.0,
+            marginVertical: wp('9%')
           }}
           price={{
             backgroundColor: '',
             flex: 0.4,
+            height: wp('4.5%'),
             color: 'black',
-            fontSize: 22,
-            marginVertical: wp('.9%'),
+            fontSize: 16,
             marginHorizontal: wp('.9%'),
             fontFamily: 'monoscape',
             alignSelf: 'center',
