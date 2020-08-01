@@ -26,103 +26,101 @@ export class SearchScreen extends Component {
         <GridComponent
           data={[
             {
-              image: 'https://agauche.org/wp-content/uploads/2020/03/alvan-nee-T-0EW-SEbsE-unsplash-scaled.jpg',
+              image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://fananimal.com/wp-content/uploads/2019/08/5-razas-de-perros-que-cambian-cuando-crecen.jpg',
+              image: 'https://www.insidehook.com/wp-content/uploads/2020/03/dog_adoptions_coronavirus.jpg?fit=1795%2C1200',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://wowpooch.com/wp-content/uploads/2019/05/Best-Dog-Food-For-Giant-Breeds-1024x536.jpg',
+              image: 'https://th.bing.com/th/id/OIP.NlxrAImhJZuBjrE5_LyqYAAAAA?pid=Api&w=141&h=212&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://www.elmundodelperro.net/fotos/91/3249_18m_01_thumb_690.jpg',
+              image: 'https://www.bing.com/images/blob?bcid=TtybFVvDHJsBsw',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://www.webconsultas.com/sites/default/files/styles/wc_adaptive_image__small/public/temas/caracteristicas_dalmata.jpg',
+              image: 'https://th.bing.com/th/id/OIP.Trws725tqh9vm5LNukOOrwHaE5?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://t1.ea.ltmcdn.com/es/images/3/0/0/10_razas_de_perros_pequenos_blancos_24003_600.jpg',
+              image: 'https://th.bing.com/th/id/OIP.dDMUv2x_HRcYmfXRjHusGQAAAA?pid=Api&w=120&h=86&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://mott.pe/noticias/wp-content/uploads/2016/02/05.png',
+              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://e.radio-capital.io/large/2018/11/14/294029_710541.jpg',
+              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMBbMDXBnMRe9y4OxwKC-Fe76EAbu4y_KYIg&usqp=CAU',
+              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://supercurioso.com/wp-content/uploads/2019/06/Razas-de-Perros-Bonitos-del-Mundo.jpg',
+              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://img.europapress.es/fotoweb/fotonoticia_20160223095538-16021602279_420.jpg',
+              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://media.telemundo51.com/2019/09/tlmd-french-bulldog-perro-ideal-apartamento-portada.jpg?fit=1200%2C675',
+              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://i.pinimg.com/564x/c4/68/d0/c468d0bdf0fb88e1efcc4ebec2bb2574.jpg',
+              image: 'https://th.bing.com/th/id/OIP.02jiiV5WLMpG5BfavUvXUQAAAA?pid=Api&w=100&h=70&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://www.mediterraneannatural.com/wp-content/uploads/2019/04/Guia-completa-de-las-razas-de-perros-dogo-argentino-3.jpg',
+              image: 'https://th.bing.com/th/id/OIP.K778MHeRxj6tkhi7bVZHtwHaE7?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSOyN8WnPfThqNimiWIJH4g1Tp2I1tJt2v-8w&usqp=CAU',
+              image: 'https://th.bing.com/th/id/OIP.zFngqtjyu0nHsZooU_MmZwAAAA?pid=Api&w=100&h=100&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://www.micachorro.net/wp-content/uploads/2018/02/pastor-aleman.jpg',
+              image: 'https://th.bing.com/th/id/OIP.Rh1abxgSzyV-U32eBTr4HgAAAA?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://www.animalfiel.com/wp-content/uploads/2020/04/razas-perros-pequenos.jpg',
+              image: 'https://th.bing.com/th/id/OIP.fN8lBBz-56V3jOMap2hZrAAAAA?pid=Api&w=90&h=90&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             },
             {
-              image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQQlP1zBM3G3yhI9s063M_vPQzUeQ6zdxVBtg&usqp=CAU',
+              image: 'https://th.bing.com/th/id/OIP.m_QjqiyuLb9aAKeachidUAHaHa?pid=Api&w=84&h=84&c=7',
               discount: '70%',
-              price: '$999.9'
+              price: '$9999'
             }
 
           ]}
-          
           itemDimension={wp('25%')}
           styleItem={{
             height: wp('30%'),
-            justifyContent: 'flex-end',
-            padding: wp('.3%'),  
+            backgroundColor: 'gray'
           }}
            precios= {{   
             marginVertical:wp('20%'),              
