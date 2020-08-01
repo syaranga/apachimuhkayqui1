@@ -36,7 +36,7 @@ export class SearchScreen extends Component {
               price: '$9999'
             },
             {
-              image: 'https://th.bing.com/th/id/OIP.NlxrAImhJZuBjrE5_LyqYAAAAA?pid=Api&w=141&h=212&c=7',
+              image: 'https://th.bing.com/th/id/OIP.roXztmu92HGfZmh-T6x4awHaHa?pid=Api&w=203&h=203&c=7',
               discount: '70%',
               price: '$9999'
             },
