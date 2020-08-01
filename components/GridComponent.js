@@ -12,7 +12,7 @@ export class GridComponent extends Component {
           renderItem={({ item }) => (
             <View style={this.props.styleItem}>
               <Image
-                style={{ resizeMode: 'cover' }}
+                style={{ height: '70%', width: '70%', resizeMode: 'cover' }}
                 source={{ uri: item.image }}
               />
               <Text>{item.discount}</Text>
