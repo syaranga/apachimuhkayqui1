@@ -6,7 +6,6 @@ import SwiperComponent from '../components/SwiperComponent'
 import TitleComponent from '../components/TitleComponent'
 import GalleryComponent from '../components/GalleryComponent'
 
-
 export class HomeScreen extends Component {
   render () {
     return (

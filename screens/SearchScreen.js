@@ -3,6 +3,7 @@ import { ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import TitleComponent from '../components/TitleComponent'
 import GridComponent from '../components/GridComponent'
+import BuyModalComponent from '../components/BuyModalComponent'
 
 export class SearchScreen extends Component {
   render () {
@@ -122,6 +123,10 @@ export class SearchScreen extends Component {
             height: wp('30%'),
             backgroundColor: 'gray'
           }}
+        />
+        <BuyModalComponent
+          data={[
+          ]}
         />
       </ScrollView>
     )
