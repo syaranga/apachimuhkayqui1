@@ -2,19 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, Image, TextInput, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 import { FlatGrid } from 'react-native-super-grid'
 
-class GridComponent extends Component {
-  constructor () {
-    super()
-
-    this.navigate = this.navigate.bind(this)
-  }
-
-  navigate (name) {
-    this.props.navigate.push({
-      name
-    })
-  }
-
+export class GridComponent extends Component {
   render () {
     return (
       <View>
@@ -33,7 +21,7 @@ class GridComponent extends Component {
           itemDimension={this.props.itemDimension}
           data={this.props.data}
           renderItem={({ item }) => (
-            <TouchableWithoutFeedback onPress={() => this.navigate('BuyModalComponent')}>
+            <TouchableWithoutFeedback>
               <View style={[styles.item, this.props.styleItem]}>
                 <Image
                   key={item.id}
