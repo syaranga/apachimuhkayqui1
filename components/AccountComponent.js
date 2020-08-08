@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
 import { FontAwesome5 } from '@expo/vector-icons'
 import { FlatGrid } from 'react-native-super-grid'
+import { MaterialCommunityIcons } from '@expo/vector-icons'
 
 export class AccountComponent extends Component {
   render () {
@@ -16,6 +17,29 @@ export class AccountComponent extends Component {
             </View>
           </View>
         </View>
+        <View>
+          <Text style={styles.title}>PROFILE</Text>
+          <MaterialCommunityIcons
+                    name="chevron-down"
+                    style={styles.icon}
+                  />
+          </View>
+          <View style={this.props.head}>
+            <Text style={styles.name}>Ridhwan Nordin</Text>  
+            <View style={this.props.head1}>
+            <Text style={styles.name1}>@ridzjcob</Text>  
+         </View>
+         </View>
+       
+        <View style={this.props.head2}>
+            <Text style={styles.name3}>ridhwanordin@gmail.com</Text> 
+        </View>
+        <View style={this.props.hea4}>
+            <Text style={styles.name4}>987654321</Text>  
+            <View style={this.props.head5}>
+            <Text style={styles.name5}>60708090</Text>  
+         </View>
+         </View>
         <View>
           <Text style={styles.title}>ADS {'+'} </Text>
         </View>
@@ -81,6 +105,65 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'right',
     marginRight: '3%'
+  },
+  name : {
+    marginHorizontal: 10,
+    width: ('59%'),
+    borderColor: '#000',
+    borderWidth: 1.5,
+    padding: ('3%'),
+    fontSize: '100%', 
+    marginVertical: -8,
+  },
+  name1 : {
+    marginHorizontal: 10,
+    width: ('34%'),
+    borderColor: '#000',
+    borderWidth: 1.5,
+    padding: ('3.3%'),
+    fontSize: '100%', 
+    marginVertical: -38,
+    flexDirection: 'row',
+    position: 'absolute',
+    left: '218px'
+  },
+  name3 : {
+    marginHorizontal: 10,
+    borderColor: '#000',
+    borderWidth: 1.5,
+    padding: ('3.5%'),
+    fontSize: '100%', 
+    marginVertical: 19, 
+  },
+  name4 : {
+    marginHorizontal: 10,
+    width: ('53.1%'),
+    borderColor: '#000',
+    borderWidth: 1.5,
+    padding: ('3.5%'),
+    fontSize: '100%', 
+    marginVertical: -8
+  },
+  name5 : {
+    marginHorizontal: 10,
+    width: ('39.5%'),
+    borderColor: '#000',
+    borderWidth: 1.5,
+    padding: ('3.6%'),
+    fontSize: '100%', 
+    marginVertical: -41,
+    flexDirection: 'row',
+    position: 'absolute',
+    left: '198px'
+  },
+  icon:{
+    flexDirection: 'row',
+    position: 'absolute',
+    right: 10,
+    fontSize: '145%',
+    marginVertical: 7,
+
+    
   }
 })
 
