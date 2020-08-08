@@ -9,8 +9,8 @@ export class SearchScreen extends Component {
   render () {
     return (
       <View>
-        <BuyModalComponent visible />
         <ScrollView>
+          <BuyModalComponent visible />
           <TitleComponent
             title='Search'
             styleContainer={{
