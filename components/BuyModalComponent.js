@@ -1,115 +1,146 @@
 import React, { Component } from 'react'
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
+import { Text, View, Modal, StyleSheet } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
+import TitleComponent from './TitleComponent'
+import GalleryComponent from './GalleryComponent'
 import { Entypo } from '@expo/vector-icons'
 
 export class BuyModalComponent extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {}
+  }
+
   render () {
     return (
-      <View style={styles.container}>
-        <View>
+      <View style={styles.modalContainer}>
+        <Modal
+          visible={this.props.visible}
+          style={styles.modalStyle}
+        >
           <View style={{ flex: 1, flexDirection: 'row' }}>
-            <Text style={styles.buy}>Buy</Text>
-            <View style={{ marginTop: hp('2%'), position: 'absolute', right: 0 }}>
-              <Entypo name='heart' size={26} color='#FA4CA4' />
-            </View>
-          </View>
-          <View>
-            <Image
-              style={styles.buyImage}
-              source={{ uri: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg' }}
+            <TitleComponent
+              title='Buy'
+              styleContainer={{
+                width: wp('95%'),
+                marginHorizontal: wp('2.5%'),
+                textShadowColor: 'gray',
+                textShadowOffset: {
+                  width: hp('.3%'),
+                  height: hp('.3%')
+                }
+              }}
+              style={{
+                fontSize: hp('7%')
+              }}
+            />
+            <Entypo
+              name='heart' size={30} color='#F011A2'
+              style={styles.entypoIcon}
             />
           </View>
-          <View style={styles.content}>
-            <View style={styles.avatarWrapper}>
-              <Image
-                style={styles.avatarImage}
-                source={{ uri: 'https://images.unsplash.com/profile-1561381043166-4a4993b5f33d?dpr=1&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff' }}
-              />
-              <View style={styles.user}>
-                <Text style={styles.userName}>Ridwhan Nordin</Text>
-                <Text style={styles.userAlias}>@ridzjcob</Text>
-              </View>
-            </View>
-            <View style={styles.priceWrapper}>
-              <Text style={styles.price}> $9876.54</Text>
-            </View>
+
+          <GalleryComponent
+            data={[
+              {
+                image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
+                avatar: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg',
+                nickname: 'Ridhwan nordin',
+                alias: '@ridzjcob',
+                price: '9876.54'
+              },
+              {
+                image: 'https://www.insidehook.com/wp-content/uploads/2020/03/dog_adoptions_coronavirus.jpg?fit=1795%2C1200',
+                avatar: 'https://manofmany.com/wp-content/uploads/2019/06/50-Long-Haircuts-Hairstyle-Tips-for-Men-2.jpg',
+                nickname: 'Clem onojeghuo',
+                alias: '@clemono2',
+                price: '9876.54'
+              },
+              {
+                image: 'https://th.bing.com/th/id/OIP.roXztmu92HGfZmh-T6x4awHaHa?pid=Api&w=203&h=203&c=7',
+                avatar: 'https://newcastlebeach.org/images/man-picture.jpg',
+                nickname: 'Jon tyson',
+                alias: '@jontyson',
+                price: '9876.54'
+              },
+              {
+                image: 'https://www.bing.com/images/blob?bcid=TtybFVvDHJsBsw',
+                avatar: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg',
+                nickname: 'Simon zhu',
+                alias: '@smnzhu',
+                price: '9876.54'
+              }
+            ]}
+            styleContainer={{
+              height: hp('55%'),
+              width: wp('95%'),
+              marginBottom: wp('2.5%')
+            }}
+            styleItem={{
+              height: hp('50%'),
+              width: wp('90%'),
+              marginHorizontal: wp('2.5%')
+            }}
+            styleAvatar={{
+              height: hp('7%'),
+              width: hp('7%'),
+              borderRadius: hp('7%')
+            }}
+            stylePrice={{
+              fontSize: hp('5%')
+            }}
+            styleNickname={{
+              fontSize: hp('3%'),
+              fontWeight: 'bold'
+            }}
+            styleAlias={{
+              fontSize: hp('2%')
+            }}
+          />
+          <View style={styles.addButton}>
+            <Text style={styles.addText}>Add to Cart</Text>
           </View>
-          <TouchableOpacity onPress={() => this.navigate.pop()}>
-            <View style={styles.addWrapper}>
-              <Text style={styles.addText}> Add to cart</Text>
-            </View>
-          </TouchableOpacity>
-        </View>
+        </Modal>
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  modalContainer: {
+    width: wp('100%'),
+    height: hp('100%'),
+    zIndex: 50,
     position: 'absolute',
-    marginTop: '19%',
-    marginHorizontal: wp('2.5%'),
-    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignContent: 'center',
+    ackgroundColor: 'rgba(0,0,0,.5)'
+  },
+  modalStyle: {
     width: wp('95%'),
-    height: hp('78%'),
+    height: hp('77.5%'),
+    marginHorizontal: wp('2.5%'),
+    borderRadius: wp('3%'),
+    backgroundColor: 'white',
+    borderWidth: 'none',
+    paddingBottom: hp('2%')
+  },
+  entypoIcon: {
+    position: 'absolute',
+    right: 0,
+    marginTop: hp('3%'),
+    marginRight: wp('3%')
+  },
+  addButton: {
+    borderWidth: 2,
+    borderwidthColor: 'black',
+    paddingVertical: hp('2.2%'),
     alignItems: 'center',
-    borderRadius: 8
-  },
-  buy: {
-    textShadowColor: 'gray',
-    fontSize: 30,
-    textShadowOffset: {
-      width: hp('.3%'),
-      height: hp('.3%')
-    }
-  },
-  buyImage: {
-    height: hp('49%'),
-    width: wp('90%'),
-    marginTop: '3%'
-  },
-  content: {
-    flex: 1,
-    flexDirection: 'row',
-    marginTop: '2.5%'
-  },
-  avatarWrapper: {
-    flex: 1,
-    flexDirection: 'row'
-  },
-  avatarImage: {
-    height: 28,
-    width: 28,
-    borderRadius: 14
-  },
-  user: {
-    marginLeft: '2%'
-  },
-  userName: {
-    fontWeight: 'bold',
-    fontSize: 11.5
-  },
-  userAlias: {
-    fontSize: 11.5
-  },
-  priceWrapper: {
-  },
-  price: {
-    fontSize: 34,
-    position: 'relative',
-    bottom: 10
-  },
-  addWrapper: {
-    borderWidth: 1.5,
-    borderWidthColor: 'black',
-    borderRadius: 25,
-    paddingVertical: hp('2.3%'),
-    marginTop: wp('1%')
+    marginHorizontal: wp('2.5%'),
+    borderRadius: wp('20%')
   },
   addText: {
-    textAlign: 'center'
+    fontWeight: '600'
   }
 })
 export default BuyModalComponent

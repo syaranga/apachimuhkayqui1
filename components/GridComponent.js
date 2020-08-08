@@ -21,19 +21,21 @@ export class GridComponent extends Component {
           itemDimension={this.props.itemDimension}
           data={this.props.data}
           renderItem={({ item }) => (
-            <TouchableWithoutFeedback>
-              <View style={[styles.item, this.props.styleItem]}>
-                <Image
-                  key={item.id}
-                  style={this.props.styleItem}
-                  source={{ uri: item.image }}
-                />
-                <View style={styles.content}>
-                  <Text style={styles.discount}>{item.discount}</Text>
-                  <Text style={styles.price}>{item.price}</Text>
+            <View>
+              <TouchableWithoutFeedback onPress={() => this.props.handleOnPress(item)}>
+                <View style={[styles.item, this.props.styleItem]}>
+                  <Image
+                    key={item.id}
+                    style={this.props.styleItem}
+                    source={{ uri: item.image }}
+                  />
+                  <View style={styles.content}>
+                    <Text style={styles.discount}>{item.discount}</Text>
+                    <Text style={styles.price}>{item.price}</Text>
+                  </View>
                 </View>
-              </View>
-            </TouchableWithoutFeedback>
+              </TouchableWithoutFeedback>
+            </View>
 
           )}
         />

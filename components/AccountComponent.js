@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Text, View, Image, StyleSheet } from 'react-native'
+import { Text, View, Image, StyleSheet, TextInput } from 'react-native'
 import { FontAwesome5 } from '@expo/vector-icons'
 import { FlatGrid } from 'react-native-super-grid'
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 
 export class AccountComponent extends Component {
   render () {
@@ -13,6 +14,29 @@ export class AccountComponent extends Component {
             <View style={styles.userData}>
               <Text style={[styles.nickname, this.props.styleNickname]}>Ridhwan Nordin</Text>
               <Text style={[styles.alias, this.props.styleAlias]}>@ridzjcob</Text>
+            </View>
+          </View>
+        </View>
+        <View style={styles.profileContainer}>
+          <View style={styles.profileWrapper}>
+            <Text style={styles.profileTitle}>PROFILE</Text>
+            <FontAwesome5
+              name='chevron-down' size={15}
+              color='black'
+              style={styles.profileIcon}
+            />
+          </View>
+          <View style={styles.inputContainer}>
+            <View style={styles.userInput}>
+              <TextInput style={styles.inputName} />
+              <TextInput style={styles.inputAlias} />
+            </View>
+            <View style={styles.emailInput}>
+              <TextInput style={styles.inputEmail} />
+            </View>
+            <View style={styles.phoneInput}>
+              <TextInput style={styles.celNumber} />
+              <TextInput style={styles.phoneNumber} />
             </View>
           </View>
         </View>
@@ -40,14 +64,93 @@ export class AccountComponent extends Component {
 }
 
 const styles = StyleSheet.create({
-  context: { flex: 1, flexDirection: 'row', justifyContent: 'space-between' },
-  user: { flex: 1, flexDirection: 'row' },
+  context: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  user: {
+    flex: 1,
+    flexDirection: 'row'
+  },
   avatar: {
-
   },
   userData: {},
   nickname: {},
   alias: {},
+  profileContainer: {
+    marginTop: hp('2%')
+  },
+  profileWrapper: {
+    flex: 1,
+    flexDirection: 'row'
+  },
+  profileTitle: {
+    fontWeight: 'bold',
+    marginLeft: wp('2.5%'),
+    fontSize: 12
+  },
+  profileIcon: {
+    position: 'absolute',
+    right: 0,
+    marginRight: wp('3%'),
+    marginTop: hp('0.5%')
+  },
+  inputContainer: {
+    marginTop: hp('0.5%')
+  },
+  userInput: {
+    flex: 1,
+    flexDirection: 'row',
+    marginHorizontal: '2.5%'
+  },
+  inputName: {
+    borderWidth: 2,
+    borderwidthColor: 'black',
+    paddingVertical: hp('2%'),
+    paddingHorizontal: wp('3%'),
+    width: wp('60%')
+  },
+  inputAlias: {
+    borderWidth: 2,
+    borderwidthColor: 'black',
+    paddingVertical: hp('2%'),
+    paddingHorizontal: wp('3%'),
+    marginLeft: wp('1%'),
+    width: wp('34%')
+  },
+  emailInput: {
+    marginHorizontal: '2.5%',
+    marginTop: hp('1.5%')
+  },
+  inputEmail: {
+    borderWidth: 2,
+    borderwidthColor: 'black',
+    paddingVertical: hp('2%'),
+    paddingHorizontal: wp('3%'),
+    width: wp('95%')
+  },
+  phoneInput: {
+    flex: 1,
+    flexDirection: 'row',
+    marginHorizontal: '2.5%',
+    marginTop: hp('1.5%')
+  },
+  celNumber: {
+    borderWidth: 2,
+    borderwidthColor: 'black',
+    paddingVertical: hp('2%'),
+    paddingHorizontal: wp('3%'),
+    width: wp('50%')
+  },
+  phoneNumber: {
+    borderWidth: 2,
+    borderwidthColor: 'black',
+    paddingVertical: hp('2%'),
+    paddingHorizontal: wp('3%'),
+    marginLeft: wp('1%'),
+    width: wp('44%')
+  },
   title: {
     justifyContent: 'center',
     fontSize: '20',
