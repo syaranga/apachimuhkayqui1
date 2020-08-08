@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, TextInput, StyleSheet, TouchableWithoutFeedback  } from 'react-native'
+import { Text, View, Image, TextInput, StyleSheet } from 'react-native'
 import { FlatGrid } from 'react-native-super-grid'
 
 export class GridComponent extends Component {
@@ -21,8 +21,6 @@ export class GridComponent extends Component {
           itemDimension={this.props.itemDimension}
           data={this.props.data}
           renderItem={({ item }) => (
-            <View>
-              <TouchableWithoutFeedback onPress={() => this.props.handleOnPress(item)}>
             <View style={[styles.item, this.props.styleItem]}>
               <Image
                 style={this.props.styleItem}
@@ -32,8 +30,6 @@ export class GridComponent extends Component {
                 <Text style={styles.discount}>{item.discount}</Text>
                 <Text style={styles.price}>{item.price}</Text>
               </View>
-            </View>
-            </TouchableWithoutFeedback>
             </View>
           )}
         />
