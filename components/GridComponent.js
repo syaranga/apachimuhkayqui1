@@ -48,13 +48,7 @@ export class GridComponent extends Component {
 }
 
 const styles = StyleSheet.create({
-  title: {
-    justifyContent: 'center',
-    fontSize: '20',
-    paddingTop: '20',
-    margin: 10,
-    fontWeight: 'bold'
-  },
+
   textInput: {
     height: 45,
     borderColor: 'black',
