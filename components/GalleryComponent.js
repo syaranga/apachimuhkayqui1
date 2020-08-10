@@ -36,6 +36,8 @@ export class GalleryComponent extends Component {
 }
 
 const styles = StyleSheet.create({
+
+
   scrollView: {},
   item: {},
   imageWrapper: { height: '90%', width: '100%', marginBottom: '2%' },
@@ -48,6 +50,7 @@ const styles = StyleSheet.create({
   alias: {},
   priceWrapper: {},
   price: {}
-})
+}
+)
 
 export default GalleryComponent

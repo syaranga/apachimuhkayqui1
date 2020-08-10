@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { Text, View, Image, TextInput, StyleSheet } from 'react-native'
+import { Text, View, Image, TextInput, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 import { FlatGrid } from 'react-native-super-grid'
+import BuyModaComponent from './BuyModalComponet'
 
 export class GridComponent extends Component {
   render () {
@@ -21,15 +22,18 @@ export class GridComponent extends Component {
           itemDimension={this.props.itemDimension}
           data={this.props.data}
           renderItem={({ item }) => (
-            <View style={[styles.item, this.props.styleItem]}>
-              <Image
-                style={this.props.styleItem}
-                source={{ uri: item.image }}
-              />
-              <View style={styles.content}>
-                <Text style={styles.discount}>{item.discount}</Text>
-                <Text style={styles.price}>{item.price}</Text>
-              </View>
+            <View>
+              <BuyModaComponent  visible />
+                <View style={[styles.item, this.props.styleItem]}>
+                  <Image
+                    style={this.props.styleItem}
+                    source={{ uri: item.image }}
+                  />
+                  <View style={styles.content}>
+                    <Text style={styles.discount}>{item.discount}</Text>
+                    <Text style={styles.price}>{item.price}</Text>
+                  </View>
+                </View>
             </View>
           )}
         />
