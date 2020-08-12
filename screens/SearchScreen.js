@@ -3,11 +3,14 @@ import { ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import TitleComponent from '../components/TitleComponent'
 import GridComponent from '../components/GridComponent'
+import BuyModalComponent from '../components/BuyModalComponent'
 
 export class SearchScreen extends Component {
   render () {
     return (
-      <ScrollView>
+      <view>
+          <ScrollView>
+          <BuyModalComponent visible /> 
         <TitleComponent
           title='Search'
           styleContainer={{
@@ -24,6 +27,11 @@ export class SearchScreen extends Component {
           }}
         />
         <GridComponent
+          handleOnPress={(item) => {
+            console.log('pressed!')
+            console.log(item)
+          }}
+
           data={[
             {
               image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
@@ -123,6 +131,9 @@ export class SearchScreen extends Component {
           }}
         />
       </ScrollView>
+      </view>
+      
+     
     )
   }
 }

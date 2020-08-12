@@ -1,89 +1,84 @@
 import React, { Component } from 'react'
-import { Text, View, Modal } from 'react-native'
+import { Text, View, Modal, StyleSheet } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import TitleComponent from './TitleComponent'
 import GalleryComponent from './GalleryComponent'
+import { Entypo } from '@expo/vector-icons'
 
 export class BuyModalComponent extends Component {
-    constructor (props) {
-        super   (props)
-        this.state = {}
-    }
+  constructor (props) {
+    super(props)
+    this.state = {}
+  }
+
   render () {
-      return (
-          <View style={{
-            width: wp('100%'),
-            height: hp('100%'),
-            zIndex: 50,
-            position: 'absolute',
-            justifyContent: 'center',
-            alignContent: 'center',
-            backgroundColor: 'rgba(0,0,0,.5)'
-          }}
-          >
-            <Modal
-              visible={this.props.visible}
-              style={{
-                width: wp('90%'),
-                marginHorizontal: wp('5%'),
-                borderRadius: wp('5%'),
-                backgroundColor: 'white'
+    return (
+      <View style={styles.modalContainer}>
+        <Modal
+          visible={this.props.visible}
+          style={styles.modalStyle}
+        >
+          <View style={{ flex: 1, flexDirection: 'row' }}>
+            <TitleComponent
+              title='Buy'
+              styleContainer={{
+                width: wp('95%'),
+                marginHorizontal: wp('2.5%'),
+                textShadowColor: 'gray',
+                textShadowOffset: {
+                  width: hp('.3%'),
+                  height: hp('.3%')
+                }
               }}
-            >
-          <TitleComponent
-            title='Buy'
-            styleContainer={{
-              width: wp('95%'),
-              marginHorizontal: wp('2.5%'),
-              textShadowColor: 'gray',
-              textShadowOffset: {
-                width: hp('.3%'),
-                height: hp('.3%')
-              }
-            }}
-            style={{
-              fontSize: hp('8%')
-            }}
-          />
-            <GalleryComponent
+              style={{
+                fontSize: hp('7%')
+              }}
+            />
+            <Entypo
+              name='heart' size={30} color='#F011A2'
+              style={styles.entypoIcon}
+            />
+          </View>
+
+          <GalleryComponent
             data={[
               {
-                image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+                image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
                 avatar: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg',
-                nickname: 'ridhwan nordin',
+                nickname: 'Ridhwan nordin',
                 alias: '@ridzjcob',
                 price: '9876.54'
               },
               {
-                image: 'https://images.unsplash.com/photo-1561229980-b674f5893cba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+                image: 'https://www.insidehook.com/wp-content/uploads/2020/03/dog_adoptions_coronavirus.jpg?fit=1795%2C1200',
                 avatar: 'https://manofmany.com/wp-content/uploads/2019/06/50-Long-Haircuts-Hairstyle-Tips-for-Men-2.jpg',
-                nickname: 'clem onojeghuo',
+                nickname: 'Clem onojeghuo',
                 alias: '@clemono2',
                 price: '9876.54'
               },
               {
-                image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
+                image: 'https://th.bing.com/th/id/OIP.roXztmu92HGfZmh-T6x4awHaHa?pid=Api&w=203&h=203&c=7',
                 avatar: 'https://newcastlebeach.org/images/man-picture.jpg',
-                nickname: 'jon tyson',
+                nickname: 'Jon tyson',
                 alias: '@jontyson',
                 price: '9876.54'
               },
               {
-                image: 'https://scontent.flim22-1.fna.fbcdn.net/v/t1.0-9/p960x960/67139255_489779711566046_9015261501061070848_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_eui2=AeEDK5RDKsTynS2JYj7NfGqIqq9RepxIss2qr1F6nEiyzSNaqwzA2XoIqj4Eyk3Ty39qkDW5_5OfXNywPytfMYee&_nc_ohc=9hy-4b-XawMAX_IZloB&_nc_ht=scontent.flim22-1.fna&_nc_tp=6&oh=a6a82659a6dff635a49b398a24133999&oe=5F3E6583',
+                image: 'https://www.bing.com/images/blob?bcid=TtybFVvDHJsBsw',
                 avatar: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg',
-                nickname: 'simon zhu',
+                nickname: 'Simon zhu',
                 alias: '@smnzhu',
                 price: '9876.54'
               }
             ]}
             styleContainer={{
               height: hp('55%'),
-              width: wp('100%'),
+              width: wp('95%'),
               marginBottom: wp('2.5%')
             }}
             styleItem={{
               height: hp('50%'),
-              width: wp('95%'),
+              width: wp('90%'),
               marginHorizontal: wp('2.5%')
             }}
             styleAvatar={{
@@ -95,15 +90,57 @@ export class BuyModalComponent extends Component {
               fontSize: hp('5%')
             }}
             styleNickname={{
-              fontSize: hp('3%')
+              fontSize: hp('3%'),
+              fontWeight: 'bold'
             }}
             styleAlias={{
               fontSize: hp('2%')
             }}
           />
-          </Modal>
-        </View>
+          <View style={styles.addButton}>
+            <Text style={styles.addText}>Add to Cart</Text>
+          </View>
+        </Modal>
+      </View>
     )
- }
+  }
 }
+
+const styles = StyleSheet.create({
+  modalContainer: {
+    width: wp('100%'),
+    height: hp('100%'),
+    zIndex: 50,
+    position: 'absolute',
+    justifyContent: 'center',
+    alignContent: 'center',
+    backgroundColor: 'rgba(0,0,0,.5)'
+  },
+  modalStyle: {
+    width: wp('95%'),
+    height: hp('77.5%'),
+    marginHorizontal: wp('2.5%'),
+    borderRadius: wp('3%'),
+    backgroundColor: 'white',
+    borderWidth: 0,
+    paddingBottom: hp('2%')
+  },
+  entypoIcon: {
+    position: 'absolute',
+    right: 0,
+    marginTop: hp('3%'),
+    marginRight: wp('3%')
+  },
+  addButton: {
+    borderWidth: 2,
+    borderColor: 'black',
+    paddingVertical: hp('2.2%'),
+    alignItems: 'center',
+    marginHorizontal: wp('2.5%'),
+    borderRadius: wp('20%')
+  },
+  addText: {
+    fontWeight: '600'
+  }
+})
 export default BuyModalComponent

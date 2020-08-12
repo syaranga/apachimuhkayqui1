@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
   alias: {},
   title: {
     justifyContent: 'center',
-    fontSize: '20',
+    fontSize: 0,
     paddingTop: '20',
     margin: 10,
     fontWeight: 'bold'
@@ -64,11 +64,11 @@ const styles = StyleSheet.create({
     left: 75,
     width: 23,
     bottom: '5%',
-    justifyContent: '',
+    justifyContent: 'space-between',
     backgroundColor: 'white',
     padding: '5%',
     margin: '5%',
-    borderRadius: '10%'
+    borderRadius: 10
   },
   discount: {
     flex: 0.5,

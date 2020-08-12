@@ -46,8 +46,8 @@ export class GridComponent extends Component {
 const styles = StyleSheet.create({
   title: {
     justifyContent: 'center',
-    fontSize: '20',
-    paddingTop: '20',
+    fontSize: 20,
+    paddingTop: 20,
     margin: 10,
     fontWeight: 'bold'
   },
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     backgroundColor: 'rgba(255, 255, 255, .5)',
-    justifyContent: 'space-between'
+    justifyContent: 'center'
   },
   discount: {
     flex: 0.5,
