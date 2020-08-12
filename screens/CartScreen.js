@@ -95,7 +95,7 @@ export class CartScreen extends Component {
           }}
         />
         <View>
-          <Text style={{ fontWeight: 'bold', fontSize: 30, textAlign: 'center', paddingTop: wp('5%'), marginBottom: wp('5%'), borderBottomColor: 'black', borderBottomWidth: 2 }}>98765.34</Text>
+          <Text style={{ fontWeight: 'bold', fontSize: 30, textAlign: 'center', paddingTop: wp('5%'), marginBottom: wp('5%'), borderBottomColor: 'black', borderBottomWidth: 2 }}>$98765.34</Text>
         </View>
       </ScrollView>
 
