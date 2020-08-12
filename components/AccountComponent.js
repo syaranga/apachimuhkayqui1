@@ -105,15 +105,13 @@ const styles = StyleSheet.create({
     marginHorizontal: '2.5%'
   },
   inputName: {
-    borderWidth: 2,
-    borderwidthColor: 'black',
+    borderWidth: wp('.5%'),
     paddingVertical: hp('2%'),
     paddingHorizontal: wp('3%'),
     width: wp('60%')
   },
   inputAlias: {
-    borderWidth: 2,
-    borderwidthColor: 'black',
+    borderWidth: wp('.5%'),
     paddingVertical: hp('2%'),
     paddingHorizontal: wp('3%'),
     marginLeft: wp('1%'),
@@ -124,8 +122,7 @@ const styles = StyleSheet.create({
     marginTop: hp('1.5%')
   },
   inputEmail: {
-    borderWidth: 2,
-    borderwidthColor: 'black',
+    borderWidth: wp('.5%'),
     paddingVertical: hp('2%'),
     paddingHorizontal: wp('3%'),
     width: wp('95%')
@@ -137,15 +134,13 @@ const styles = StyleSheet.create({
     marginTop: hp('1.5%')
   },
   celNumber: {
-    borderWidth: 2,
-    borderwidthColor: 'black',
+    borderWidth: wp('.5%'),
     paddingVertical: hp('2%'),
     paddingHorizontal: wp('3%'),
     width: wp('50%')
   },
   phoneNumber: {
-    borderWidth: 2,
-    borderwidthColor: 'black',
+    borderWidth: wp('.5%'),
     paddingVertical: hp('2%'),
     paddingHorizontal: wp('3%'),
     marginLeft: wp('1%'),

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Text, View, Image, TextInput, StyleSheet, TouchableWithoutFeedback } from 'react-native'
 import { FlatGrid } from 'react-native-super-grid'
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 
 export class GridComponent extends Component {
   render () {
@@ -51,10 +52,9 @@ export class GridComponent extends Component {
 
 const styles = StyleSheet.create({
   title: {
-    justifyContent: 'center',
-    fontSize: '20',
-    paddingTop: '20',
-    margin: 10,
+    fontSize: 20,
+    marginLeft: wp('2.5%'),
+    marginTop: hp('2%'),
     fontWeight: 'bold'
   },
   textInput: {
