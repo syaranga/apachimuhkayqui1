@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     borderColor: '#000',
     borderWidth: 1,
     padding: ('4%'),
-    fontSize: '100%'
+    fontSize: 100
   },
   resultado: {
     marginVertical: 14,
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   },
   contenedor: {
     textAlign: 'center',
-    fontSize: '100%',
+    fontSize: 100,
     color: 'black'
   },
   All: {
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   },
   title: {
     justifyContent: 'center',
-    fontSize: '20',
+    fontSize: 20,
     paddingTop: '20',
     margin: 10,
     fontWeight: 'bold'
