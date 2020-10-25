@@ -9,7 +9,7 @@ export class TitleSectionComponent extends Component {
         <Text style={styles.text}>
           {this.props.title}
         </Text>
-        <MaterialIcons style={styles.icon} name='keyboard-arrow-right' size={24} />
+        <MaterialIcons style={styles.icon} name='keyboard-arrow-right' />
       </View>
     )
   }

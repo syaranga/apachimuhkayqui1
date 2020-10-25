@@ -104,3 +104,4 @@ dist
 .tern-port
 web-build/
 .expo/
+.expo 2/
