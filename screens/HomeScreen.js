@@ -11,11 +11,7 @@ import CategoriesComponent from '../components/CategoriesComponent'
 export class HomeScreen extends Component {
   render () {
     return (
-<<<<<<< HEAD
-      <ScrollView showsHorizontalScrollIndicator={false}>
-=======
       <ScrollView showsVerticalScrollIndicator={false}>
->>>>>>> fb7a20258ee21b38b65e72c9953d1065a2ca173f
         <StatusBar hidden />
         <TitleComponent
           title='Discover'
