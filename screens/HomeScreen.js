@@ -110,7 +110,31 @@ export class HomeScreen extends Component {
             marginHorizontal: wp('2.5%')
           }}
         />
-        <CategoriesComponent />
+        <CategoriesComponent
+          data={[
+            { name: 'Mens', image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
+            { name: 'Women', image: 'https://i.pinimg.com/originals/f0/a6/4e/f0a64e32194d341befecc80458707565.jpg' },
+            { name: 'Boy', image: 'https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/324/boy.jpg' },
+            { name: 'Girl', image: 'https://www.girlsinthegame.org/wp-content/uploads/2019/09/Home-Page-Banner-aspect-ratio-385x470.jpg' },
+            { name: 'Baby', image: 'https://website-bamedag.netdna-ssl.com/fileadmin/media/_processed_/0/e/csm_2Versuch_hohe_Aufloesung_Perfect_0__Caucasian_3c11a78869.jpg' },
+            { name: 'Offer', image: 'https://cdnmedia.triathlon.com.pe/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/base/F36218.jpg' }
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+        />
+        <CategoriesComponent
+          data={[
+            { name: 'Novelty', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' },
+            { name: 'Home', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' },
+            { name: 'Beauty', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' },
+            { name: 'Food', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' },
+            { name: 'Hygiene', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' }
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+        />
       </ScrollView>
     )
   }
