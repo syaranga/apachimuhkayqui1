@@ -5,11 +5,13 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import SwiperComponent from '../components/SwiperComponent'
 import TitleComponent from '../components/TitleComponent'
 import GalleryComponent from '../components/GalleryComponent'
+import TitleSectionComponent from '../components/TitleSectionComponent'
+import CategoriesComponent from '../components/CategoriesComponent'
 
 export class HomeScreen extends Component {
   render () {
     return (
-      <ScrollView>
+      <ScrollView showsHorizontalScrollIndicator={false}>
         <StatusBar hidden />
         <TitleComponent
           title='Discover'
@@ -101,6 +103,14 @@ export class HomeScreen extends Component {
             fontSize: hp('2%')
           }}
         />
+        <TitleSectionComponent
+          title='categories to you'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <CategoriesComponent />
       </ScrollView>
     )
   }
