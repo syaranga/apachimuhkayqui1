@@ -5,7 +5,7 @@ export class GalleryComponent extends Component {
   render () {
     return (
       <View style={[this.props.styleContainer]}>
-        <ScrollView horizontal style={styles.scrollView}>
+        <ScrollView showsHorizontalScrollIndicator={false} horizontal style={styles.scrollView}>
           {
             this.props.data.map((item, index) => {
               return (
