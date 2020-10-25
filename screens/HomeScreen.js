@@ -56,7 +56,7 @@ export class HomeScreen extends Component {
               price: '9876.54'
             },
             {
-              image: 'https://images.unsplash.com/photo-1561229980-b674f5893cba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
               avatar: 'https://manofmany.com/wp-content/uploads/2019/06/50-Long-Haircuts-Hairstyle-Tips-for-Men-2.jpg',
               nickname: 'clem onojeghuo',
               alias: '@clemono2',
@@ -70,7 +70,7 @@ export class HomeScreen extends Component {
               price: '9876.54'
             },
             {
-              image: 'https://scontent.flim22-1.fna.fbcdn.net/v/t1.0-9/p960x960/67139255_489779711566046_9015261501061070848_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_eui2=AeEDK5RDKsTynS2JYj7NfGqIqq9RepxIss2qr1F6nEiyzSNaqwzA2XoIqj4Eyk3Ty39qkDW5_5OfXNywPytfMYee&_nc_ohc=9hy-4b-XawMAX_IZloB&_nc_ht=scontent.flim22-1.fna&_nc_tp=6&oh=a6a82659a6dff635a49b398a24133999&oe=5F3E6583',
+              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
               avatar: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg',
               nickname: 'simon zhu',
               alias: '@smnzhu',
@@ -109,7 +109,31 @@ export class HomeScreen extends Component {
             marginHorizontal: wp('2.5%')
           }}
         />
-        <CategoriesComponent />
+        <CategoriesComponent
+          data={[
+            { name: 'Mens', image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
+            { name: 'Women', image: 'https://i.pinimg.com/originals/f0/a6/4e/f0a64e32194d341befecc80458707565.jpg' },
+            { name: 'Boy', image: 'https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/324/boy.jpg' },
+            { name: 'Girl', image: 'https://www.girlsinthegame.org/wp-content/uploads/2019/09/Home-Page-Banner-aspect-ratio-385x470.jpg' },
+            { name: 'Baby', image: 'https://website-bamedag.netdna-ssl.com/fileadmin/media/_processed_/0/e/csm_2Versuch_hohe_Aufloesung_Perfect_0__Caucasian_3c11a78869.jpg' },
+            { name: 'Offer', image: 'https://cdnmedia.triathlon.com.pe/media/catalog/product/cache/1/image/1200x/040ec09b1e35df139433887a97daa66f/base/F36218.jpg' }
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+        />
+        <CategoriesComponent
+          data={[
+            { name: 'Novelty', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' },
+            { name: 'Home', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' },
+            { name: 'Beauty', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' },
+            { name: 'Food', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' },
+            { name: 'Hygiene', image: 'https://avatarfiles.alphacoders.com/245/245940.jpg' }
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+        />
       </ScrollView>
     )
   }
