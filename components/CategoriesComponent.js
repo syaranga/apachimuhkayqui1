@@ -23,9 +23,6 @@ export default class CategoriesComponent extends Component {
   }
 }
 
-<<<<<<< HEAD
-export default CategoriesComponent
-=======
 export class CategoryComponent extends Component {
   render () {
     return (
@@ -65,4 +62,3 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   }
 })
->>>>>>> fb7a20258ee21b38b65e72c9953d1065a2ca173f
