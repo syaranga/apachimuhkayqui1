@@ -8,6 +8,7 @@ import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import CategoriesComponent from '../components/CategoriesComponent'
 import SlideItemComponent from '../components/SlideItemComponent'
+import MatchComponent from '../components/MatchComponent'
 
 export class HomeScreen extends Component {
   render () {
@@ -154,6 +155,19 @@ export class HomeScreen extends Component {
           }}
         />
         <SlideItemComponent />
+        <TitleSectionComponent
+        title='Match youre favorite'
+        styleContainer={{
+          width: wp ('95%'),
+          marginHorizontal: wp('2.5%')
+        }}
+        />
+        <MatchComponent
+        styleContainer={{
+          width: wp('100%'),
+          height: hp('100%')
+        }}
+        />
       </ScrollView>
     )
   }
