@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import { StatusBar, ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
@@ -7,6 +6,7 @@ import TitleComponent from '../components/TitleComponent'
 import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import CategoriesComponent from '../components/CategoriesComponent'
+import SlideItemComponent from '../components/SlideItemComponent'
 
 export class HomeScreen extends Component {
   render () {
@@ -122,6 +122,11 @@ export class HomeScreen extends Component {
           styleSlide={{
             paddingHorizontal: wp('2.5%')
           }}
+          styleCategoryImage={{
+            height: hp('7%'),
+            width: hp('7%'),
+            borderRadius: hp('7%')
+          }}
         />
         <CategoriesComponent
           data={[
@@ -133,6 +138,94 @@ export class HomeScreen extends Component {
           ]}
           styleSlide={{
             paddingHorizontal: wp('2.5%')
+          }}
+          styleCategoryImage={{
+            height: hp('7%'),
+            width: hp('7%'),
+            borderRadius: hp('7%')
+          }}
+        />
+        <TitleSectionComponent
+          title='Top selected to you'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <SlideItemComponent
+          data={[
+            { image: 'https://www.vanidades.com/wp-content/uploads/2018/06/Las-fotos-m%C3%A1s-sexys-de-Zac-Efron-en-Dub%C3%A1i.jpg' },
+            { image: 'https://i.pinimg.com/originals/ba/5f/99/ba5f995e33488d4123e89d63c4373ec9.jpg' }
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+          styleCategoryImage={{
+            height: hp('32%'),
+            width: hp('26.2%')
+          }}
+        />
+        <TitleSectionComponent
+          title='Top Favorite'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <SlideItemComponent
+          data={[
+            { image: 'https://i.pinimg.com/originals/ee/32/2d/ee322d9dce910a5110c7d4a8c78e9159.jpg' },
+            { image: 'https://i.pinimg.com/originals/a3/ac/f9/a3acf95ac8c2735e818b9c5a149b0a94.jpg' },
+            { texto: 'Metal Earrings  $/. 4444.5'}
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+          styleCategoryImage={{
+            height: hp('32%'),
+            width: hp('26.2%')
+          }}
+        />
+        <TitleSectionComponent
+          title='Top Adquiered'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <SlideItemComponent
+          data={[
+            { image: 'https://image.freepik.com/foto-gratis/mujer-hermosa-natural_105413-1398.jpg' },
+            { image: 'https://i.pinimg.com/originals/8b/da/ca/8bdaca81d5ddbaeb92b61d6b5787d866.jpg' },
+            { texto: 'Metal Earrings  $/. 4444.5'}
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+          styleCategoryImage={{
+            height: hp('32%'),
+            width: hp('26.2%')
+          }}
+        />
+        <TitleSectionComponent
+          title='Top Most Viewed'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <SlideItemComponent
+          data={[
+            { image: 'https://image.freepik.com/foto-gratis/personas-que-sonrie-alegre-hombres-guapos_1187-6057.jpg' },
+            { image: 'https://img.blogs.es/anexom/wp-content/uploads/2018/12/42707058715_61bbdc578f_k.jpg' },
+            { texto: 'Metal Earrings  $/. 4444.5'}
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+          styleCategoryImage={{
+            height: hp('32%'),
+            width: hp('26.2%')
           }}
         />
       </ScrollView>
