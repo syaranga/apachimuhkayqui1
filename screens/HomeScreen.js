@@ -7,10 +7,7 @@ import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import CategoriesComponent from '../components/CategoriesComponent'
 import SlideItemComponent from '../components/SlideItemComponent'
-<<<<<<< HEAD
-=======
 import MatchComponent from '../components/MatchComponent'
->>>>>>> ad74dffbc34346437cdf723b895eee2179322a6a
 
 export class HomeScreen extends Component {
   render () {
