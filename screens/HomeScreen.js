@@ -7,6 +7,8 @@ import TitleComponent from '../components/TitleComponent'
 import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import CategoriesComponent from '../components/CategoriesComponent'
+import SlideItemComponent from '../components/SlideItemComponent'
+
 export class HomeScreen extends Component {
   render () {
     return (
@@ -121,6 +123,11 @@ export class HomeScreen extends Component {
           styleSlide={{
             paddingHorizontal: wp('2.5%')
           }}
+          styleCategoryImage={{
+            height: hp('7%'),
+            width: hp('7%'),
+            borderRadius: hp('7%')
+          }}
         />
         <CategoriesComponent
           data={[
@@ -133,7 +140,20 @@ export class HomeScreen extends Component {
           styleSlide={{
             paddingHorizontal: wp('2.5%')
           }}
+          styleCategoryImage={{
+            height: hp('7%'),
+            width: hp('7%'),
+            borderRadius: hp('7%')
+          }}
         />
+        <TitleSectionComponent
+          title='Top Selected you'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <SlideItemComponent />
       </ScrollView>
     )
   }
