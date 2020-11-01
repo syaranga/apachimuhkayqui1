@@ -7,6 +7,10 @@ import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import CategoriesComponent from '../components/CategoriesComponent'
 import SlideItemComponent from '../components/SlideItemComponent'
+<<<<<<< HEAD
+=======
+import MatchComponent from '../components/MatchComponent'
+>>>>>>> ad74dffbc34346437cdf723b895eee2179322a6a
 
 export class HomeScreen extends Component {
   render () {
@@ -152,80 +156,24 @@ export class HomeScreen extends Component {
             marginHorizontal: wp('2.5%')
           }}
         />
-        <SlideItemComponent
-          data={[
-            { image: 'https://www.vanidades.com/wp-content/uploads/2018/06/Las-fotos-m%C3%A1s-sexys-de-Zac-Efron-en-Dub%C3%A1i.jpg' },
-            { image: 'https://i.pinimg.com/originals/ba/5f/99/ba5f995e33488d4123e89d63c4373ec9.jpg' }
-          ]}
-          styleSlide={{
-            paddingHorizontal: wp('2.5%')
-          }}
-          styleCategoryImage={{
-            height: hp('32%'),
-            width: hp('26.2%')
-          }}
-        />
+        <SlideItemComponent />
         <TitleSectionComponent
-          title='Top Favorite'
+          title='Match youre favorite'
           styleContainer={{
             width: wp('95%'),
             marginHorizontal: wp('2.5%')
           }}
         />
-        <SlideItemComponent
+        <MatchComponent
           data={[
-            { image: 'https://i.pinimg.com/originals/ee/32/2d/ee322d9dce910a5110c7d4a8c78e9159.jpg' },
-            { image: 'https://i.pinimg.com/originals/a3/ac/f9/a3acf95ac8c2735e818b9c5a149b0a94.jpg' },
-            { texto: 'Metal Earrings  $/. 4444.5'}
+            { image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
+            { image: 'https://i.pinimg.com/originals/f0/a6/4e/f0a64e32194d341befecc80458707565.jpg' },
+            { image: 'https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/324/boy.jpg' },
+            { image: 'https://www.girlsinthegame.org/wp-content/uploads/2019/09/Home-Page-Banner-aspect-ratio-385x470.jpg' }
           ]}
-          styleSlide={{
-            paddingHorizontal: wp('2.5%')
-          }}
-          styleCategoryImage={{
-            height: hp('32%'),
-            width: hp('26.2%')
-          }}
-        />
-        <TitleSectionComponent
-          title='Top Adquiered'
           styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
-        <SlideItemComponent
-          data={[
-            { image: 'https://image.freepik.com/foto-gratis/mujer-hermosa-natural_105413-1398.jpg' },
-            { image: 'https://i.pinimg.com/originals/8b/da/ca/8bdaca81d5ddbaeb92b61d6b5787d866.jpg' },
-            { texto: 'Metal Earrings  $/. 4444.5'}
-          ]}
-          styleSlide={{
-            paddingHorizontal: wp('2.5%')
-          }}
-          styleCategoryImage={{
-            height: hp('32%'),
-            width: hp('26.2%')
-          }}
-        />
-        <TitleSectionComponent
-          title='Top Most Viewed'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
-        <SlideItemComponent
-          data={[
-            { image: 'https://image.freepik.com/foto-gratis/personas-que-sonrie-alegre-hombres-guapos_1187-6057.jpg' },
-            { image: 'https://img.blogs.es/anexom/wp-content/uploads/2018/12/42707058715_61bbdc578f_k.jpg' },
-            { texto: 'Metal Earrings  $/. 4444.5'}
-          ]}
-          styleSlide={{
-            paddingHorizontal: wp('2.5%')
-          }}
-          styleCategoryImage={{
-            height: hp('32%'),
-            width: hp('26.2%')
+            width: wp('100%'),
+            height: hp('100%')
           }}
         />
       </ScrollView>
