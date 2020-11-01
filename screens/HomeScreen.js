@@ -8,6 +8,7 @@ import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import CategoriesComponent from '../components/CategoriesComponent'
 import SlideItemComponent from '../components/SlideItemComponent'
+import MatchComponent from '../components/MatchComponent'
 
 export class HomeScreen extends Component {
   render () {
@@ -147,10 +148,30 @@ export class HomeScreen extends Component {
           }}
         />
         <TitleSectionComponent
-          title='Top Selected to you'
+          title='Top selected to you'
           styleContainer={{
             width: wp('95%'),
             marginHorizontal: wp('2.5%')
+          }}
+        />
+        <SlideItemComponent />
+        <TitleSectionComponent
+          title='Match youre favorite'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <MatchComponent
+          data={[
+            { image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
+            { image: 'https://i.pinimg.com/originals/f0/a6/4e/f0a64e32194d341befecc80458707565.jpg' },
+            { image: 'https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/324/boy.jpg' },
+            { image: 'https://www.girlsinthegame.org/wp-content/uploads/2019/09/Home-Page-Banner-aspect-ratio-385x470.jpg' }
+          ]}
+          styleContainer={{
+            width: wp('100%'),
+            height: hp('100%')
           }}
         />
         <SlideItemComponent />
