@@ -5,7 +5,7 @@ export class SlideItemComponent extends Component {
   render () {
     return (
       <View>
-        <Text> SlideItemComponent  </Text>
+        <Text> SlideItemComponent </Text>
       </View>
     )
   }
