@@ -8,10 +8,11 @@ import SearchScreen from './screens/SearchScreen'
 import FavoriteScreen from './screens/FavoriteScreen'
 import CartScreen from './screens/CartScreen'
 import AccountScreen from './screens/AccountScreen'
+import DetailItemScreen from './screens/DetailItemScreen'
 
 const Tab = createBottomTabNavigator()
 
-function MyTabs () {
+function MyTabs() {
   return (
     <Tab.Navigator
       initialRouteName='Home'
@@ -69,11 +70,21 @@ function MyTabs () {
           )
         }}
       />
+      <Tab.Screen
+        name='DetailItem'
+        conponent={DetailItemScreen}
+        options={{
+          tabBarLabel: 'Detail Item',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name='more' color={color} size={size} />
+          )
+        }}
+      />
     </Tab.Navigator>
   )
 }
 
-export default function App () {
+export default function App() {
   return (
     <NavigationContainer>
       <MyTabs />
