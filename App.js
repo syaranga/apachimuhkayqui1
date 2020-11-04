@@ -72,7 +72,7 @@ function MyTabs() {
       />
       <Tab.Screen
         name='DetailItem'
-        conponent={DetailItemScreen}
+        component={DetailItemScreen}
         options={{
           tabBarLabel: 'Detail Item',
           tabBarIcon: ({ color, size }) => (
