@@ -8,6 +8,7 @@ import SearchScreen from './screens/SearchScreen'
 import FavoriteScreen from './screens/FavoriteScreen'
 import CartScreen from './screens/CartScreen'
 import AccountScreen from './screens/AccountScreen'
+import DetailItemScreen from './screens/DetailItemScreen'
 
 const Tab = createBottomTabNavigator()
 
@@ -66,6 +67,16 @@ function MyTabs () {
           tabBarLabel: 'Account',
           tabBarIcon: ({ color, size }) => (
             <AntDesign name='user' color={color} size={size} />
+          )
+        }}
+      />
+      <Tab.Screen
+        name='DetailItem'
+        component={DetailItemScreen}
+        options={{
+          tabBarLabel: 'Detail Item',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name='more' color={color} size={size} />
           )
         }}
       />
