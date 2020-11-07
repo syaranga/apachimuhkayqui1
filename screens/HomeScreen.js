@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import { StatusBar, ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
@@ -11,7 +10,7 @@ import SlideItemComponent from '../components/SlideItemComponent'
 import MatchComponent from '../components/MatchComponent'
 
 export class HomeScreen extends Component {
-  render() {
+  render () {
     return (
       <ScrollView showsVerticalScrollIndicator={false}>
         <StatusBar hidden />
@@ -163,6 +162,12 @@ export class HomeScreen extends Component {
           }}
         />
         <MatchComponent
+          data={[
+            { image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
+            { image: 'https://i.pinimg.com/originals/f0/a6/4e/f0a64e32194d341befecc80458707565.jpg' },
+            { image: 'https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/324/boy.jpg' },
+            { image: 'https://www.girlsinthegame.org/wp-content/uploads/2019/09/Home-Page-Banner-aspect-ratio-385x470.jpg' }
+          ]}
           styleContainer={{
             width: wp('100%'),
             height: hp('100%')

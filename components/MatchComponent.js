@@ -3,12 +3,12 @@ import { View, Text, StyleSheet, Image } from 'react-native'
 import Swiper from 'react-native-deck-swiper'
 
 export default class MatchComponent extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {}
   }
 
-  render() {
+  render () {
     return (
       <View style={[styles.container, this.props.styleContainer]}>
         <Swiper
