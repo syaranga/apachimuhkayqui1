@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
-import { FontAwesome5 } from '@expo/vector-icons'
+import { FontAwesome5, MaterialIcons } from '@expo/vector-icons'
 import { FlatGrid } from 'react-native-super-grid'
 
 export class AccountComponent extends Component {
@@ -17,7 +17,8 @@ export class AccountComponent extends Component {
           </View>
         </View>
         <View>
-          <Text style={styles.title}>ADS {'+'} </Text>
+          <Text style={styles.title}>ADS </Text>
+          <MaterialIcons style={styles.icon} name='keyboard-arrow-down' />
         </View>
         <FlatGrid
           itemDimension={this.props.itemDimension}
@@ -60,13 +61,11 @@ const styles = StyleSheet.create({
   },
   content: {
     position: 'absolute',
-    right: 0,
-    left: 75,
-    width: 23,
     bottom: '5%',
     backgroundColor: 'white',
-    padding: '5%',
-    margin: '5%'
+    left: 73,
+    padding: 8,
+    borderRadius: 2
   },
   discount: {
     flex: 0.5,
@@ -79,6 +78,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'right',
     marginRight: '3%'
+  },
+  icon: {
+    bottom: 35,
+    left: 160,
+    fontSize: 24,
+    alignSelf: 'center'
   }
 })
 
