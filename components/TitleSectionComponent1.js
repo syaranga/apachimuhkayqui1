@@ -21,6 +21,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, flexDirection: 'row', justifyContent: 'space-between'
   },
-  text: { fontSize: 15 },
-  icon: { fontSize: 24, alignSelf: 'center' }
+  text: { fontSize: 16 },
+  icon: { fontSize: 29, alignSelf: 'center' }
 })

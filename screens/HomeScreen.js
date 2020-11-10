@@ -154,7 +154,84 @@ export class HomeScreen extends Component {
             marginHorizontal: wp('2.5%')
           }}
         />
-        <SlideItemComponent />
+        <SlideItemComponent
+          data={[
+            { image: 'https://i.pinimg.com/originals/4d/93/22/4d9322d88e47f82fd273dbb970b5e9fd.jpg' },
+            { image: 'https://i.pinimg.com/originals/9f/b8/c4/9fb8c407c053bb4c5609f57391510777.jpg' },
+            { image: 'https://i.pinimg.com/originals/9d/61/df/9d61df788c51f6361e2a3e4e4cbe702e.jpg' },
+            { image: 'https://i.pinimg.com/originals/98/77/fd/9877fd030126f53ed0b867eaf0c15774.jpg' }
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+          styleCategoryImage={{
+            height: hp('32%'),
+            width: hp('26.2%')
+          }}
+        />
+        <TitleSectionComponent
+          title='Top Favorite'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <SlideItemComponent
+          data={[
+            { image: 'https://i.pinimg.com/originals/37/d5/f0/37d5f080a6c38df678cf06941e31523f.jpg' },
+            { image: 'https://lookandfashion-static.hola.com//viviana-gonzalez-de-marco/files/2016/10/distinci%C3%B3n-1.jpg' },
+            { texto: 'Metal Earrings  $/. 4444.5' }
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+          styleCategoryImage={{
+            height: hp('32%'),
+            width: hp('26.2%')
+          }}
+        />
+        <TitleSectionComponent
+          title='Top Adquiered'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <SlideItemComponent
+          data={[
+            { image: 'https://sc01.alicdn.com/kf/UTB80TSDF3QydeJk43PUq6AyQpXaq.jpg_350x350.jpg' },
+            { image: 'https://thumbs.dreamstime.com/b/retrato-del-hombre-elegante-hermoso-en-traje-elegante-64520733.jpg' },
+            { texto: 'Metal Earrings  $/. 4444.5' }
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+          styleCategoryImage={{
+            height: hp('32%'),
+            width: hp('26.2%')
+          }}
+        />
+        <TitleSectionComponent
+          title='Top Most Viewed'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <SlideItemComponent
+          data={[
+            { image: 'https://i.linio.com/p/21494828d203ed1327ac985b4eb462a4-product.jpg' },
+            { image: 'https://i.linio.com/p/97023656ceaebc00b26a7ecd871ea9af-zoom.jpg' },
+            { texto: 'Metal Earrings  $/. 4444.5' }
+          ]}
+          styleSlide={{
+            paddingHorizontal: wp('2.5%')
+          }}
+          styleCategoryImage={{
+            height: hp('32%'),
+            width: hp('26.2%')
+          }}
+        />
         <TitleSectionComponent
           title='Match youre favorite'
           styleContainer={{

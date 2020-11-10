@@ -72,7 +72,7 @@ export class OrdersComponent extends Component {
             </View>
           </View>
           <View style={styles.inputG2}>
-            <View style={styles.input2}>
+            <View style={styles.input1}>
               <Text style={styles.text12}>Canceled</Text>
             </View>
             <View style={styles.input2}>
@@ -114,20 +114,20 @@ const styles = StyleSheet.create({
     flex: 1,
     borderColor: '#4DCF6C',
     borderWidth: 2,
-    padding: 3,
+    padding: 1,
     borderRadius: 10,
-    width: 339,
+    width: 336,
     left: 9,
-    top: 1,
-    height: 130
+    top: 6,
+    height: 150
   },
   text1: {
     backgroundColor: '#4DCF6C',
-    width: 110,
+    width: 105,
     borderRadius: 4,
     textAlign: 'center',
     color: 'white',
-    bottom: 25,
+    bottom: 26,
     left: 222
   },
   text2: {
@@ -179,27 +179,27 @@ const styles = StyleSheet.create({
     flex: 1,
     borderColor: '#F4CD58',
     borderWidth: 2,
-    padding: 5,
+    padding: 0,
     borderRadius: 10,
     width: 337,
     left: 10,
     top: 27,
-    height: 130
+    height: 136
   },
   text11: {
     backgroundColor: '#F4CD58',
-    width: 110,
-    borderRadius: 5,
+    width: 105,
+    borderRadius: 4,
     textAlign: 'center',
     color: 'white',
-    bottom: 25,
+    bottom: 26,
     left: 222
   },
   inputG2: {
     flex: 1,
-    borderColor: 'red',
+    borderColor: '#FE0000',
     borderWidth: 2,
-    padding: 5,
+    padding: 0,
     borderRadius: 10,
     width: 337,
     left: 10,
@@ -208,8 +208,8 @@ const styles = StyleSheet.create({
   },
   text12: {
     backgroundColor: '#FE0000',
-    width: 110,
-    borderRadius: 5,
+    width: 105,
+    borderRadius: 4,
     textAlign: 'center',
     color: 'white',
     bottom: 25,
