@@ -4,6 +4,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import TitleComponent from '../components/TitleComponent'
 import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
+import SimpleGalleryComponent from '../components/SimpleGalleryComponent'
 
 export class DetailItemScreen extends Component {
   render () {
@@ -87,12 +88,32 @@ export class DetailItemScreen extends Component {
             marginHorizontal: wp('2.5%')
           }}
         />
+        <SimpleGalleryComponent
+          data={[
+            { image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg' },
+            { image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg' },
+            { image: 'https://newcastlebeach.org/images/man-picture.jpg' },
+            { image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg' },
+            { image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg' },
+            { image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640' }
+          ]}
+        />
         <TitleSectionComponent
           title='Size'
           styleContainer={{
             width: wp('95%'),
             marginHorizontal: wp('2.5%')
           }}
+        />
+        <SimpleGalleryComponent
+          data={[
+            { image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg' },
+            { image: 'https://newcastlebeach.org/images/man-picture.jpg' },
+            { image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg' },
+            { image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg' },
+            { image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg' },
+            { image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640' }
+          ]}
         />
         <TitleSectionComponent
           title='Description'
