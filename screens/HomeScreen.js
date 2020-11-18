@@ -10,7 +10,7 @@ import CategoriesComponent from '../components/CategoriesComponent'
 import SlideItemComponent from '../components/SlideItemComponent'
 import MatchComponent from '../components/MatchComponent'
 
-export class HomeScreen extends Component {
+export default class HomeScreen extends Component {
   render() {
     return (
       <ScrollView showsVerticalScrollIndicator={false}>
