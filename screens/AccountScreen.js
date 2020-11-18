@@ -3,26 +3,13 @@ import { ScrollView } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import TitleComponent from '../components/TitleComponent'
 import AccountComponent from '../components/AccountComponent'
+import TitleSectionComponent from '../components/TitleSectionComponent'
 
 export class AccountScreen extends Component {
   render () {
     return (
       <ScrollView>
-        <TitleComponent
-          title='Account'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            textShadowColor: 'gray',
-            textShadowOffset: {
-              width: hp('.3%'),
-              height: hp('.3%')
-            }
-          }}
-          style={{
-            fontSize: hp('8%')
-          }}
-        />
+        <TitleComponent title='Account' />
         <AccountComponent
           data={[
             {
@@ -107,6 +94,7 @@ export class AccountScreen extends Component {
             marginLeft: hp('2%')
           }}
         />
+        <TitleSectionComponent title='Profile' />
       </ScrollView>
     )
   }
