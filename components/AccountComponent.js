@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 
 export class AccountComponent extends Component {
   render () {
     return (
-      <View>
-        <View style={styles.context}>
-          <View style={styles.user}>
-            <Image style={[styles.avatar, this.props.styleAvatar]} source={{ uri: 'https://media-exp1.licdn.com/dms/image/C5603AQH5-cgGGJvI4A/profile-displayphoto-shrink_200_200/0?e=1601510400&v=beta&t=HwzDK_qAoTt8Xq8OqFPAKh9KftdFDzb8In6KaZ2NWwQ' }} />
-            <View style={styles.userData}>
-              <Text style={[styles.nickname, this.props.styleNickname]}>Ridhwan Nordin</Text>
-              <Text style={[styles.alias, this.props.styleAlias]}>@ridzjcob</Text>
-            </View>
+      <View style={[styles.container]}>
+        <View style={styles.slide}>
+          <Image
+            style={[styles.avatar, this.props.styleAvatar]}
+            source={{ uri: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CZA2BKJX3S376/1500x1500/CZA7BICTERC22.jpg' }}
+          />
+          <View>
+            <Text style={[styles.nickname, this.props.styleNickname]}>Ridhwan Nordin</Text>
+            <Text style={[styles.alias, this.props.styleAlias]}>@ridzjcob</Text>
           </View>
         </View>
       </View>
@@ -20,45 +22,19 @@ export class AccountComponent extends Component {
 }
 
 const styles = StyleSheet.create({
-  context: { flex: 1, flexDirection: 'row', justifyContent: 'space-between' },
-  user: { flex: 1, flexDirection: 'row' },
+  container: { flex: 1 },
+  slide: { flexDirection: 'row' },
   avatar: {
-
+    height: wp('20%'),
+    width: wp('20%'),
+    borderRadius: wp('20%')
   },
-  userData: {},
-  nickname: {},
-  alias: {},
-  title: {
-    justifyContent: 'center',
-    fontSize: 20,
-    paddingTop: 20,
-    margin: 10,
+  nickname: {
+    fontSize: wp('8%'),
     fontWeight: 'bold'
   },
-  item: {
-    position: 'relative'
-  },
-  content: {
-    position: 'absolute',
-    right: 0,
-    left: 75,
-    width: 23,
-    bottom: '5%',
-    backgroundColor: 'white',
-    padding: '5%',
-    margin: '5%'
-  },
-  discount: {
-    flex: 0.5,
-    color: 'red',
-    fontWeight: 'bold',
-    marginLeft: '3%'
-  },
-  price: {
-    flex: 0.5,
-    fontWeight: 'bold',
-    textAlign: 'right',
-    marginRight: '3%'
+  alias: {
+    fontSize: wp('8%')
   }
 })
 

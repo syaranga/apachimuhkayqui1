@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, TouchableWithoutFeedbackBase, View } from 'react-native'
+import { ScrollView, TouchableWithoutFeedbackBase, View, Text } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import TitleComponent from '../components/TitleComponent'
 import GridComponent from '../components/GridComponent'
@@ -53,6 +53,9 @@ export class SearchScreen extends Component {
               backgroundColor: 'gray'
             }}
           />
+          <Text>
+            {JSON.stringify(this.state.items)}
+          </Text>
         </ScrollView>
       </View>
     )
