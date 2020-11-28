@@ -1,17 +1,17 @@
 import React, { Component } from 'React'
-import { Text, View, TouchableWithoutFeeback, StyleSheet } from 'react-native'
+import { Text, View, TouchableWithoutFeedback, StyleSheet } from 'react-native'
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
 export default class ButtonComponent extends Component {
   render () {
     return (
-      <TouchableWithoutFeeback>
+      <TouchableWithoutFeedback>
         <View style={[styles.container, this.props.styleContainer]}>
           <Text style={styles.text}>
             {this.props.title}
           </Text>
         </View>
-      </TouchableWithoutFeeback>
+      </TouchableWithoutFeedback>
     )
   }
 }
