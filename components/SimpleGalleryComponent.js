@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, StyleSheet, View, Image } from 'react-native'
+import { ScrollView, StyleSheet, Text, View, Image } from 'react-native'
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
 export default class SimpleGalleryComponent extends Component {
@@ -15,7 +15,7 @@ export default class SimpleGalleryComponent extends Component {
             (this.props.data && this.props.data.length >= 1) && (
               this.props.data.map((item, index) => {
                 return (
-                  <View key={index} style={[styles.item, (index === 0 && { marginleft: 0 })]}>
+                  <View key={index} style={[styles.item, (index === 0 && { marginLeft: 0 })]}>
                     <Image style={styles.image} source={{ uri: item.image }} />
                   </View>
                 )
@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
   slide: {
     paddingHorizontal: wp('2.5%')
   },
-  item: { marginleft: 5 },
+  item: { marginLeft: 5 },
   image: { width: 100, height: 100, marginHorizontal: 5 }
 })

@@ -20,11 +20,11 @@ const styles = StyleSheet.create({
     marginHorizontal: wp('2.5%'),
     textShadowColor: 'gray',
     textShadowOffset: {
-      width: hp('.3%'),
-      height: hp('.3%')
+      width: wp('.3%'),
+      height: wp('.3%')
     }
   },
   style: {
-    fontSize: hp('8%')
+    fontSize: wp('8%')
   }
 })

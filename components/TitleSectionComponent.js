@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
     width: wp('95%'),
     marginHorizontal: wp('2.5%')
   },
-  text: { fontSize: 24 },
-  icon: { fontSize: 24, alignSelf: 'center' }
+  text: { fontSize: wp('5%') },
+  icon: { fontSize: wp('5%'), alignSelf: 'center' }
 })
