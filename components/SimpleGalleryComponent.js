@@ -31,8 +31,8 @@ export default class SimpleGalleryComponent extends Component {
 const styles = StyleSheet.create({
   container: {},
   slide: {
-    paddingHorizontal: wp('2.5&')
+    paddingHorizontal: wp('2.5%')
   },
-  item: { marginLeft: 10 },
+  item: { marginLeft: 5 },
   image: { width: 100, height: 100, marginHorizontal: 5 }
 })
