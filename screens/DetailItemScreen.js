@@ -1,30 +1,17 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, View } from 'react-native'
+import { ScrollView, Text } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import TitleComponent from '../components/TitleComponent'
 import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import SimpleGalleryComponent from '../components/SimpleGalleryComponent'
+import ButtonComponent from '../components/BuyModalComponent'
 
 export class DetailItemScreen extends Component {
   render () {
     return (
       <ScrollView>
-        <TitleComponent
-          title='Detail item'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            textShadowColor: 'gray',
-            textShadowOffset: {
-              width: hp('.3%'),
-              height: hp('.3%')
-            }
-          }}
-          style={{
-            fontSize: hp('8%')
-          }}
-        />
+        <TitleComponent title='Detail item' />
         <GalleryComponent
           data={[
             {
@@ -81,13 +68,7 @@ export class DetailItemScreen extends Component {
             fontSize: hp('2%')
           }}
         />
-        <TitleSectionComponent
-          title='Color'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Color' />
         <SimpleGalleryComponent
           data={[
             { image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg' },
@@ -98,33 +79,35 @@ export class DetailItemScreen extends Component {
             { image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640' }
           ]}
         />
-        <TitleSectionComponent
-          title='Size'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Size' />
         <SimpleGalleryComponent
           data={[
-            { image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg' },
             { image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg' },
             { image: 'https://newcastlebeach.org/images/man-picture.jpg' },
-            { image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg' },
             { image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg' },
+            { image: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg' },
+            { image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg' },
             { image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640' }
           ]}
         />
-        <TitleSectionComponent
-          title='Description'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Description' />
         <Text style={{ textAlign: 'justify', fontSize: 10, marginHorizontal: wp('2.5%') }}>
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
         </Text>
+        <ButtonComponent
+          title='Add to cart'
+          styleContainer={{
+            marginTop: wp('3%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <ButtonComponent
+          title='Buy now'
+          styleContainer={{
+            marginTop: wp('1%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
       </ScrollView>
     )
   }

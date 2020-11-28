@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { Text, View, Image, StyleSheet } from 'react-native'
-import { FontAwesome5 } from '@expo/vector-icons'
-import { FlatGrid } from 'react-native-super-grid'
 
 export class AccountComponent extends Component {
   render () {
@@ -16,24 +14,6 @@ export class AccountComponent extends Component {
             </View>
           </View>
         </View>
-        <View>
-          <Text style={styles.title}>ADS {'+'} </Text>
-        </View>
-        <FlatGrid
-          itemDimension={this.props.itemDimension}
-          data={this.props.data}
-          renderItem={({ item }) => (
-            <View style={[styles.item, this.props.styleItem]}>
-              <Image
-                style={this.props.styleItem}
-                source={{ uri: item.image }}
-              />
-              <View style={styles.content}>
-                <FontAwesome5 name='trash-alt' size={15} color='black' />
-              </View>
-            </View>
-          )}
-        />
       </View>
     )
   }

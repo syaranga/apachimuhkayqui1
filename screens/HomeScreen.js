@@ -15,21 +15,7 @@ export class HomeScreen extends Component {
     return (
       <ScrollView showsVerticalScrollIndicator={false}>
         <StatusBar hidden />
-        <TitleComponent
-          title='Discover'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            textShadowColor: 'gray',
-            textShadowOffset: {
-              width: hp('.3%'),
-              height: hp('.3%')
-            }
-          }}
-          style={{
-            fontSize: hp('8%')
-          }}
-        />
+        <TitleComponent title='Discover' />
         <SwiperComponent
           autoplay
           loop
@@ -105,13 +91,7 @@ export class HomeScreen extends Component {
             fontSize: hp('2%')
           }}
         />
-        <TitleSectionComponent
-          title='Categories to you'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Categories to you' />
         <CategoriesComponent
           data={[
             { name: 'Mens', image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
@@ -147,21 +127,9 @@ export class HomeScreen extends Component {
             borderRadius: hp('7%')
           }}
         />
-        <TitleSectionComponent
-          title='Top selected to you'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Top selected to you' />
         <SlideItemComponent />
-        <TitleSectionComponent
-          title='Match youre favorite'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Match youre favorite' />
         <MatchComponent
           data={[
             { image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
