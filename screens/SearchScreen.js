@@ -25,7 +25,7 @@ export class SearchScreen extends Component {
       })
     })
       .then((result) => result.json())
-      .then(({ data }) => this.setState({ items: data }))
+      .then(({ data }) => this.setState({ items: data.Items }))
       .catch((err) => console.error(err))
   }
 
@@ -40,13 +40,7 @@ export class SearchScreen extends Component {
               console.log('pressed!')
               console.log(item)
             }}
-            data={[
-              {
-                image: 'https://www.barkyn.com/blog/img/uploads/2019/09/jonatan-burneo-NTyH57Qqiu8-unsplash-1.jpg',
-                discount: '70%',
-                price: '$9999'
-              }
-            ]}
+            data={this.state.items}
             itemDimension={wp('25%')}
             styleItem={{
               height: wp('30%'),
