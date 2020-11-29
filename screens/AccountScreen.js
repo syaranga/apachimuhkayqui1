@@ -4,8 +4,9 @@ import TitleComponent from '../components/TitleComponent'
 import AccountComponent from '../components/AccountComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import TextInputComponent from '../components/TextInputComponent'
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
-export class AccountScreen extends Component {
+export default class AccountScreen extends Component {
   render () {
     return (
       <ScrollView>
@@ -16,7 +17,8 @@ export class AccountScreen extends Component {
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
-            alignContent: 'space-between'
+            alignContent: 'space-between',
+            marginTop: wp('2%')
           }}
         >
           <View style={{ flex: 0.65 }}>
@@ -26,12 +28,15 @@ export class AccountScreen extends Component {
             <TextInputComponent placeholder='Nick name' />
           </View>
         </View>
-        <TextInputComponent placeholder='Email' />
+        <View style={{ marginTop: wp('2%') }}>
+          <TextInputComponent placeholder='Email' />
+        </View>
         <View
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
-            alignContent: 'space-between'
+            alignContent: 'space-between',
+            marginTop: wp('2%')
           }}
         >
           <View style={{ flex: 0.55 }}>
@@ -45,5 +50,3 @@ export class AccountScreen extends Component {
     )
   }
 }
-
-export default AccountScreen

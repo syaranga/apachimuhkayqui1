@@ -6,6 +6,7 @@ import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import SimpleGalleryComponent from '../components/SimpleGalleryComponent'
 import ButtonComponent from '../components/ButtonComponent'
+import SlideItemComponent from '../components/SlideItemComponent'
 
 export class DetailItemScreen extends Component {
   render () {
@@ -108,6 +109,9 @@ export class DetailItemScreen extends Component {
             marginHorizontal: wp('2.5%')
           }}
         />
+        <TitleSectionComponent title='Customer also buy' />
+        <SlideItemComponent />
+        <TitleSectionComponent title='Last viewed' />
       </ScrollView>
     )
   }
