@@ -6,7 +6,9 @@ export default class SlideItemComponent extends Component {
     return (
       <View>
         <ScrollView>
-          <SlideComponent />
+          <SlideComponent
+            data={this.props.data}
+          />
         </ScrollView>
       </View>
     )
@@ -34,9 +36,12 @@ export class SlideComponent extends Component {
 export class ItemComponent extends Component {
   render () {
     return (
-      <View>
-        <Image />
-        <Text>item</Text>
+      <View style={{ height: 200, width: 100 }}>
+        <Image
+          style={{ flex: 1 }}
+          source={{ uri: this.props.data.image }}
+        />
+        <Text>{this.props.data.brand}</Text>
       </View>
     )
   }
