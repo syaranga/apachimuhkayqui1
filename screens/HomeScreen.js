@@ -91,13 +91,7 @@ export class HomeScreen extends Component {
             fontSize: hp('2%')
           }}
         />
-        <TitleSectionComponent
-          title='Categories to you'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Categories to you' />
         <CategoriesComponent
           data={[
             { name: 'Mens', image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
