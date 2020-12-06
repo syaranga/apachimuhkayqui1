@@ -10,21 +10,7 @@ export class DetailItemScreen extends Component {
   render () {
     return (
       <ScrollView>
-        <TitleComponent
-          title='Detail item'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            textShadowColor: 'gray',
-            textShadowOffset: {
-              width: hp('.3%'),
-              height: hp('.3%')
-            }
-          }}
-          style={{
-            fontSize: hp('8%')
-          }}
-        />
+        <TitleComponent title='Detail item' />
         <GalleryComponent
           data={[
             {
