@@ -14,21 +14,7 @@ export class HomeScreen extends Component {
     return (
       <ScrollView showsVerticalScrollIndicator={false}>
         <StatusBar hidden />
-        <TitleComponent
-          title='Discover'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%'),
-            textShadowColor: 'gray',
-            textShadowOffset: {
-              width: hp('.3%'),
-              height: hp('.3%')
-            }
-          }}
-          style={{
-            fontSize: hp('8%')
-          }}
-        />
+        <TitleComponent title='Discover' />
         <SwiperComponent
           autoplay
           loop
@@ -104,13 +90,7 @@ export class HomeScreen extends Component {
             fontSize: hp('2%')
           }}
         />
-        <TitleSectionComponent
-          title='Categories to you'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Categories to you' />
         <CategoriesComponent
           data={[
             { name: 'Mens', image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
@@ -146,13 +126,7 @@ export class HomeScreen extends Component {
             borderRadius: hp('7%')
           }}
         />
-        <TitleSectionComponent
-          title='Top selected to you'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Top selected to you' />
         <SlideItemComponent
           data={[
             { image: 'https://www.vanidades.com/wp-content/uploads/2018/06/Las-fotos-m%C3%A1s-sexys-de-Zac-Efron-en-Dub%C3%A1i.jpg' },
@@ -169,13 +143,7 @@ export class HomeScreen extends Component {
             width: hp('26.2%')
           }}
         />
-        <TitleSectionComponent
-          title='Top Favorite'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Top Favorite' />
         <SlideItemComponent
           data={[
             { image: 'https://i.pinimg.com/originals/ee/32/2d/ee322d9dce910a5110c7d4a8c78e9159.jpg' },
@@ -190,13 +158,7 @@ export class HomeScreen extends Component {
             width: hp('26.2%')
           }}
         />
-        <TitleSectionComponent
-          title='Top Adquiered'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Top Adquiered' />
         <SlideItemComponent
           data={[
             { image: 'https://image.freepik.com/foto-gratis/mujer-hermosa-natural_105413-1398.jpg' },
@@ -211,13 +173,7 @@ export class HomeScreen extends Component {
             width: hp('26.2%')
           }}
         />
-        <TitleSectionComponent
-          title='Top Most Viewed'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Top Most Viewed' />
         <SlideItemComponent
           data={[
             { image: 'https://image.freepik.com/foto-gratis/personas-que-sonrie-alegre-hombres-guapos_1187-6057.jpg' },
@@ -232,13 +188,7 @@ export class HomeScreen extends Component {
             width: hp('26.2%')
           }}
         />
-        <TitleSectionComponent
-          title='Match youre favorite'
-          styleContainer={{
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
+        <TitleSectionComponent title='Match youre favorite' />
         <MatchComponent
           data={[
             { image: 'https://www.sanctuarysalondayspa.com/wp-content/uploads/2019/08/06-2.jpg' },
