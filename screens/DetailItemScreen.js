@@ -5,6 +5,8 @@ import TitleComponent from '../components/TitleComponent'
 import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import SimpleGalleryComponent from '../components/SimpleGalleryComponent'
+import ButtonComponent from '../components/ButtonComponent'
+import SlideItemComponent from '../components/SlideItemComponent'
 
 export class DetailItemScreen extends Component {
   render () {
@@ -93,6 +95,56 @@ export class DetailItemScreen extends Component {
         <Text style={{ textAlign: 'justify', fontSize: 10, marginHorizontal: wp('2.5%') }}>
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)
         </Text>
+        <ButtonComponent
+          title='Add to cart'
+          styleContainer={{
+            marginTop: wp('3%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <ButtonComponent
+          title='Buy now'
+          styleContainer={{
+            marginTop: wp('1%'),
+            marginHorizontal: wp('2.5%')
+          }}
+        />
+        <TitleSectionComponent title='Customer also buy' />
+        <SlideItemComponent
+          data={[
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              brand: 'Losas',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
+              brand: 'Ford',
+              price: '9876.54'
+            },
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              brand: 'Losas',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
+              brand: 'Ford',
+              price: '9876.54'
+            },
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              brand: 'Losas',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
+              brand: 'Ford',
+              price: '9876.54'
+            }
+          ]}
+        />
+        <TitleSectionComponent title='Last viewed' />
       </ScrollView>
     )
   }

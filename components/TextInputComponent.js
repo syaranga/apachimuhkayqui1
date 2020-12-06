@@ -6,17 +6,18 @@ export default class TextInputComponent extends Component {
   render () {
     return (
       <TextInput
-        style={[styles.TextInput, this.props.style]}
+        style={[styles.textInput, this.props.style]}
         placeholder={this.props.placeholder}
+        onChangeText={this.props.handleOnChangeText}
       />
     )
   }
 }
 
 const styles = StyleSheet.create({
-  TextInput: {
-    height: wp('8%'),
-    borderRadius: wp('1'),
+  textInput: {
+    height: wp('12%'),
+    borderRadius: wp('1%'),
     borderColor: 'black',
     borderWidth: 1,
     paddingHorizontal: wp('1%')
