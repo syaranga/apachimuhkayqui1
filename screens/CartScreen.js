@@ -47,7 +47,21 @@ export class CartScreen extends Component {
     return (
       <ScrollView>
         <StatusBar hidden />
-        <TitleComponent title='Cart' />
+        <TitleComponent
+          title='Cart'
+          styleContainer={{
+            width: wp('95%'),
+            marginHorizontal: wp('2.5%'),
+            textShadowColor: 'gray',
+            textShadowOffset: {
+              width: hp('.3%'),
+              height: hp('.3%')
+            }
+          }}
+          style={{
+            fontSize: hp('8%')
+          }}
+        />
         <CartComponent
           data={[
             {
