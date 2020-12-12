@@ -36,7 +36,21 @@ export class SearchScreen extends Component {
         <TextInputComponent
           placeholder='Text to search'
           style={{ marginHorizontal: wp('2.5%') }}
-          handleOnChangeText={(text) => console.log(text)}
+          handleOnChangeText={(text) => {
+            fetch('http://localhost:4000/graphql', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
+              },
+              body: JSON.stringify({
+                query: '{ Items(brand: "' + text + '") { id, user_id, brand, model, description, price, image, user {id, fullname, alias, email, phone, document}}}'
+              })
+            })
+              .then((result) => result.json())
+              .then(({ data }) => this.setState({ items: data.Items }))
+              .catch((err) => console.error(err))
+          }}
         />
         <GridComponent
           handleOnPress={(item) => {
