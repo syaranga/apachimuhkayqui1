@@ -114,12 +114,32 @@ export class DetailItemScreen extends Component {
           data={[
             {
               image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
-              brand: 'Ford',
+              brand: 'Losas',
               price: '9876.54'
             },
             {
               image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
+              brand: 'Ford',
+              price: '9876.54'
+            },
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
               brand: 'Losas',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
+              brand: 'Ford',
+              price: '9876.54'
+            },
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              brand: 'Losas',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
+              brand: 'Ford',
               price: '9876.54'
             }
           ]}

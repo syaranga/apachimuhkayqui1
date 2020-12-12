@@ -4,8 +4,49 @@ import TitleComponent from '../components/TitleComponent'
 import AccountComponent from '../components/AccountComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import TextInputComponent from '../components/TextInputComponent'
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
-export class AccountScreen extends Component {
+export default class AccountScreen extends Component {
+  componentDidMount () {
+    var query = `
+    mutation createUser($user: inputUser) {
+      createUser(data: $user) {
+        id
+        fullname
+        alias
+        email
+        phone
+        document
+      }
+    }
+    `
+
+    const variables = {
+      user: {
+        fullname: 'nombre completo',
+        alias: 'un alias',
+        email: 'un email',
+        phone: 123456789,
+        document: 12345678
+      }
+    }
+
+    fetch('http://localhost:4000/graphql', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify({
+        query,
+        variables
+      })
+    })
+      .then(r => r.json())
+      .then(data => console.log('data returned:', data))
+      .catch((err) => console.error(err))
+  }
+
   render () {
     return (
       <ScrollView>
@@ -16,7 +57,8 @@ export class AccountScreen extends Component {
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
-            alignContent: 'space-between'
+            alignContent: 'space-between',
+            marginTop: wp('2%')
           }}
         >
           <View style={{ flex: 0.65 }}>
@@ -26,12 +68,15 @@ export class AccountScreen extends Component {
             <TextInputComponent placeholder='Nick name' />
           </View>
         </View>
-        <TextInputComponent placeholder='Email' />
+        <View style={{ marginTop: wp('2%') }}>
+          <TextInputComponent placeholder='Email' />
+        </View>
         <View
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
-            alignContent: 'space-between'
+            alignContent: 'space-between',
+            marginTop: wp('2%')
           }}
         >
           <View style={{ flex: 0.55 }}>
@@ -45,5 +90,3 @@ export class AccountScreen extends Component {
     )
   }
 }
-
-export default AccountScreen
