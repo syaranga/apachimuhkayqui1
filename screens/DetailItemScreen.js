@@ -6,6 +6,7 @@ import GalleryComponent from '../components/GalleryComponent'
 import TitleSectionComponent from '../components/TitleSectionComponent'
 import SimpleGalleryComponent from '../components/SimpleGalleryComponent'
 import ButtonComponent from '../components/ButtonComponent'
+import SlideItemComponent from '../components/SlideItemComponent'
 
 export class DetailItemScreen extends Component {
   render () {
@@ -108,6 +109,42 @@ export class DetailItemScreen extends Component {
             marginHorizontal: wp('2.5%')
           }}
         />
+        <TitleSectionComponent title='Customer also buy' />
+        <SlideItemComponent
+          data={[
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              brand: 'losas',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg',
+              brand: 'Ford',
+              price: '9876.54'
+            },
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              brand: 'losas',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg',
+              brand: 'Ford',
+              price: '9876.54'
+            },
+            {
+              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              brand: 'losas',
+              price: '9876.54'
+            },
+            {
+              image: 'https://i.pinimg.com/originals/cb/78/2b/cb782bd9da27e7b6dcd7974d2bb3a42e.jpg',
+              brand: 'Ford',
+              price: '9876.54'
+            }
+          ]}
+        />
+        <TitleSectionComponent title='Last viewed' />
       </ScrollView>
     )
   }
