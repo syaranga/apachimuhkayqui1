@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
   slide: {
     paddingHorizontal: wp('2.5%')
   },
-  item: {},
+  item: { marginLeft: 5 },
   image: { width: 100, height: 100, marginHorizontal: 5 }
 })

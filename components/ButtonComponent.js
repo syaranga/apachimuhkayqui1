@@ -7,7 +7,7 @@ export default class ButtonComponent extends Component {
     return (
       <TouchableWithoutFeedback>
         <View style={[styles.container, this.props.styleContainer]}>
-          <Text style={StyleSheet.text}>
+          <Text style={styles.text}>
             {this.props.title}
           </Text>
         </View>
