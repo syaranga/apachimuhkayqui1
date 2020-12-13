@@ -11,6 +11,45 @@ import CoinsComponent from '../components/CoinsComponent'
 import OrdersComponent from '../components/OrdersComponent'
 
 export default class AccountScreen extends Component {
+  componentDidMount () {
+    var query = `
+    mutation createUser($user: inputUser) {
+      createUser(data: $user) {
+        id
+        fullname
+        alias
+        phone
+        document
+      }
+    }
+    `
+
+    const variables = {
+      user: {
+        fullname: 'Joseph Antony Cordova Aguilar',
+        alias: 'JosephCA',
+        email: 'josephtex1066@gmail.com',
+        phone: 995009817,
+        document: 74611496
+      }
+    }
+
+    fetch('http://localhost:4000/graphql', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify({
+        query,
+        variables
+      })
+    })
+      .then(r => r.json())
+      .then(data => console.log('data returned:', data))
+      .catch((err) => console.error(err))
+  }
+
   render () {
     return (
       <ScrollView>
