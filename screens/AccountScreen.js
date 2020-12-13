@@ -7,6 +7,46 @@ import TextInputComponent from '../components/TextInputComponent'
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
 export default class AccountScreen extends Component {
+  componentDidMount () {
+    var query = `
+    mutation CreateMessage($input: MessageInput) {
+      createMessage(input: $input) {
+        id
+        fullname
+        alias
+        email
+        phone
+        document
+      }
+    }
+    `
+
+    const variables = {
+      user: {
+        fullname: 'Jhony Felix Lopez',
+        alias: 'un alias',
+        email: 'email',
+        phone: 65857,
+        document: 111111
+      }
+    }
+
+    fetch('http://localhost:4000/graphql', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      },
+      body: JSON.stringify({
+        query,
+        variables
+      })
+    })
+      .then(r => r.json())
+      .then(data => console.log('data returned:', data))
+      .catch((err) => console.error(err))
+  }
+
   render () {
     return (
       <ScrollView>
