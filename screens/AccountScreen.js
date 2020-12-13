@@ -18,6 +18,7 @@ export default class AccountScreen extends Component {
         id
         fullname
         alias
+        email
         phone
         document
       }
