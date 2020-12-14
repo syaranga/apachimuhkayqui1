@@ -11,7 +11,7 @@ import SlideItemComponent from '../components/SlideItemComponent'
 export class DetailItemScreen extends Component {
   render () {
     return (
-      <ScrollView>
+      <ScrollView>git status
         <TitleComponent title='Detail item' />
         <GalleryComponent
           data={[

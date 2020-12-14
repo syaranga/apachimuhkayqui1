@@ -8,7 +8,7 @@ import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
 export default class AccountScreen extends Component {
   componentDidMount () {
-    var query = `
+    var query = 
     mutation createUser($user: inputUser) {
       createUser(data: $user) {
         id
@@ -19,8 +19,7 @@ export default class AccountScreen extends Component {
         document
       }
     }
-    `
-
+    
     const variables = {
       user: {
         fullname: 'nombre completo',
