@@ -31,21 +31,32 @@ export class ItemComponent extends Component {
           style={{ flex: 1 }}
           source={{ uri: this.props.data.image }}
         />
-        <View style={{ position: 'absolute', flex: 1 }}>
-          <View>
+        <ForegroundItemComponent {...this.props} />
+      </View>
+    )
+  }
+}
+
+export class ForegroundItemComponent extends Component {
+  render () {
+    return (
+      <View style={styles.foreground}>
+        <View style={{ backgroundColor: 'red' }}>
+          <View style={[styles.row, { backgroundColor: 'green' }]}>
             <Text>{this.props.data.brand}</Text>
-            <Text>{this.props.data.model}</Text>
-            <Text>{this.props.data.description}</Text>
             <Text>{this.props.data.original_price}</Text>
+          </View>
+          <View style={[styles.row, { backgroundColor: 'blue' }]}>
+            <Text>{this.props.data.model}</Text>
             <Text>{this.props.data.price}</Text>
           </View>
+        </View>
+        <View>
           <View>
-            <View>
-              <Text>add</Text>
-            </View>
-            <View>
-              <Text>love</Text>
-            </View>
+            <Text>add</Text>
+          </View>
+          <View>
+            <Text>love</Text>
           </View>
         </View>
       </View>
@@ -62,5 +73,18 @@ const styles = StyleSheet.create({
     width: wp('46.25%'),
     height: wp('46.25%') * 1.32,
     marginRight: wp('2.5%')
+  },
+  foreground: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(200,200,20,.5)'
+  },
+  row: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignContent: 'space-between'
   }
 })
