@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, View, VirtualizedList } from 'react-native'
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
 export default class SlideItemComponent extends Component {

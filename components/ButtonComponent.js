@@ -5,7 +5,7 @@ import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 export default class ButtonComponent extends Component {
   render () {
     return (
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback onPress={this.props.handleOnPress}>
         <View style={[styles.container, this.props.styleContainer]}>
           <Text style={styles.text}>
             {this.props.title}

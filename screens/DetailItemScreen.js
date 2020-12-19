@@ -116,7 +116,7 @@ export class DetailItemScreen extends Component {
               image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
               brand: 'Losas',
               model: 'Turquesa MIX',
-              original_price: '1299.99',
+              original_price: '1299.54',
               price: '9876.54'
             },
             {
