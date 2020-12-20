@@ -12,6 +12,10 @@ export default class LoginScreen extends Component {
           console.log('createUser:', result.data)
           this.setState({ user: result.data })
         }
+        if (control === 'readUser') {
+          console.log('readUser:', result.data)
+          this.setState({ user: result.data })
+        }
       })
       .catch((err) => console.error(err))
   }
@@ -32,7 +36,44 @@ export default class LoginScreen extends Component {
           />
           <ButtonComponent
             title='Start'
-            handleOnPress={() => console.log('start session')}
+            handleOnPress={() => {
+              const query = `
+                query Users($user: inputUser) {
+                  Users(data: $user) {
+                    id
+                    fullname
+                    alias
+                    email
+                    phone
+                    document
+                  }
+                }
+              `
+              const variables = {
+                user: {
+                  fullname: this.state.fullname,
+                  alias: this.state.alias,
+                  email: this.state.email,
+                  phone: Number(this.state.phone),
+                  document: Number(this.state.document)
+                }
+              }
+              this.handleOnFetch(
+                'http://localhost:4000/graphql',
+                {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json'
+                  },
+                  body: JSON.stringify({
+                    query,
+                    variables
+                  })
+                },
+                'readUser'
+              )
+            }}
           />
         </View>
         <View>
@@ -73,7 +114,13 @@ export default class LoginScreen extends Component {
                 }
               `
               const variables = {
-                user: { ...this.state }
+                user: {
+                  fullname: this.state.fullname,
+                  alias: this.state.alias,
+                  email: this.state.email,
+                  phone: Number(this.state.phone),
+                  document: Number(this.state.document)
+                }
               }
               this.handleOnFetch(
                 'http://localhost:4000/graphql',
