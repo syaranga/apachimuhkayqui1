@@ -9,12 +9,11 @@ import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 export default class AccountScreen extends Component {
   componentDidMount () {
     var query = `
-    mutation CreateMessage($input: MessageInput) {
-      createMessage(input: $input) {
+    mutation createUser($user: inputUser) {
+      createUser(data: $user) {
         id
         fullname
         alias
-        email
         phone
         document
       }
@@ -24,26 +23,38 @@ export default class AccountScreen extends Component {
     const variables = {
       user: {
         fullname: 'Jhony Felix Lopez',
-        alias: 'un alias',
-        email: 'email',
+        alias: 'chano',
+        email: 'jhonycms@gmail.com',
         phone: 65857,
         document: 111111
       }
     }
-
-    fetch('http://localhost:4000/graphql', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
+    this.handleOnFetch(
+      'http://localhost:4000/graphql',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json'
+        },
+        body: JSON.stringify({
+          query,
+          variables
+        })
       },
-      body: JSON.stringify({
-        query,
-        variables
-      })
-    })
+      'updateUser'
+    )
+  }
+
+  handleOnFetch (input, init, control, object) {
+    fetch(input, init)
       .then(r => r.json())
-      .then(data => console.log('data returned:', data))
+      .then(result => {
+        if (control === 'updateUser') {
+          console.log('user:', result.data)
+          this.setState({ user: result.data })
+        }
+      })
       .catch((err) => console.error(err))
   }
 
