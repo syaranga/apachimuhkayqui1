@@ -61,7 +61,6 @@ export default class AccountScreen extends Component {
           this.setState({ user: result.data })
         }
       })
-
       .catch((err) => console.error(err))
   }
 
