@@ -4,6 +4,18 @@ import TextInputComponent from '../components/TextInputComponent'
 import ButtonComponent from '../components/ButtonComponent'
 
 export default class LoginScreen extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      fullname: null,
+      alias: null,
+      email: null,
+      phone: null,
+      document: null,
+      password: null
+    }
+  }
+
   handleOnFetch (input, init, control, object) {
     fetch(input, init)
       .then(r => r.json())
@@ -27,10 +39,12 @@ export default class LoginScreen extends Component {
         <View>
           <Text>Login</Text>
           <TextInputComponent
+            key='email'
             placeholder='@email'
             handleOnChangeText={(text) => this.setState({ email: text })}
           />
           <TextInputComponent
+            key='password'
             placeholder='password'
             handleOnChangeText={(password) => this.setState({ password })}
           />
@@ -79,22 +93,27 @@ export default class LoginScreen extends Component {
         <View>
           <Text>Register</Text>
           <TextInputComponent
+            key='fullname'
             placeholder='fullname'
             handleOnChangeText={(text) => this.setState({ fullname: text })}
           />
           <TextInputComponent
+            key='alias'
             placeholder='alias'
             handleOnChangeText={(text) => this.setState({ alias: text })}
           />
           <TextInputComponent
+            key='email'
             placeholder='email'
             handleOnChangeText={(text) => this.setState({ email: text })}
           />
           <TextInputComponent
+            key='phone'
             placeholder='phone'
             handleOnChangeText={(text) => this.setState({ phone: text })}
           />
           <TextInputComponent
+            key='document'
             placeholder='document'
             handleOnChangeText={(text) => this.setState({ document: text })}
           />
