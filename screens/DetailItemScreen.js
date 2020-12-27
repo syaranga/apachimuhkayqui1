@@ -113,36 +113,46 @@ export class DetailItemScreen extends Component {
         <SlideItemComponent
           data={[
             {
-              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
-              brand: 'Losas',
-              model: 'Turquesa MIX',
-              original_price: '1299.54',
-              price: '9876.54'
+              image: 'https://plazavea.vteximg.com.br/arquivos/ids/474482-450-450/image-5b6c8527510c4205ba5723133bfcb315.jpg',
+              brand: 'Juguete Little tikes',
+              model: 'Cosy Coupe',
+              original_price: '699.00',
+              price: '309.00'
             },
             {
-              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
-              brand: 'Ford',
-              price: '9876.54'
+              image: 'https://plazavea.vteximg.com.br/arquivos/ids/552667-450-450/20192047.jpg',
+              brand: 'Smartphone Samsung',
+              model: 'Galaxy A51 6.5"',
+              original_price: '1499.00',
+              price: '1249.00'
             },
             {
-              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
-              brand: 'Losas',
-              price: '9876.54'
+              image: 'https://plazavea.vteximg.com.br/arquivos/ids/499558-450-450/20201379.jpg',
+              brand: 'Televisor LG LED 49"',
+              model: 'UHD 4K Smart TV',
+              original_price: '1599.00',
+              price: '1499.00'
             },
             {
-              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
-              brand: 'Ford',
-              price: '9876.54'
+              image: 'https://promart.vteximg.com.br/arquivos/ids/245699-444-444/113541.jpg',
+              brand: 'Piscina estructural',
+              model: 'Steel Pro 1200 litros',
+              original_price: '239.00',
+              price: '179.00'
             },
             {
-              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
-              brand: 'Losas',
-              price: '9876.54'
+              image: 'https://promart.vteximg.com.br/arquivos/ids/589400-444-444/image-950d36e8c92c4ccb837df10575c25466.jpg',
+              brand: 'Patines Zapatilla Sequins',
+              model: 'YX-114A talla 32',
+              original_price: '199.00',
+              price: '99.00'
             },
             {
-              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
-              brand: 'Ford',
-              price: '9876.54'
+              image: 'https://promart.vteximg.com.br/arquivos/ids/353270-444-444/123250.jpg',
+              brand: 'Ventilador Recirculador 12"',
+              model: 'Gris orange',
+              original_price: '69.00',
+              price: '49.00'
             }
           ]}
         />
