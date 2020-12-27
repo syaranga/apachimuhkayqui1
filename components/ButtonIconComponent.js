@@ -9,7 +9,7 @@ export default class ButtonIconComponent extends Component {
       <View style={[styles.container, this.props.styleContainer]}>
         <AntDesign
           style={[styles.icon, this.props.styleIcon]}
-          name='home'
+          name={this.props.name}
         />
       </View>
     )
@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
   icon: {
     color: '#000000',
     fontSize: 24,
-    backgroundColor: 'pink',
     textAlign: 'center'
   }
 })
