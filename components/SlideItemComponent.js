@@ -58,8 +58,8 @@ export class ForegroundItemComponent extends Component {
         </View>
         <View style={[styles.rowWrapper, { paddingVertical: wp('2.5%') }]}>
           <View style={[styles.row, { flex: 0.9 }]}>
-            <ButtonIconComponent />
-            <ButtonIconComponent />
+            <ButtonIconComponent name='shoppingcart' />
+            <ButtonIconComponent name='hearto' />
           </View>
         </View>
       </View>
