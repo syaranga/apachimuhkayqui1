@@ -113,36 +113,46 @@ export class DetailItemScreen extends Component {
         <SlideItemComponent
           data={[
             {
-              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
-              brand: 'Losas',
-              model: 'Turquesa MIX',
-              original_price: '1299.54',
-              price: '9876.54'
+              image: '//i.linio.com/p/1f99a5464e2e301da796f20b20f023ce-product.jpg',
+              brand: 'Olympus',
+              model: 'Cámara Olympus Tough Tg-6 12Mpx',
+              original_price: '2,929.00',
+              price: '2,339.00'
             },
             {
-              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
-              brand: 'Ford',
-              price: '9876.54'
+              image: 'https://hiraoka.com.pe/media/catalog/product/cache/a357cb11a228eb6f7f15c0ee1ff203af/1/1/118420.jpg',
+              brand: 'OSTER',
+              model: 'Freidora de aire Oster CKSTAF7601-053 3.2L',
+              original_price: '549.00',
+              price: '459.00'
             },
             {
-              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
-              brand: 'Losas',
-              price: '9876.54'
+              image: 'https://hiraoka.com.pe/media/catalog/product/cache/a357cb11a228eb6f7f15c0ee1ff203af/1/1/117072_1.jpg',
+              brand: 'SAMSUNG',
+              model: 'Tablet PC Samsung SM-T720NZKAPEO 10.5"',
+              original_price: '1,699.00',
+              price: '1,499.00'
             },
             {
-              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
-              brand: 'Ford',
-              price: '9876.54'
+              image: 'https://hiraoka.com.pe/media/catalog/product/cache/a357cb11a228eb6f7f15c0ee1ff203af/2/0/2018234675220_2.jpg',
+              brand: 'SONY',
+              model: 'TV Sony LED 4K Smart 75" XBR-75X855G',
+              original_price: '10,599.00',
+              price: '8,599.00'
             },
             {
-              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
-              brand: 'Losas',
-              price: '9876.54'
+              image: 'https://hiraoka.com.pe/media/catalog/product/cache/a357cb11a228eb6f7f15c0ee1ff203af/1/2/120869_9_.jpg',
+              brand: 'LG',
+              model: 'Equipo de Sonido Xboom Bluetooth LG RN9 (2020)',
+              original_price: '1,599.00',
+              price: '1,099.00'
             },
             {
-              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
-              brand: 'Ford',
-              price: '9876.54'
+              image: 'https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/42226052_1-Z4vlRMCC.jpg',
+              brand: 'XIOMI',
+              model: 'REDMI NOTE 9 PRO 128GB BLANCO',
+              original_price: '1,399',
+              price: '1,049'
             }
           ]}
         />
