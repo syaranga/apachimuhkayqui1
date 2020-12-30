@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 import { StyleSheet, View } from 'react-native'
-import { AntDesing } from '@expo/vector-icons'
+import { AntDesign } from '@expo/vector-icons'
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
 export default class ButtonIconComponent extends Component {
   render () {
     return (
-      <View style={[styles.container, this.props.stylesContainer]}>
-        <AntDesing
+      <View style={[styles.container, this.props.styleContainer]}>
+        <AntDesign
           style={[styles.icon, this.props.styleIcon]}
-          name='home'
+          name={this.props.name}
         />
       </View>
     )
@@ -27,7 +27,6 @@ const styles = StyleSheet.create({
   icon: {
     color: '#000000',
     fontSize: 24,
-    backgroundColor: 'pink',
     textAlign: 'center'
   }
 })

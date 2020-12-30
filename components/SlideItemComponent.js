@@ -44,28 +44,29 @@ export class ForegroundItemComponent extends Component {
       <View style={styles.foreground}>
         <View style={{ paddingVertical: wp('2.5%'), backgroundColor: 'rgba(255,255,255,0.5)' }}>
           <View style={[styles.rowWrapper]}>
-            <View style={[style.row, { flex: 0.9 }]}>
+            <View style={[styles.row, { flex: 0.9 }]}>
               <Text>{this.props.data.brand}</Text>
               <Text>{this.props.data.original_price}</Text>
             </View>
           </View>
           <View style={[styles.rowWrapper]}>
-            <View style={[style.row, { flex: 0.9 }]}>
+            <View style={[styles.row, { flex: 0.9 }]}>
               <Text>{this.props.data.model}</Text>
               <Text>{this.props.data.price}</Text>
             </View>
           </View>
         </View>
         <View style={[styles.rowWrapper, { paddingVertical: wp('2.5%') }]}>
-          <View style={[style.row, { flex: 0.9 }]}>
-            <ButtonIconComponent />
-            <ButtonIconComponent />
+          <View style={[styles.row, { flex: 0.9 }]}>
+            <ButtonIconComponent name='shoppingcart' />
+            <ButtonIconComponent name='hearto' />
           </View>
         </View>
       </View>
     )
   }
 }
+
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: wp('2.5%')
