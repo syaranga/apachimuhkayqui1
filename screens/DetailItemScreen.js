@@ -110,7 +110,52 @@ export class DetailItemScreen extends Component {
           }}
         />
         <TitleSectionComponent title='Customer also buy' />
-        <SlideItemComponent />
+        <SlideItemComponent
+          data={[
+            {
+              image: 'https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/img-K93bZY0t.jpg',
+              brand: 'CALEFACTOR ELÉCTRICO',
+              model: '1800W',
+              original_price: '35.9',
+              price: '59.00'
+            },
+            {
+              image: 'https://plazavea.vteximg.com.br/arquivos/ids/417581-1000-1000/20198081.jpg',
+              brand: 'BLACKLINE',
+              model: 'HB-206C',
+              original_price: '179.90',
+              price: '199.90'
+            },
+            {
+              image: 'https://plazavea.vteximg.com.br/arquivos/ids/245916-1000-1000/image-3c5fb44c1338446795c2c80eedf162ef.jpg',
+              brand: 'Treadmill',
+              model: 'OX-0008',
+              original_price: '999.00',
+              price: '1,199.00'
+            },
+            {
+              image: 'https://mister-mango.omni.la/ProductCatalog/Workspace.CWDQQL6GUIJMS/ProductCatalog.CYKNCR4FRG6MQ/1500x1500/CYKSKLHMRCYO2.jpg',
+              brand: 'Tommy Hilfiger',
+              model: '1791579',
+              original_price: '529.00',
+              price: '1299.00'
+            },
+            {
+              image: 'https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/img-JuIPVRfJ.jpg',
+              brand: 'ASPIRADORA ROBOT',
+              model: 'STRIKER 2.0',
+              original_price: '429.00',
+              price: '599.00'
+            },
+            {
+              image: 'https://e39a9f00db6c5bc097f9-75bc5dce1d64f93372e7c97ed35869cb.ssl.cf1.rackcdn.com/img-wu3bS3kz.jpg',
+              brand: 'BICICLETA ELECTRICA',
+              model: 'ROBSTEP',
+              original_price: '1,999.00',
+              price: '2,599'
+            }
+          ]}
+        />
         <TitleSectionComponent title='Last viewed' />
       </ScrollView>
     )
