@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native'
 import { AntDesign } from '@expo/vector-icons'
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen'
 
-export default class ButtonComponent extends Component {
+export default class ButtonIconComponent extends Component {
   render () {
     return (
       <View style={[styles.container, this.props.styleContainer]}>
