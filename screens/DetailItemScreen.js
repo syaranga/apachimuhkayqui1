@@ -113,16 +113,18 @@ export class DetailItemScreen extends Component {
         <SlideItemComponent
           data={[
             {
-              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
-              brand: 'Losas',
-              model: 'Turquesa MIX',
-              original_price: '1299.54',
-              price: '9876.54'
+              image: 'https://promart.vteximg.com.br/arquivos/ids/476246-444-444/130062.jpg',
+              brand: 'IROBOT',
+              model: 'Roomba 614',
+              original_price: '1299.00',
+              price: '1039.00'
             },
             {
-              image: 'https://i.pinimg.com/originals/b0/b8/21/b0b821853ad3de7e3a4c957817ba5a2d.jpg',
-              brand: 'Ford',
-              price: '9876.54'
+              image: 'https://plazavea.vteximg.com.br/arquivos/ids/591963-450-450/image-6005ff6b9cf142e4b10d8b3d7bfe3545.jpg',
+              brand: 'CAT',
+              model: 'Juguete Tractor Cat Radio Control Remoto Excavadora Escala 1:24',
+              original_price: '575.00',
+              price: '460.00'
             },
             {
               image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
