@@ -68,6 +68,7 @@ export default class LoginScreen extends Component {
                   fullname: this.state.fullname,
                   alias: this.state.alias,
                   email: this.state.email,
+                  password: this.state.password,
                   phone: Number(this.state.phone),
                   document: Number(this.state.document)
                 }
