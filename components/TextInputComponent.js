@@ -6,6 +6,7 @@ export default class TextInputComponent extends Component {
   render () {
     return (
       <TextInput
+        value={this.props.value}
         style={[styles.textInput, this.props.style]}
         placeholder={this.props.placeholder}
         onChangeText={this.props.handleOnChangeText}
