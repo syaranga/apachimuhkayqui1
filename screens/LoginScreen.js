@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 import TextInputComponent from '../components/TextInputComponent'
 import ButtonComponent from '../components/ButtonComponent'
+import { setItem } from '../helpers/AsyncStorageHelper'
 
 export default class LoginScreen extends Component {
   constructor (props) {
@@ -26,7 +27,9 @@ export default class LoginScreen extends Component {
         }
         if (control === 'readUser') {
           console.log('readUser:', result.data)
-          this.setState({ user: result.data })
+          setItem('user', result.data.Users[0])
+          console.log('user:', result.data.Users[0])
+          this.setState({ user: result.data.Users[0] })
         }
       })
       .catch((err) => console.error(err))
@@ -109,6 +112,11 @@ export default class LoginScreen extends Component {
             handleOnChangeText={(text) => this.setState({ email: text })}
           />
           <TextInputComponent
+            key='password'
+            placeholder='password'
+            handleOnChangeText={(password) => this.setState({ password })}
+          />
+          <TextInputComponent
             key='phone'
             placeholder='phone'
             handleOnChangeText={(text) => this.setState({ phone: text })}
@@ -138,6 +146,7 @@ export default class LoginScreen extends Component {
                   fullname: this.state.fullname,
                   alias: this.state.alias,
                   email: this.state.email,
+                  password: this.state.password,
                   phone: Number(this.state.phone),
                   document: Number(this.state.document)
                 }

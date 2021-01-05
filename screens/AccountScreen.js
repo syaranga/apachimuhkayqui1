@@ -9,47 +9,24 @@ import TitleSectionComponent2 from '../components/TitleSectionComponent2'
 import ProfileComponent from '../components/ProfileComponent'
 import CoinsComponent from '../components/CoinsComponent'
 import OrdersComponent from '../components/OrdersComponent'
+import { getItem } from '../helpers/AsyncStorageHelper'
 
 export default class AccountScreen extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      fullname: null,
+      alias: null,
+      email: null,
+      document: null,
+      phone: null
+    }
+  }
+
   componentDidMount () {
-    var query = `
-    mutation createUser($user: inputUser) {
-      createUser(data: $user) {
-        id
-        fullname
-        alias
-        email
-        phone
-        document
-      }
-    }
-    `
-
-    const variables = {
-      user: {
-        fullname: 'Joseph Antony Cordova Aguilar',
-        alias: 'JosephCA',
-        email: 'josephtex1066@gmail.com',
-        phone: 995009817,
-        document: 74611496
-      }
-    }
-
-    this.handleOnFetch(
-      'http://localhost:4000/graphql',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json'
-        },
-        body: JSON.stringify({
-          query,
-          variables
-        })
-      },
-      'updateUser'
-    )
+    getItem('user')
+      .then((user) => this.setState({ ...user }))
+      .catch((err) => console.error(err))
   }
 
   handleOnFetch (input, init, control, object) {
@@ -79,14 +56,20 @@ export default class AccountScreen extends Component {
           }}
         >
           <View style={{ flex: 0.65 }}>
-            <TextInputComponent placeholder='Full name' />
+            <TextInputComponent
+              value={this.state.fullname}
+              placeholder='Full name'
+            />
           </View>
           <View style={{ flex: 0.30 }}>
             <TextInputComponent placeholder='Nick name' />
           </View>
         </View>
         <View style={{ marginTop: wp('2%') }}>
-          <TextInputComponent placeholder='Email' />
+          <TextInputComponent
+            value={this.state.email}
+            placeholder='Email'
+          />
         </View>
         <View
           style={{
@@ -97,10 +80,16 @@ export default class AccountScreen extends Component {
           }}
         >
           <View style={{ flex: 0.55 }}>
-            <TextInputComponent placeholder='Phone' />
+            <TextInputComponent
+              value={this.state.phone}
+              placeholder='Phone'
+            />
           </View>
           <View style={{ flex: 0.40 }}>
-            <TextInputComponent placeholder='Document' />
+            <TextInputComponent
+              value={this.state.document}
+              placeholder='Document'
+            />
           </View>
         </View>
         <TitleSectionComponent2

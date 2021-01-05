@@ -10,6 +10,8 @@ import CartScreen from './screens/CartScreen'
 import AccountScreen from './screens/AccountScreen'
 import LoginScreen from './screens/LoginScreen'
 import DetailItemScreen from './screens/DetailItemScreen'
+import CheckoutScreen from './screens/CheckoutScreen'
+import AddAdScreen from './screens/AddAdScreen'
 
 const Tab = createBottomTabNavigator()
 
@@ -88,6 +90,26 @@ function MyTabs () {
           tabBarLabel: 'Detail Item',
           tabBarIcon: ({ color, size }) => (
             <MaterialIcons name='more' color={color} size={size} />
+          )
+        }}
+      />
+      <Tab.Screen
+        name='CheckoutScreen'
+        component={CheckoutScreen}
+        options={{
+          tabBarLabel: 'Checkout',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name='change-history' color={color} size={size} />
+          )
+        }}
+      />
+      <Tab.Screen
+        name='AddAdScreen'
+        component={AddAdScreen}
+        options={{
+          tabBarLabel: 'AddAd',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialIcons name='add' color={color} size={size} />
           )
         }}
       />
