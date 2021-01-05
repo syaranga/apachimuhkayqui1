@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, View, StatusBar } from 'react-native'
+import { ScrollView, Text, View, StyleSheet, StatusBar } from 'react-native'
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen'
 import { MaterialIcons, AntDesign } from '@expo/vector-icons'
 import TitleComponent from '../components/TitleComponent'
 import TextInputComponent from '../components/TextInputComponent'
 import TitleSectionComponent1 from '../components/TitleSectionComponent1'
-import SwiperComponent from '../components/SwiperComponent'
 import GalleryComponent from '../components/GalleryComponent'
-import TitleSectionComponent from '../components/TitleSectionComponent'
 import SimpleGalleryComponent from '../components/SimpleGalleryComponent'
 import MasonryComponent from '../components/MasonryComponent'
 import GalleryAddComponent from '../components/GalleryAddComponent'
@@ -70,27 +68,10 @@ export default class AddadScreen extends Component {
             marginHorizontal: wp('2.5%')
           }}
         />
-        <SwiperComponent
-          autoplay
-          loop
-          data={[
-            { image: 'https://agauche.org/wp-content/uploads/2020/03/alvan-nee-T-0EW-SEbsE-unsplash-scaled.jpg' }
-          ]}
-          styleContainer={{
-            height: hp('50%'),
-            width: wp('100%'),
-            marginBottom: wp('2.5%')
-          }}
-          styleItem={{
-            height: hp('50%'),
-            width: wp('95%'),
-            marginHorizontal: wp('2.5%')
-          }}
-        />
         <GalleryComponent
           data={[
             {
-              image: 'http://i1.wp.com/johnlewisglass.com/wp-content/uploads/2016/04/8-1.png?w=640',
+              image: 'https://www.sosodours.com/wp-content/uploads//2019/07/Chien-plancher-odeur-urine.jpg',
               avatar: 'https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg',
               nickname: 'ridhwan nordin',
               alias: '@ridzjcob',
@@ -188,7 +169,7 @@ export default class AddadScreen extends Component {
         >
           <View style={{ flex: 1, flexDirection: 'row', backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
             <View style={{ flex: 1 }}>
-              <Text style={{ flex: 1, fontWeight: 'bold', width: 100, height: 10 }} />
+              <Text style={{ flex: 1, fontWeight: 'bold', width: 1, height: 10 }} />
               <Text style={{ flex: 1, color: '#D4C6C3' }} />
             </View>
             <View style={{ flex: 1 }}>
@@ -198,14 +179,8 @@ export default class AddadScreen extends Component {
           </View>
 
           <View style={{ flex: 1, flexDirection: 'row' }}>
-            <View style={{ justifyContent: 'space-around', flex: 1, flexDirection: 'row', width: 25, backgroundColor: 'white', padding: '3%', margin: '3%', borderRadius: '1%' }}>
-              <AntDesign name='minus' size={15} color='black' />
-              <Text>1</Text>
-              <AntDesign name='plus' size={15} color='black' />
-            </View>
-            <View style={{ width: 25, backgroundColor: 'white', padding: '3%', margin: '3%', borderRadius: '3%' }}>
-              <MaterialIcons name='add-shopping-cart' size={15} color='black' />
-            </View>
+            <View style={{ justifyContent: 'space-around', flex: 1, flexDirection: 'row', width: 25, backgroundColor: 'white', padding: '3%', margin: '3%', borderRadius: '1%' }} />
+
           </View>
         </View>
 
@@ -243,14 +218,6 @@ export default class AddadScreen extends Component {
             {
               uri: 'https://static.seattletimes.com/wp-content/uploads/2017/02/41ea8bde4534470fae6c8240acad1476-780x1169.jpg',
               renderFooter: this.renderFooterMasonry
-            },
-            {
-              uri: 'https://thedogbookcompany.com/wp-content/uploads/2019/10/French-Bulldog-Pictures-Adventure.jpg',
-              renderFooter: this.renderFooterMasonry
-            },
-            {
-              uri: 'https://www.bitseven.de/wp-content/uploads/Leistungen-Werbeagentur-Grossartige-Webseiten-683x1024.jpg',
-              renderFooter: this.renderFooterMasonry
             }
           ]}
           styleContainer={{
@@ -258,7 +225,23 @@ export default class AddadScreen extends Component {
             marginHorizontal: wp('2.5%')
           }}
         />
+        <View style={styles.input5}>
+          <View style={{ flex: 0.65 }}>
+            <TextInputComponent
+              placeholder=' Add ads'
+            />
+          </View>
+        </View>
       </ScrollView>
     )
   }
 }
+const styles = StyleSheet.create({
+
+  input5: {
+    bottom: 15,
+    left: 150,
+    padding: 5,
+    width: 100
+  }
+})
