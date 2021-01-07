@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { ScrollView, View } from 'react-native'
 import TitleComponent from '../components/TitleComponent'
 import AccountComponent from '../components/AccountComponent'
+import TitleSectionComponent from '../components/TitleSectionComponent'
 
 export default class AccountScreen extends Component {
   render () {
