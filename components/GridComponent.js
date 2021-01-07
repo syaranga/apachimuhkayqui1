@@ -5,31 +5,44 @@ import { FlatGrid } from 'react-native-super-grid'
 export class GridComponent extends Component {
   render () {
     return (
-      <FlatGrid
-        itemDimension={this.props.itemDimension}
-        data={this.props.data}
-        renderItem={({ item }) => (
-          <View>
-            <TouchableWithoutFeedback onPress={() => this.props.handleOnPress(item)}>
-              <View style={[styles.item, this.props.styleItem]}>
-                <Image
-                  style={this.props.styleItem}
-                  source={{ uri: item.image }}
-                />
-                <View style={styles.content}>
-                  <View style={{ flex: 0.5 }}>
-                    <Text style={styles.discount}>{`${item.brand} ${item.model}`}</Text>
-                  </View>
-                  <View style={{ flex: 0.5 }}>
+      <View>
+        <TextInput
+          style={styles.textInput}
+        />
+        <View>
+          <Text style={styles.title}>ALL RESULTS</Text>
+        </View>
+        <View>
+          <Text style={styles.textNumber}>
+            {'(<) 1 de 100 (>)'}
+          </Text>
+        </View>
+        <FlatGrid
+          itemDimension={this.props.itemDimension}
+          data={this.props.data}
+          renderItem={({ item }) => (
+            <View>
+              <TouchableWithoutFeedback onPress={() => this.props.handleOnPress(item)}>
+                <View style={[styles.item, this.props.styleItem]}>
+                  <Image
+                    style={this.props.styleItem}
+                    source={{ uri: item.image }}
+                  />
+                  <View style={styles.content}>
                     <Text style={styles.discount}>{item.discount}</Text>
                     <Text style={styles.price}>{item.price}</Text>
                   </View>
                 </View>
-              </View>
-            </TouchableWithoutFeedback>
-          </View>
-        )}
-      />
+              </TouchableWithoutFeedback>
+            </View>
+          )}
+        />
+        <View>
+          <Text style={styles.textNumber}>
+            {'(<) 1 de 100 (>)'}
+          </Text>
+        </View>
+      </View>
     )
   }
 }
